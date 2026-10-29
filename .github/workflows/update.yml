@@ -47,6 +47,7 @@ jobs:
             echo "沒有變動"
           else
             git commit -m "自動更新優惠資料 $(TZ=Asia/Taipei date +%F)"
+            git pull --rebase   # 執行期間若有人 push，先接上最新版本再推，避免整次結果白跑
             git push
           fi
 

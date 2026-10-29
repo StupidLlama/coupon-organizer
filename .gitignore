@@ -3,3 +3,4 @@ issues.json
 processed.txt
 rejected.tsv
 .env
+run.log
