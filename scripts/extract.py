@@ -17,21 +17,35 @@ def _version(name: str) -> tuple:
     return (int(m.group(1)), int(m.group(2) or 0)) if m else (0, 0)
 
 
-def resolve_model(preferred: str, api_key: str) -> str:
-    """向 Gemini 查詢這把金鑰能用的模型。preferred 是 auto 或已停用時，自動挑版本最新的穩定 flash 模型。"""
+def resolve_models(preferred: str, api_key: str, limit: int = 4) -> list[str]:
+    """向 Gemini 查詢這把金鑰能用的模型，回傳候選清單（第一個優先用，忙線或沒額度時換下一個）。
+    preferred 是 auto 時，依版本由新到舊排列穩定的 flash 模型；有指定名稱且可用時，排在第一個。"""
     r = requests.get(LIST_API, headers={"x-goog-api-key": api_key}, params={"pageSize": 200}, timeout=30)
     r.raise_for_status()
     names = [m["name"].removeprefix("models/") for m in r.json().get("models", [])
              if "generateContent" in m.get("supportedGenerationMethods", [])]
-    if preferred and preferred != "auto" and preferred in names:
-        return preferred
     flash = [n for n in names if "flash" in n and not any(w in n for w in SKIP_WORDS)]
     if not flash:  # 沒有穩定版就退一步，接受 preview
         flash = [n for n in names if "flash" in n and not any(w in n for w in SKIP_WORDS if w != "preview")]
-    if not flash:
+    if not flash and not (preferred in names):
         raise RuntimeError("找不到可用的 Gemini flash 模型，可用模型：" + ", ".join(names[:20]))
     # 版本新的優先；同版本時，名稱短的（例如 gemini-x-flash，而不是帶日期的版本）優先
-    return sorted(flash, key=lambda n: (_version(n), -len(n)), reverse=True)[0]
+    ordered = sorted(flash, key=lambda n: (_version(n), -len(n)), reverse=True)
+    if preferred and preferred != "auto" and preferred in names:
+        ordered = [preferred] + [n for n in ordered if n != preferred]
+    return ordered[:limit]
+
+
+class ModelBusy(Exception):
+    """這個模型目前忙線（503）或沒有額度（429），可以換下一個模型再試。"""
+
+
+def _api_message(r: requests.Response) -> str:
+    try:
+        return r.json().get("error", {}).get("message", "")[:160]
+    except ValueError:
+        return r.text[:160]
+
 
 SCHEMA = {
     "type": "ARRAY",
@@ -75,11 +89,15 @@ def extract(store: str, url: str, text: str, model: str, api_key: str, today: st
         "generationConfig": {"responseMimeType": "application/json", "responseSchema": SCHEMA, "temperature": 0.1},
     }
     headers = {"x-goog-api-key": api_key, "Content-Type": "application/json"}
-    for attempt in range(3):
-        r = requests.post(API.format(model=model), headers=headers, json=body, timeout=90)
-        if r.status_code == 429 or r.status_code >= 500:  # 超過免費額度或伺服器忙：等一下再試
-            time.sleep(30 * (attempt + 1))
+    last = ""
+    for attempt in range(2):
+        r = requests.post(API.format(model=model), headers=headers, json=body, timeout=120)
+        if r.status_code == 429 or r.status_code >= 500:  # 沒額度或伺服器忙：等一下再試一次
+            last = f"HTTP {r.status_code}：{_api_message(r)}"
+            time.sleep(20 * (attempt + 1))
             continue
+        if r.status_code in (401, 403):
+            raise PermissionError(f"金鑰無效或沒有權限（HTTP {r.status_code}）：{_api_message(r)}")
         r.raise_for_status()
         try:
             raw = r.json()["candidates"][0]["content"]["parts"][0]["text"]
@@ -87,4 +105,4 @@ def extract(store: str, url: str, text: str, model: str, api_key: str, today: st
         except (KeyError, IndexError, json.JSONDecodeError):
             return []
         return items if isinstance(items, list) else []
-    raise RuntimeError("Gemini 連續失敗，可能超過今日免費額度")
+    raise ModelBusy(last)

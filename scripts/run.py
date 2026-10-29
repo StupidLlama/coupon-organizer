@@ -34,11 +34,12 @@ def main() -> int:
     if not args.no_fetch and not api_key:
         print("⚠️ 沒有設定 GEMINI_API_KEY，這次只處理回報和清理過期。")
     if not args.no_fetch and api_key:
-        from extract import extract, resolve_model
+        from extract import ModelBusy, extract, resolve_models
         from fetch import fetch_text
 
-        model = resolve_model(settings.get("model", "auto"), api_key)
-        print(f"使用模型：{model}")
+        models = resolve_models(settings.get("model", "auto"), api_key)
+        print(f"候選模型：{'、'.join(models)}")
+        print(f"使用模型：{models[0]}")
         only = {s for s in args.only.split(",") if s}
         gap = float(settings.get("request_gap_seconds", 7))
         stop = False
@@ -52,15 +53,25 @@ def main() -> int:
                 if not text:
                     print(f"略過 {store['name']} {url}：{status}")
                     continue
-                try:
-                    items = extract(store["name"], url, text, model, api_key, today())
-                except Exception as e:  # 單一網頁失敗不影響其他店家
-                    print(f"Gemini 失敗 {store['name']}：{e}")
-                    if "額度" in str(e) or "401" in str(e) or "403" in str(e):
-                        print("金鑰無效或超過今日額度，停止這次更新。")
-                        stop = True
-                        break
-                    continue
+                items = None
+                while models and items is None:
+                    try:
+                        items = extract(store["name"], url, text, models[0], api_key, today())
+                    except ModelBusy as e:  # 這個模型忙線或沒額度：換下一個候選模型，同一個網頁再試
+                        print(f"{models[0]} 無法使用（{e}），改用下一個模型")
+                        models.pop(0)
+                        if models:
+                            print(f"使用模型：{models[0]}")
+                    except PermissionError as e:
+                        print(e)
+                        models.clear()
+                    except Exception as e:  # 其他錯誤只影響這個網頁
+                        print(f"Gemini 失敗 {store['name']}：{e}")
+                        items = []
+                if not models:
+                    print("所有候選模型都無法使用，停止這次更新，已抓到的資料仍會保存。")
+                    stop = True
+                    break
                 for it in items:
                     it["_source"] = url
                 found.setdefault(sid, []).extend(items)
