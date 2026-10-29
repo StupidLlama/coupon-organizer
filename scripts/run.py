@@ -34,12 +34,17 @@ def main() -> int:
     if not args.no_fetch and not api_key:
         print("⚠️ 沒有設定 GEMINI_API_KEY，這次只處理回報和清理過期。")
     if not args.no_fetch and api_key:
-        from extract import extract
+        from extract import extract, resolve_model
         from fetch import fetch_text
 
+        model = resolve_model(settings.get("model", "auto"), api_key)
+        print(f"使用模型：{model}")
         only = {s for s in args.only.split(",") if s}
         gap = float(settings.get("request_gap_seconds", 7))
+        stop = False
         for sid, store in cfg["stores"].items():
+            if stop:
+                break
             if only and sid not in only:
                 continue
             for url in store.get("urls", []):
@@ -48,10 +53,12 @@ def main() -> int:
                     print(f"略過 {store['name']} {url}：{status}")
                     continue
                 try:
-                    items = extract(store["name"], url, text, settings.get("model", "gemini-2.5-flash"), api_key, today())
+                    items = extract(store["name"], url, text, model, api_key, today())
                 except Exception as e:  # 單一網頁失敗不影響其他店家
                     print(f"Gemini 失敗 {store['name']}：{e}")
-                    if "額度" in str(e):
+                    if "額度" in str(e) or "401" in str(e) or "403" in str(e):
+                        print("金鑰無效或超過今日額度，停止這次更新。")
+                        stop = True
                         break
                     continue
                 for it in items:

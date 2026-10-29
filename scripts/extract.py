@@ -7,6 +7,31 @@ import requests
 from common import AUD, COND, TYPE
 
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+LIST_API = "https://generativelanguage.googleapis.com/v1beta/models"
+SKIP_WORDS = ("lite", "image", "tts", "live", "audio", "embedding", "thinking", "exp", "preview", "omni")
+
+
+def _version(name: str) -> tuple:
+    import re
+    m = re.search(r"gemini-(\d+)(?:\.(\d+))?", name)
+    return (int(m.group(1)), int(m.group(2) or 0)) if m else (0, 0)
+
+
+def resolve_model(preferred: str, api_key: str) -> str:
+    """向 Gemini 查詢這把金鑰能用的模型。preferred 是 auto 或已停用時，自動挑版本最新的穩定 flash 模型。"""
+    r = requests.get(LIST_API, headers={"x-goog-api-key": api_key}, params={"pageSize": 200}, timeout=30)
+    r.raise_for_status()
+    names = [m["name"].removeprefix("models/") for m in r.json().get("models", [])
+             if "generateContent" in m.get("supportedGenerationMethods", [])]
+    if preferred and preferred != "auto" and preferred in names:
+        return preferred
+    flash = [n for n in names if "flash" in n and not any(w in n for w in SKIP_WORDS)]
+    if not flash:  # 沒有穩定版就退一步，接受 preview
+        flash = [n for n in names if "flash" in n and not any(w in n for w in SKIP_WORDS if w != "preview")]
+    if not flash:
+        raise RuntimeError("找不到可用的 Gemini flash 模型，可用模型：" + ", ".join(names[:20]))
+    # 版本新的優先；同版本時，名稱短的（例如 gemini-x-flash，而不是帶日期的版本）優先
+    return sorted(flash, key=lambda n: (_version(n), -len(n)), reverse=True)[0]
 
 SCHEMA = {
     "type": "ARRAY",

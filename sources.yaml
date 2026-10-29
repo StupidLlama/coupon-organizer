@@ -6,7 +6,7 @@
 #   例：mcd: { ..., app_ios: "https://apps.apple.com/tw/app/...", app_android: "https://play.google.com/store/apps/details?id=..." }
 
 settings:
-  model: gemini-2.5-flash      # Gemini 模型名稱；若 Google 改版停用，換成目前免費額度可用的 flash 模型
+  model: auto                  # auto = 每次自動挑最新的穩定 flash 模型；也可以填固定名稱（填錯或被停用時會自動改用 auto）
   request_gap_seconds: 7       # 每次呼叫 Gemini 間隔幾秒，避免超過免費額度的每分鐘上限
   max_chars_per_page: 15000    # 每個網頁最多送多少字給 Gemini
   stale_days: 14               # 自動抓到的優惠，超過幾天沒再出現就移除
