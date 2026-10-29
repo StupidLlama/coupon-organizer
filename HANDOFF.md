@@ -49,15 +49,15 @@
 | `GEMINI_API_KEY`（repo secret） | ✅ 已設定（Google AI Studio，Default Gemini Project） |
 | Issue 標籤 `approved` / `new-coupon` / `expired` | ✅ 已建立 |
 | Gemini 自動選模型（v0.4.1） | ✅ 已推上 GitHub，會選到 `gemini-3.8-flash` |
-| **備用模型＋15 秒間隔（v0.4.2）** | ⚠️ **還沒推上 GitHub**，見下方「第一件事」 |
-| 真實優惠資料 | ❌ 還沒成功抓到任何一筆，網站上仍是 53 筆示範資料 |
+| 備用模型＋15 秒間隔（v0.4.2） | ✅ 已推上 GitHub |
+| 真實優惠資料 | ⚠️ 已能抓到（約 75 筆），但第一次因 push 衝突沒存到，網站上仍是示範資料 |
 
-### ⚠️ 下一個對話的第一件事
-v0.4.2 的修改只在最後一個 `coupon-organizer.zip` 裡（2026-10-29 12:28 傳送）。請先確認使用者電腦上的 `scripts/extract.py` 裡有沒有 `def resolve_models` 和 `class ModelBusy`：
-- **有**：請使用者 commit、push，再執行 `gh workflow run update.yml`
-- **沒有**：請使用者解壓那個 zip 覆蓋，或由 Claude 照第 6 節的說明直接改檔案
-
-然後看 Actions 紀錄，確認至少有幾家店抓到真實優惠。
+### 最新進度（2026-10-29 13:00）
+- v0.4.2 已推上 GitHub。第三次執行（run 40818764836）**Gemini 成功抓到約 75 筆真實優惠**（全家、家樂福、康是美、Apple 等），但 push 被拒（執行中使用者剛好 push），結果沒存到。
+- 已修正：`update.yml` push 前先 `git pull --rebase`（commit 93b31c9）；`.gitignore` 加 `run.log`。
+- 今日 `gemini-3.8-flash`、`3.7-flash` 回 429「超過額度」（被前幾次執行用光），`3.6`、`3.5` 回 503。額度台灣 15:00 重置。
+- **下一步**：15:00 後 `gh workflow run update.yml`，確認 `data/coupons.json` 有真實優惠；之後做第 10 節第 2 項「換更好的來源網址」。
+- 看完整紀錄的方法：`gh run view <ID> --log | Out-File -Encoding utf8 run.log`，Claude 直接讀檔（終端機中文會亂碼）。
 
 ## 3. 版本紀錄
 | 版本 | 內容 |
