@@ -4,3 +4,4 @@ processed.txt
 rejected.tsv
 .env
 run.log
+check_urls.log

@@ -1,5 +1,7 @@
 # 優惠夾：店家清單與抓取來源
-# - 每家店的 urls 是自動更新時要抓的網頁。目前先放官網首頁，之後請換成各店的「優惠／活動」頁面，抓到的資料會準很多。
+# - 每家店的 urls 是自動更新時要抓的網頁（各店的「優惠／活動／最新消息」頁）。每多一個網址，每天就多一次 Gemini 呼叫。
+# - urls: [] = 暫停抓取（找不到合規、抓得到的官方來源），店家和已有的優惠會保留。
+# - 換網址後可以用 python scripts/check_urls.py 測試抓不抓得到。
 # - 很多網站是用 JavaScript 動態載入，純抓 HTML 可能拿不到內容；抓不到的店家會在 Actions 紀錄裡顯示「沒有文字」。
 # - sub 必須是下面 categories 裡的子分類代號。
 # - 選填 app_ios / app_android：App Store / Google Play 的下載頁網址。填了之後，「App 限定」的優惠詳情會出現「開啟 App」按鈕。
@@ -21,42 +23,42 @@ categories:
   pay: { name: 金融支付, subs: { wallet: 行動支付, card: 信用卡 } }
 
 stores:
-  mcd: { name: 麥當勞, domain: mcdonalds.com.tw, sub: fast, color: "#d62300", urls: ["https://www.mcdonalds.com.tw/"] }
+  mcd: { name: 麥當勞, domain: mcdonalds.com, sub: fast, color: "#d62300", urls: [] }  # 暫停：官網擋 bot（新舊網址都 403）
   kfc: { name: 肯德基, domain: kfcclub.com.tw, sub: fast, color: "#a3080c", urls: ["https://www.kfcclub.com.tw/"] }
-  mos: { name: 摩斯漢堡, domain: mos.com.tw, sub: fast, color: "#0a7a3d", urls: ["https://www.mos.com.tw/"] }
-  bk: { name: 漢堡王, domain: burgerking.com.tw, sub: fast, color: "#d35400", urls: ["https://www.burgerking.com.tw/"] }
-  sbux: { name: 星巴克, domain: starbucks.com.tw, sub: drink, color: "#00704a", urls: ["https://www.starbucks.com.tw/"] }
-  louisa: { name: 路易莎, domain: louisacoffee.co, sub: drink, color: "#3b2a20", urls: ["https://www.louisacoffee.co/"] }
-  kebuke: { name: 可不可熟成紅茶, domain: kebuke.com, sub: drink, color: "#1d3557", urls: ["https://www.kebuke.com/"] }
+  mos: { name: 摩斯漢堡, domain: mos.com.tw, sub: fast, color: "#0a7a3d", urls: [] }  # 暫停：疑似 robots.txt 禁止
+  bk: { name: 漢堡王, domain: burgerking.com.tw, sub: fast, color: "#d35400", urls: ["https://www.burgerking.com.tw/news"] }
+  sbux: { name: 星巴克, domain: starbucks.com.tw, sub: drink, color: "#00704a", urls: ["https://www.starbucks.com.tw/stores/allevent.jspx"] }
+  louisa: { name: 路易莎, domain: louisacoffee.co, sub: drink, color: "#3b2a20", urls: ["https://www.louisacoffee.co/news"] }
+  kebuke: { name: 可不可熟成紅茶, domain: kebuke.com, sub: drink, color: "#1d3557", urls: ["https://kebuke.com/news/"] }
   ubereats: { name: Uber Eats, domain: ubereats.com, sub: delivery, color: "#06c167", urls: ["https://www.ubereats.com/tw"] }
-  panda: { name: foodpanda, domain: foodpanda.com.tw, sub: delivery, color: "#d70f64", urls: ["https://www.foodpanda.com.tw/"] }
-  pizzahut: { name: 必勝客, domain: pizzahut.com.tw, sub: dine, color: "#c8102e", urls: ["https://www.pizzahut.com.tw/"] }
+  panda: { name: foodpanda, domain: foodpanda.com.tw, sub: delivery, color: "#d70f64", urls: [] }  # 暫停：robots.txt 禁止活動頁
+  pizzahut: { name: 必勝客, domain: pizzahut.com.tw, sub: dine, color: "#c8102e", urls: ["https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp"] }
   s711: { name: 7-ELEVEN, domain: 7-11.com.tw, sub: mart, color: "#00804a", urls: ["https://www.7-11.com.tw/"] }
-  fami: { name: 全家, domain: family.com.tw, sub: mart, color: "#0a8f3c", urls: ["https://www.family.com.tw/"] }
-  carrefour: { name: 家樂福, domain: carrefour.com.tw, sub: mart, color: "#004e9f", urls: ["https://www.carrefour.com.tw/"] }
-  watsons: { name: 屈臣氏, domain: watsons.com.tw, sub: daily, color: "#00a0af", urls: ["https://www.watsons.com.tw/"] }
-  cosmed: { name: 康是美, domain: cosmed.com.tw, sub: daily, color: "#e4007f", urls: ["https://www.cosmed.com.tw/"] }
+  fami: { name: 全家, domain: family.com.tw, sub: mart, color: "#0a8f3c", urls: [] }  # 暫停：疑似 robots.txt 禁止
+  carrefour: { name: 萬家福（原家樂福）, domain: uni-prosperity.com.tw, sub: mart, color: "#004e9f", urls: [] }  # 暫停：萬家福官網是 JavaScript 動態載入
+  watsons: { name: 屈臣氏, domain: watsons.com.tw, sub: daily, color: "#00a0af", urls: [] }  # 暫停：robots.txt 只允許台灣 12:00–16:45 造訪
+  cosmed: { name: 康是美, domain: cosmed.com.tw, sub: daily, color: "#e4007f", urls: ["https://www.cosmed.com.tw/news.aspx"] }
   apple: { name: Apple, domain: apple.com, sub: tech, color: "#333333", urls: ["https://www.apple.com/tw/"] }
-  tk: { name: 燦坤, domain: tkec.com.tw, sub: tech, color: "#e60012", urls: ["https://www.tkec.com.tw/"] }
-  xiaomi: { name: 小米, domain: mi.com, sub: tech, color: "#ff6900", urls: ["https://www.mi.com/tw/"] }
-  shopee: { name: 蝦皮購物, domain: shopee.tw, sub: online, color: "#ee4d2d", urls: ["https://shopee.tw/"] }
-  momo: { name: momo購物網, domain: momoshop.com.tw, sub: online, color: "#d6006f", urls: ["https://www.momoshop.com.tw/"] }
-  netflix: { name: Netflix, domain: netflix.com, sub: stream, color: "#b20710", urls: ["https://www.netflix.com/tw/"] }
-  disney: { name: Disney+, domain: disneyplus.com, sub: stream, color: "#0b1e5b", urls: ["https://www.disneyplus.com/zh-tw"] }
-  yt: { name: YouTube Premium, domain: youtube.com, sub: stream, color: "#ff0000", urls: ["https://www.youtube.com/premium"] }
+  tk: { name: 燦坤, domain: tk3c.com, sub: tech, color: "#e60012", urls: ["https://www.tk3c.com/publishindex.aspx?CID=142"] }
+  xiaomi: { name: 小米, domain: mi.com, sub: tech, color: "#ff6900", urls: ["https://www.mi.com/tw/new-user/"] }
+  shopee: { name: 蝦皮購物, domain: shopee.tw, sub: online, color: "#ee4d2d", urls: [] }  # 暫停：JavaScript 動態載入
+  momo: { name: momo購物網, domain: momoshop.com.tw, sub: online, color: "#d6006f", urls: [] }  # 暫停：JavaScript 動態載入
+  netflix: { name: Netflix, domain: netflix.com, sub: stream, color: "#b20710", urls: ["https://help.netflix.com/zh-tw/node/24926/tw"] }
+  disney: { name: Disney+, domain: disneyplus.com, sub: stream, color: "#0b1e5b", urls: [] }  # 暫停：robots.txt 禁止
+  yt: { name: YouTube Premium, domain: youtube.com, sub: stream, color: "#ff0000", urls: ["https://support.google.com/youtube/answer/9158808"] }
   spotify: { name: Spotify, domain: spotify.com, sub: music, color: "#1db954", urls: ["https://www.spotify.com/tw/premium/"] }
-  kkbox: { name: KKBOX, domain: kkbox.com, sub: music, color: "#09cef6", urls: ["https://www.kkbox.com/tw/tc/"] }
-  claude: { name: Claude, domain: claude.ai, sub: ai, color: "#c96442", urls: ["https://www.anthropic.com/news"] }
+  kkbox: { name: KKBOX, domain: kkbox.com, sub: music, color: "#09cef6", urls: ["https://help.kkbox.com/tw/zh-tw/billing/pay-types/1847?p=kkbox"] }
+  claude: { name: Claude, domain: claude.ai, sub: ai, color: "#c96442", urls: ["https://claude.com/pricing"] }
   github: { name: GitHub, domain: github.com, sub: ai, color: "#24292f", urls: ["https://education.github.com/pack"] }
-  notion: { name: Notion, domain: notion.so, sub: ai, color: "#191919", urls: ["https://www.notion.so/pricing"] }
-  canva: { name: Canva, domain: canva.com, sub: ai, color: "#7d2ae8", urls: ["https://www.canva.com/zh_tw/pricing/"] }
-  cht: { name: 中華電信, domain: cht.com.tw, sub: telecom, color: "#0055a5", urls: ["https://www.cht.com.tw/"] }
+  notion: { name: Notion, domain: notion.so, sub: ai, color: "#191919", urls: ["https://www.notion.com/en-us/help/notion-for-education"] }
+  canva: { name: Canva, domain: canva.com, sub: ai, color: "#7d2ae8", urls: [] }  # 暫停：網站擋 bot（403）
+  cht: { name: 中華電信, domain: cht.com.tw, sub: telecom, color: "#0055a5", urls: ["https://www.cht.com.tw/home/consumer/customer-service/announce"] }
   twm: { name: 台灣大哥大, domain: taiwanmobile.com, sub: telecom, color: "#ff6600", urls: ["https://www.taiwanmobile.com/"] }
-  thsr: { name: 台灣高鐵, domain: thsrc.com.tw, sub: transit, color: "#e35205", urls: ["https://www.thsrc.com.tw/"] }
-  uber: { name: Uber, domain: uber.com, sub: transit, color: "#000000", urls: ["https://www.uber.com/tw/zh-tw/"] }
-  agoda: { name: Agoda, domain: agoda.com, sub: stay, color: "#5392f9", urls: ["https://www.agoda.com/zh-tw/deals"] }
-  vieshow: { name: 威秀影城, domain: vscinemas.com.tw, sub: movie, color: "#1a1a1a", urls: ["https://www.vscinemas.com.tw/"] }
+  thsr: { name: 台灣高鐵, domain: thsrc.com.tw, sub: transit, color: "#e35205", urls: ["https://www.thsrc.com.tw/", "https://www.thsrc.com.tw/ArticleContent/530e869c-479d-441a-a4b4-61a8166827e9"] }
+  uber: { name: Uber, domain: uber.com, sub: transit, color: "#000000", urls: ["https://www.uber.com/tw/zh-tw/blog/ride/ride-promotions/"] }
+  agoda: { name: Agoda, domain: agoda.com, sub: stay, color: "#5392f9", urls: [] }  # 暫停：JavaScript 動態載入
+  vieshow: { name: 威秀影城, domain: vscinemas.com.tw, sub: movie, color: "#1a1a1a", urls: [] }  # 暫停：官網擋 bot（403）
   steam: { name: Steam, domain: store.steampowered.com, sub: game, color: "#1b2838", urls: ["https://store.steampowered.com/?l=tchinese"] }
-  linepay: { name: LINE Pay, domain: pay.line.me, sub: wallet, color: "#06c755", urls: ["https://pay.line.me/portal/tw/main"] }
+  linepay: { name: LINE Pay, domain: pay.line.me, sub: wallet, color: "#06c755", urls: ["https://pay.line.me/portal/tw/customer/press"] }
   jko: { name: 街口支付, domain: jkopay.com, sub: wallet, color: "#c8102e", urls: ["https://www.jkopay.com/"] }
-  cathay: { name: 國泰世華, domain: cathaybk.com.tw, sub: card, color: "#00843d", urls: ["https://www.cathaybk.com.tw/cathaybk/personal/credit-card/"] }
+  cathay: { name: 國泰世華, domain: cathaybk.com.tw, sub: card, color: "#00843d", urls: ["https://www.cathay-cube.com.tw/content/cub-aem-cs/zh-tw/cathaybk/personal/event/overview.html"] }
