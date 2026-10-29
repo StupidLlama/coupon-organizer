@@ -1,0 +1,62 @@
+name: 每日更新優惠資料
+
+on:
+  schedule:
+    - cron: "0 22 * * *"   # 每天 UTC 22:00 = 台灣時間早上 6:00
+  workflow_dispatch:        # 也可以在 Actions 頁面手動執行
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: update-coupons
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 安裝套件
+        run: pip install -r requirements.txt
+
+      - name: 取得已核准的回報
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue list --label approved --state open --limit 100 --json number,body,labels > issues.json
+
+      - name: 抓取並整理優惠
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/run.py --issues issues.json
+
+      - name: 有變動就存檔
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898810+github-actions[bot]@users.noreply.github.com"
+          git add data/coupons.json
+          if git diff --cached --quiet; then
+            echo "沒有變動"
+          else
+            git commit -m "自動更新優惠資料 $(TZ=Asia/Taipei date +%F)"
+            git push
+          fi
+
+      - name: 回覆並關閉處理過的回報
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for n in $(cat processed.txt 2>/dev/null); do
+            gh issue close "$n" --comment "已併入優惠資料，謝謝回報！"
+          done
+          while IFS=$'\t' read -r n why; do
+            [ -n "$n" ] && gh issue edit "$n" --remove-label approved && gh issue comment "$n" --body "沒辦法併入：$why。修正後請再加上 approved 標籤。"
+          done < rejected.tsv

@@ -1,0 +1,72 @@
+name: 回報新優惠
+description: 發現優惠夾裡沒有的優惠？填這張表告訴我們
+title: "[新優惠] "
+labels: [new-coupon]
+body:
+  - type: input
+    id: store
+    attributes:
+      label: 店家
+      description: 請填網站上顯示的店名，例如：麥當勞、星巴克、7-ELEVEN
+    validations: { required: true }
+  - type: input
+    id: title
+    attributes:
+      label: 優惠標題
+      placeholder: 大麥克買一送一
+    validations: { required: true }
+  - type: textarea
+    id: detail
+    attributes:
+      label: 優惠內容
+      description: 怎麼使用、有什麼限制
+  - type: dropdown
+    id: type
+    attributes:
+      label: 優惠類型
+      options: [優惠券, 特價, 活動, 免費試用, 點數回饋, 方案折扣]
+    validations: { required: true }
+  - type: input
+    id: end
+    attributes:
+      label: 到期日
+      description: 格式 YYYY-MM-DD；沒有期限就留空
+      placeholder: 2026-12-31
+  - type: checkboxes
+    id: audience
+    attributes:
+      label: 適合誰
+      description: 只勾選有明確限定的對象；不限對象就都不要勾
+      options:
+        - label: 學生
+        - label: 上班族
+        - label: 新創・企業
+        - label: 家庭
+        - label: 長者
+        - label: 新用戶
+  - type: checkboxes
+    id: conditions
+    attributes:
+      label: 使用條件
+      options:
+        - label: 會員限定
+        - label: App 限定
+        - label: LINE 限定
+        - label: 指定支付
+        - label: 綁約限定
+        - label: 門市限定
+  - type: input
+    id: code
+    attributes:
+      label: 優惠碼
+  - type: input
+    id: redeem
+    attributes:
+      label: 兌換網址
+      description: 可以直接領券或使用的網頁（選填）
+  - type: input
+    id: source
+    attributes:
+      label: 來源網址
+      description: 官方公告或活動頁的連結，方便我們確認
+    validations: { required: true }

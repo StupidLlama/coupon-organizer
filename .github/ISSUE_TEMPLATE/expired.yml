@@ -1,0 +1,16 @@
+name: 回報優惠已失效
+description: 這張優惠已經不能用了
+title: "[已失效] "
+labels: [expired]
+body:
+  - type: input
+    id: coupon_id
+    attributes:
+      label: 優惠編號
+      description: 從網站按「回報失效」會自動帶入
+    validations: { required: true }
+  - type: textarea
+    id: reason
+    attributes:
+      label: 說明
+      description: 例如：店員說活動已結束、App 裡找不到這張券

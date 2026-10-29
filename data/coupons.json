@@ -1,0 +1,1285 @@
+{
+ "updated_at": "2026-10-29T11:08:26+08:00",
+ "categories": {
+  "food": {
+   "name": "美食",
+   "subs": {
+    "fast": "速食",
+    "drink": "飲料咖啡",
+    "delivery": "外送",
+    "dine": "餐廳"
+   }
+  },
+  "shop": {
+   "name": "購物",
+   "subs": {
+    "mart": "超商量販",
+    "daily": "日用美妝",
+    "tech": "電子產品",
+    "online": "網購平台"
+   }
+  },
+  "svc": {
+   "name": "服務訂閱",
+   "subs": {
+    "stream": "影音串流",
+    "music": "音樂",
+    "ai": "AI 與軟體",
+    "telecom": "電信網路"
+   }
+  },
+  "travel": {
+   "name": "交通旅遊",
+   "subs": {
+    "transit": "交通",
+    "stay": "住宿"
+   }
+  },
+  "fun": {
+   "name": "娛樂",
+   "subs": {
+    "movie": "電影",
+    "game": "遊戲"
+   }
+  },
+  "pay": {
+   "name": "金融支付",
+   "subs": {
+    "wallet": "行動支付",
+    "card": "信用卡"
+   }
+  }
+ },
+ "stores": {
+  "mcd": {
+   "name": "麥當勞",
+   "domain": "mcdonalds.com.tw",
+   "sub": "fast",
+   "color": "#d62300",
+   "url": "https://www.mcdonalds.com.tw/"
+  },
+  "kfc": {
+   "name": "肯德基",
+   "domain": "kfcclub.com.tw",
+   "sub": "fast",
+   "color": "#a3080c",
+   "url": "https://www.kfcclub.com.tw/"
+  },
+  "mos": {
+   "name": "摩斯漢堡",
+   "domain": "mos.com.tw",
+   "sub": "fast",
+   "color": "#0a7a3d",
+   "url": "https://www.mos.com.tw/"
+  },
+  "bk": {
+   "name": "漢堡王",
+   "domain": "burgerking.com.tw",
+   "sub": "fast",
+   "color": "#d35400",
+   "url": "https://www.burgerking.com.tw/"
+  },
+  "sbux": {
+   "name": "星巴克",
+   "domain": "starbucks.com.tw",
+   "sub": "drink",
+   "color": "#00704a",
+   "url": "https://www.starbucks.com.tw/"
+  },
+  "louisa": {
+   "name": "路易莎",
+   "domain": "louisacoffee.co",
+   "sub": "drink",
+   "color": "#3b2a20",
+   "url": "https://www.louisacoffee.co/"
+  },
+  "kebuke": {
+   "name": "可不可熟成紅茶",
+   "domain": "kebuke.com",
+   "sub": "drink",
+   "color": "#1d3557",
+   "url": "https://www.kebuke.com/"
+  },
+  "ubereats": {
+   "name": "Uber Eats",
+   "domain": "ubereats.com",
+   "sub": "delivery",
+   "color": "#06c167",
+   "url": "https://www.ubereats.com/tw"
+  },
+  "panda": {
+   "name": "foodpanda",
+   "domain": "foodpanda.com.tw",
+   "sub": "delivery",
+   "color": "#d70f64",
+   "url": "https://www.foodpanda.com.tw/"
+  },
+  "pizzahut": {
+   "name": "必勝客",
+   "domain": "pizzahut.com.tw",
+   "sub": "dine",
+   "color": "#c8102e",
+   "url": "https://www.pizzahut.com.tw/"
+  },
+  "s711": {
+   "name": "7-ELEVEN",
+   "domain": "7-11.com.tw",
+   "sub": "mart",
+   "color": "#00804a",
+   "url": "https://www.7-11.com.tw/"
+  },
+  "fami": {
+   "name": "全家",
+   "domain": "family.com.tw",
+   "sub": "mart",
+   "color": "#0a8f3c",
+   "url": "https://www.family.com.tw/"
+  },
+  "carrefour": {
+   "name": "家樂福",
+   "domain": "carrefour.com.tw",
+   "sub": "mart",
+   "color": "#004e9f",
+   "url": "https://www.carrefour.com.tw/"
+  },
+  "watsons": {
+   "name": "屈臣氏",
+   "domain": "watsons.com.tw",
+   "sub": "daily",
+   "color": "#00a0af",
+   "url": "https://www.watsons.com.tw/"
+  },
+  "cosmed": {
+   "name": "康是美",
+   "domain": "cosmed.com.tw",
+   "sub": "daily",
+   "color": "#e4007f",
+   "url": "https://www.cosmed.com.tw/"
+  },
+  "apple": {
+   "name": "Apple",
+   "domain": "apple.com",
+   "sub": "tech",
+   "color": "#333333",
+   "url": "https://www.apple.com/tw/"
+  },
+  "tk": {
+   "name": "燦坤",
+   "domain": "tkec.com.tw",
+   "sub": "tech",
+   "color": "#e60012",
+   "url": "https://www.tkec.com.tw/"
+  },
+  "xiaomi": {
+   "name": "小米",
+   "domain": "mi.com",
+   "sub": "tech",
+   "color": "#ff6900",
+   "url": "https://www.mi.com/tw/"
+  },
+  "shopee": {
+   "name": "蝦皮購物",
+   "domain": "shopee.tw",
+   "sub": "online",
+   "color": "#ee4d2d",
+   "url": "https://shopee.tw/"
+  },
+  "momo": {
+   "name": "momo購物網",
+   "domain": "momoshop.com.tw",
+   "sub": "online",
+   "color": "#d6006f",
+   "url": "https://www.momoshop.com.tw/"
+  },
+  "netflix": {
+   "name": "Netflix",
+   "domain": "netflix.com",
+   "sub": "stream",
+   "color": "#b20710",
+   "url": "https://www.netflix.com/tw/"
+  },
+  "disney": {
+   "name": "Disney+",
+   "domain": "disneyplus.com",
+   "sub": "stream",
+   "color": "#0b1e5b",
+   "url": "https://www.disneyplus.com/zh-tw"
+  },
+  "yt": {
+   "name": "YouTube Premium",
+   "domain": "youtube.com",
+   "sub": "stream",
+   "color": "#ff0000",
+   "url": "https://www.youtube.com/premium"
+  },
+  "spotify": {
+   "name": "Spotify",
+   "domain": "spotify.com",
+   "sub": "music",
+   "color": "#1db954",
+   "url": "https://www.spotify.com/tw/premium/"
+  },
+  "kkbox": {
+   "name": "KKBOX",
+   "domain": "kkbox.com",
+   "sub": "music",
+   "color": "#09cef6",
+   "url": "https://www.kkbox.com/tw/tc/"
+  },
+  "claude": {
+   "name": "Claude",
+   "domain": "claude.ai",
+   "sub": "ai",
+   "color": "#c96442",
+   "url": "https://www.anthropic.com/news"
+  },
+  "github": {
+   "name": "GitHub",
+   "domain": "github.com",
+   "sub": "ai",
+   "color": "#24292f",
+   "url": "https://education.github.com/pack"
+  },
+  "notion": {
+   "name": "Notion",
+   "domain": "notion.so",
+   "sub": "ai",
+   "color": "#191919",
+   "url": "https://www.notion.so/pricing"
+  },
+  "canva": {
+   "name": "Canva",
+   "domain": "canva.com",
+   "sub": "ai",
+   "color": "#7d2ae8",
+   "url": "https://www.canva.com/zh_tw/pricing/"
+  },
+  "cht": {
+   "name": "中華電信",
+   "domain": "cht.com.tw",
+   "sub": "telecom",
+   "color": "#0055a5",
+   "url": "https://www.cht.com.tw/"
+  },
+  "twm": {
+   "name": "台灣大哥大",
+   "domain": "taiwanmobile.com",
+   "sub": "telecom",
+   "color": "#ff6600",
+   "url": "https://www.taiwanmobile.com/"
+  },
+  "thsr": {
+   "name": "台灣高鐵",
+   "domain": "thsrc.com.tw",
+   "sub": "transit",
+   "color": "#e35205",
+   "url": "https://www.thsrc.com.tw/"
+  },
+  "uber": {
+   "name": "Uber",
+   "domain": "uber.com",
+   "sub": "transit",
+   "color": "#000000",
+   "url": "https://www.uber.com/tw/zh-tw/"
+  },
+  "agoda": {
+   "name": "Agoda",
+   "domain": "agoda.com",
+   "sub": "stay",
+   "color": "#5392f9",
+   "url": "https://www.agoda.com/zh-tw/deals"
+  },
+  "vieshow": {
+   "name": "威秀影城",
+   "domain": "vscinemas.com.tw",
+   "sub": "movie",
+   "color": "#1a1a1a",
+   "url": "https://www.vscinemas.com.tw/"
+  },
+  "steam": {
+   "name": "Steam",
+   "domain": "store.steampowered.com",
+   "sub": "game",
+   "color": "#1b2838",
+   "url": "https://store.steampowered.com/?l=tchinese"
+  },
+  "linepay": {
+   "name": "LINE Pay",
+   "domain": "pay.line.me",
+   "sub": "wallet",
+   "color": "#06c755",
+   "url": "https://pay.line.me/portal/tw/main"
+  },
+  "jko": {
+   "name": "街口支付",
+   "domain": "jkopay.com",
+   "sub": "wallet",
+   "color": "#c8102e",
+   "url": "https://www.jkopay.com/"
+  },
+  "cathay": {
+   "name": "國泰世華",
+   "domain": "cathaybk.com.tw",
+   "sub": "card",
+   "color": "#00843d",
+   "url": "https://www.cathaybk.com.tw/cathaybk/personal/credit-card/"
+  }
+ },
+ "coupons": [
+  {
+   "id": "8376966054",
+   "store": "agoda",
+   "type": "coupon",
+   "title": "App 專屬訂房 8% 折扣",
+   "desc": "部分飯店適用，結帳時自動折抵。",
+   "start": "2026-10-25",
+   "end": "2026-12-02",
+   "aud": [
+    "family"
+   ],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "8544795242",
+   "store": "apple",
+   "type": "sale",
+   "title": "教育價買 Mac 或 iPad 加贈 AirPods",
+   "desc": "大學生與教職員適用，需驗證身分。",
+   "start": "2026-10-21",
+   "end": "2026-12-07",
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "5bf8dd15a0",
+   "store": "apple",
+   "type": "event",
+   "title": "舊 iPhone 折抵換新機",
+   "desc": "依機況估價，折抵金額直接扣除。",
+   "start": "2026-10-14",
+   "end": "2027-01-26",
+   "aud": [],
+   "cond": [
+    "store"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "bfac00eb6d",
+   "store": "bk",
+   "type": "coupon",
+   "title": "華堡第二份 1 元",
+   "desc": "App 優惠券，限內用與外帶。",
+   "start": "2026-10-07",
+   "end": "2026-10-31",
+   "aud": [],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "ffcfe78e8d",
+   "store": "canva",
+   "type": "trial",
+   "title": "Canva Pro 免費試用 30 天",
+   "desc": "到期前取消不收費。",
+   "start": "2026-09-28",
+   "end": "2026-11-27",
+   "aud": [
+    "newbie",
+    "worker"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "6895077f22",
+   "store": "carrefour",
+   "type": "sale",
+   "title": "週末量販：衛生紙 6 串 499 元",
+   "desc": "每卡限購 2 組，售完為止。",
+   "start": "2026-10-25",
+   "end": "2026-10-30",
+   "aud": [
+    "family"
+   ],
+   "cond": [
+    "store"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "f9352ecf9c",
+   "store": "cathay",
+   "type": "cashback",
+   "title": "CUBE 卡數位通路 3% 回饋",
+   "desc": "切換至玩數位權益方案。",
+   "start": "2026-10-21",
+   "end": "2027-01-11",
+   "aud": [
+    "worker"
+   ],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "87e5bb0d39",
+   "store": "cht",
+   "type": "plan",
+   "title": "學生 5G 吃到飽 499 元",
+   "desc": "30 歲以下在學學生，綁約 24 個月。",
+   "start": "2026-10-14",
+   "end": "2026-12-12",
+   "aud": [
+    "student"
+   ],
+   "cond": [
+    "bundle"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "01e7c34c6a",
+   "store": "claude",
+   "type": "plan",
+   "title": "Team 方案年繳優惠",
+   "desc": "多人團隊共用專案與對話，年繳較月繳划算。",
+   "start": "2026-10-07",
+   "end": "2026-12-27",
+   "aud": [
+    "worker",
+    "startup"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "47a8687794",
+   "store": "claude",
+   "type": "plan",
+   "title": "新創 API 使用額度",
+   "desc": "符合資格的新創團隊可申請 API 額度（示範資料，實際條件以官方公告為準）。",
+   "start": "2026-09-28",
+   "end": "2027-02-25",
+   "aud": [
+    "startup"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "eeefbaab91",
+   "store": "cosmed",
+   "type": "coupon",
+   "title": "保養品滿 1,000 折 150",
+   "desc": "LINE 好友專屬，線上線下皆可用。",
+   "start": "2026-10-25",
+   "end": "2026-11-08",
+   "aud": [],
+   "cond": [
+    "line"
+   ],
+   "code": "COS150",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "229c33d209",
+   "store": "disney",
+   "type": "trial",
+   "title": "電信綁約送 Disney+ 6 個月",
+   "desc": "申辦指定資費即可啟用。",
+   "start": "2026-10-21",
+   "end": "2026-11-27",
+   "aud": [
+    "family"
+   ],
+   "cond": [
+    "bundle"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "ae266a7e05",
+   "store": "fami",
+   "type": "sale",
+   "title": "拿鐵寄杯 10 杯 450 元",
+   "desc": "全家 App 購買，90 天內兌換完畢。",
+   "start": "2026-10-14",
+   "end": "2026-11-07",
+   "aud": [
+    "student",
+    "worker"
+   ],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "707e31cc03",
+   "store": "github",
+   "type": "trial",
+   "title": "學生開發者包：多項工具免費",
+   "desc": "驗證學生身分後可使用 Copilot 等工具。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "5ae019f3d2",
+   "store": "jko",
+   "type": "cashback",
+   "title": "新戶綁定送 100 元",
+   "desc": "首次綁定銀行帳戶即贈。",
+   "start": "2026-09-28",
+   "end": "2026-12-07",
+   "aud": [
+    "newbie"
+   ],
+   "cond": [
+    "pay",
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "cf13686698",
+   "store": "kebuke",
+   "type": "sale",
+   "title": "熟成紅茶大杯第二杯半價",
+   "desc": "門市現點限定，不得與其他優惠併用。",
+   "start": "2026-10-25",
+   "end": "2026-11-01",
+   "aud": [],
+   "cond": [
+    "store"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "62dd83ec09",
+   "store": "kfc",
+   "type": "coupon",
+   "title": "炸雞桶 6 塊 299 元",
+   "desc": "適合 3–4 人分享，外帶外送皆可。",
+   "start": "2026-10-21",
+   "end": "2026-11-06",
+   "aud": [
+    "family"
+   ],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "84895c22f5",
+   "store": "kfc",
+   "type": "sale",
+   "title": "出示學生證：蛋撻 2 入 39 元",
+   "desc": "需出示有效學生證，每人每日限 1 次。",
+   "start": "2026-10-14",
+   "end": "2026-11-17",
+   "aud": [
+    "student"
+   ],
+   "cond": [
+    "store"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "d5ba090c01",
+   "store": "kfc",
+   "type": "sale",
+   "title": "長者週一：全餐 9 折",
+   "desc": "65 歲以上出示證件，每週一適用。",
+   "start": "2026-10-07",
+   "end": "2026-11-27",
+   "aud": [
+    "senior"
+   ],
+   "cond": [
+    "store"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "c882cf561e",
+   "store": "kkbox",
+   "type": "plan",
+   "title": "家庭方案 6 人共享",
+   "desc": "主帳號邀請家人加入，每人獨立歌單。",
+   "start": "2026-09-28",
+   "end": "2027-02-25",
+   "aud": [
+    "family"
+   ],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "3ce7d37250",
+   "store": "linepay",
+   "type": "cashback",
+   "title": "指定通路 5% LINE POINTS 回饋",
+   "desc": "綁定指定卡片付款，每月上限 300 點。",
+   "start": "2026-10-25",
+   "end": "2026-11-17",
+   "aud": [],
+   "cond": [
+    "line",
+    "pay"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "0c806abf61",
+   "store": "louisa",
+   "type": "coupon",
+   "title": "LINE 好友現領 20 元折價券",
+   "desc": "單筆消費滿 100 元可折抵。",
+   "start": "2026-10-21",
+   "end": "2026-11-04",
+   "aud": [],
+   "cond": [
+    "line"
+   ],
+   "code": "LOUISA20",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "9e832302be",
+   "store": "louisa",
+   "type": "sale",
+   "title": "上班族早餐組合 79 元",
+   "desc": "平日 07:00–10:30，拿鐵加一份輕食。",
+   "start": "2026-10-14",
+   "end": "2026-11-22",
+   "aud": [
+    "worker"
+   ],
+   "cond": [
+    "store"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "96767ef4b4",
+   "store": "mcd",
+   "type": "event",
+   "title": "週二歡樂日：中薯升級大薯",
+   "desc": "每週二限定，App 領券後當日有效。",
+   "start": "2026-10-07",
+   "end": "2026-10-29",
+   "aud": [],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "95ee69a989",
+   "store": "mcd",
+   "type": "coupon",
+   "title": "大麥克買一送一",
+   "desc": "在 App 優惠券頁出示條碼，門市點餐使用。",
+   "start": "2026-09-28",
+   "end": "2026-11-02",
+   "aud": [],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "de783ea9c9",
+   "store": "mcd",
+   "type": "coupon",
+   "title": "滿福堡套餐 69 元",
+   "desc": "加 LINE 好友領取，早餐時段適用。",
+   "start": "2026-10-25",
+   "end": "2026-11-09",
+   "aud": [
+    "worker"
+   ],
+   "cond": [
+    "line"
+   ],
+   "code": "MCD69",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "2a8827f35d",
+   "store": "momo",
+   "type": "cashback",
+   "title": "指定信用卡刷卡 12% 回饋",
+   "desc": "需事先登錄活動，回饋上限 500 元。",
+   "start": "2026-10-21",
+   "end": "2026-11-11",
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "6f37356dec",
+   "store": "mos",
+   "type": "cashback",
+   "title": "會員點數 2 倍送",
+   "desc": "登入 MOS Order App 消費即自動累積。",
+   "start": "2026-10-14",
+   "end": "2026-11-11",
+   "aud": [],
+   "cond": [
+    "member",
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "ba83882f5f",
+   "store": "netflix",
+   "type": "plan",
+   "title": "年繳方案省下 2 個月",
+   "desc": "一次繳清全年，適合全家共用。",
+   "start": "2026-10-07",
+   "end": "2026-12-17",
+   "aud": [
+    "family"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "d5585a91aa",
+   "store": "notion",
+   "type": "plan",
+   "title": "新創方案 6 個月免費",
+   "desc": "透過合作加速器申請。",
+   "start": "2026-09-28",
+   "end": "2027-01-26",
+   "aud": [
+    "startup"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "27e77688b8",
+   "store": "notion",
+   "type": "plan",
+   "title": "教育方案免費升級 Plus",
+   "desc": "使用學校信箱註冊即可升級。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "bd4aa5329c",
+   "store": "panda",
+   "type": "plan",
+   "title": "pandapro 會員免外送費",
+   "desc": "訂閱期間指定餐廳免外送費。",
+   "start": "2026-10-21",
+   "end": "2026-12-12",
+   "aud": [
+    "family"
+   ],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "dea361aa06",
+   "store": "pizzahut",
+   "type": "coupon",
+   "title": "大披薩外帶 5 折",
+   "desc": "線上訂購輸入代碼，外帶自取限定。",
+   "start": "2026-10-14",
+   "end": "2026-11-03",
+   "aud": [
+    "family"
+   ],
+   "cond": [],
+   "code": "PH50",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "599ada638c",
+   "store": "s711",
+   "type": "sale",
+   "title": "City Café 大杯美式第二杯 10 元",
+   "desc": "OPENPOINT App 下單，寄杯可分次領。",
+   "start": "2026-10-07",
+   "end": "2026-11-05",
+   "aud": [
+    "worker"
+   ],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "8afd52b998",
+   "store": "s711",
+   "type": "cashback",
+   "title": "消費滿 100 送 10 點",
+   "desc": "OPENPOINT 會員綁定後自動回饋。",
+   "start": "2026-09-28",
+   "end": "2026-11-15",
+   "aud": [],
+   "cond": [
+    "member",
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "46492be98d",
+   "store": "sbux",
+   "type": "event",
+   "title": "好友分享日：大杯飲品買一送一",
+   "desc": "限星禮程會員，每人限用 1 次。",
+   "start": "2026-10-25",
+   "end": "2026-10-30",
+   "aud": [],
+   "cond": [
+    "member",
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "84ddb3ab9d",
+   "store": "sbux",
+   "type": "cashback",
+   "title": "新會員送中杯飲品 1 杯",
+   "desc": "註冊星禮程後 7 天內兌換。",
+   "start": "2026-10-21",
+   "end": "2026-11-27",
+   "aud": [
+    "newbie"
+   ],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "8272bed738",
+   "store": "shopee",
+   "type": "coupon",
+   "title": "雙 11 免運券＋全站 11% 回饋",
+   "desc": "App 領券中心領取，每日限量。",
+   "start": "2026-10-14",
+   "end": "2026-11-11",
+   "aud": [],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "6505b21cbc",
+   "store": "spotify",
+   "type": "trial",
+   "title": "Premium 免費試用 3 個月",
+   "desc": "首次訂閱的帳號限定，可隨時取消。",
+   "start": "2026-10-07",
+   "end": "2026-11-22",
+   "aud": [
+    "newbie"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "09f1a62965",
+   "store": "spotify",
+   "type": "plan",
+   "title": "Premium 學生方案半價",
+   "desc": "透過合作驗證平台確認學籍。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "3dce5bec72",
+   "store": "steam",
+   "type": "sale",
+   "title": "秋季特賣：最低 1 折",
+   "desc": "數千款遊戲同步特價。",
+   "start": "2026-10-25",
+   "end": "2026-11-03",
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "be90438738",
+   "store": "thsr",
+   "type": "sale",
+   "title": "早鳥票 65 折",
+   "desc": "乘車日前 28 天開賣，名額有限。",
+   "start": "2026-10-21",
+   "end": "2026-11-25",
+   "aud": [
+    "worker"
+   ],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "1b0e557905",
+   "store": "thsr",
+   "type": "sale",
+   "title": "大學生 5 折起",
+   "desc": "T Express App 購票，依車次折扣不同。",
+   "start": "2026-10-14",
+   "end": "2027-01-16",
+   "aud": [
+    "student"
+   ],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "c6321e3824",
+   "store": "tk",
+   "type": "sale",
+   "title": "5.5L 氣炸鍋限時 1,990 元",
+   "desc": "線上與門市同步，數量有限。",
+   "start": "2026-10-07",
+   "end": "2026-11-02",
+   "aud": [
+    "family"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "7a53030954",
+   "store": "twm",
+   "type": "plan",
+   "title": "長青方案月租 299 元",
+   "desc": "65 歲以上申辦，含市話分鐘數。",
+   "start": "2026-09-28",
+   "end": "2026-12-27",
+   "aud": [
+    "senior"
+   ],
+   "cond": [
+    "bundle"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "6629b25e63",
+   "store": "uber",
+   "type": "coupon",
+   "title": "機場接送 85 折",
+   "desc": "輸入代碼後於 App 預約行程。",
+   "start": "2026-10-25",
+   "end": "2026-11-18",
+   "aud": [
+    "worker"
+   ],
+   "cond": [
+    "app"
+   ],
+   "code": "AIRPORT15",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "55e587eca4",
+   "store": "ubereats",
+   "type": "coupon",
+   "title": "新用戶前 3 單各折 100 元",
+   "desc": "首次下單輸入優惠碼，最低消費 199 元。",
+   "start": "2026-10-21",
+   "end": "2026-11-12",
+   "aud": [
+    "newbie"
+   ],
+   "cond": [
+    "app"
+   ],
+   "code": "EATSNEW",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "901ebb4732",
+   "store": "ubereats",
+   "type": "plan",
+   "title": "Uber One 學生方案月費半價",
+   "desc": "完成學生身分驗證即可申請。",
+   "start": "2026-10-14",
+   "end": "2026-12-27",
+   "aud": [
+    "student"
+   ],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "0ba073ff16",
+   "store": "vieshow",
+   "type": "sale",
+   "title": "週三電影日：平日票 200 元",
+   "desc": "每週三全天，IMAX 等特殊廳除外。",
+   "start": "2026-10-07",
+   "end": "2026-11-01",
+   "aud": [],
+   "cond": [
+    "store"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "369441e299",
+   "store": "vieshow",
+   "type": "coupon",
+   "title": "學生票再折 20 元",
+   "desc": "售票口出示學生證。",
+   "start": "2026-09-28",
+   "end": "2026-12-27",
+   "aud": [
+    "student"
+   ],
+   "cond": [
+    "store"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "fb18da19ad",
+   "store": "watsons",
+   "type": "event",
+   "title": "會員日全館 85 折",
+   "desc": "寵 i 會員出示條碼，部分品項除外。",
+   "start": "2026-10-25",
+   "end": "2026-10-31",
+   "aud": [],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "72e3d7278d",
+   "store": "xiaomi",
+   "type": "sale",
+   "title": "雙 11 預熱：手機最高折 3,000",
+   "desc": "指定機型，官方商城下單。",
+   "start": "2026-10-21",
+   "end": "2026-11-11",
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  },
+  {
+   "id": "005ff63388",
+   "store": "yt",
+   "type": "plan",
+   "title": "YouTube Premium 學生方案",
+   "desc": "每年需重新驗證學生身分。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "",
+   "checked_at": "2026-10-28T20:45:00+08:00",
+   "origin": "demo"
+  }
+ ]
+}

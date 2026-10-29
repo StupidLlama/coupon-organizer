@@ -1,0 +1,62 @@
+# 優惠夾：店家清單與抓取來源
+# - 每家店的 urls 是自動更新時要抓的網頁。目前先放官網首頁，之後請換成各店的「優惠／活動」頁面，抓到的資料會準很多。
+# - 很多網站是用 JavaScript 動態載入，純抓 HTML 可能拿不到內容；抓不到的店家會在 Actions 紀錄裡顯示「沒有文字」。
+# - sub 必須是下面 categories 裡的子分類代號。
+# - 選填 app_ios / app_android：App Store / Google Play 的下載頁網址。填了之後，「App 限定」的優惠詳情會出現「開啟 App」按鈕。
+#   例：mcd: { ..., app_ios: "https://apps.apple.com/tw/app/...", app_android: "https://play.google.com/store/apps/details?id=..." }
+
+settings:
+  model: gemini-2.5-flash      # Gemini 模型名稱；若 Google 改版停用，換成目前免費額度可用的 flash 模型
+  request_gap_seconds: 7       # 每次呼叫 Gemini 間隔幾秒，避免超過免費額度的每分鐘上限
+  max_chars_per_page: 15000    # 每個網頁最多送多少字給 Gemini
+  stale_days: 14               # 自動抓到的優惠，超過幾天沒再出現就移除
+  keep_demo: true              # true = 保留示範資料；有真實資料後改成 false
+
+categories:
+  food: { name: 美食, subs: { fast: 速食, drink: 飲料咖啡, delivery: 外送, dine: 餐廳 } }
+  shop: { name: 購物, subs: { mart: 超商量販, daily: 日用美妝, tech: 電子產品, online: 網購平台 } }
+  svc: { name: 服務訂閱, subs: { stream: 影音串流, music: 音樂, ai: AI 與軟體, telecom: 電信網路 } }
+  travel: { name: 交通旅遊, subs: { transit: 交通, stay: 住宿 } }
+  fun: { name: 娛樂, subs: { movie: 電影, game: 遊戲 } }
+  pay: { name: 金融支付, subs: { wallet: 行動支付, card: 信用卡 } }
+
+stores:
+  mcd: { name: 麥當勞, domain: mcdonalds.com.tw, sub: fast, color: "#d62300", urls: ["https://www.mcdonalds.com.tw/"] }
+  kfc: { name: 肯德基, domain: kfcclub.com.tw, sub: fast, color: "#a3080c", urls: ["https://www.kfcclub.com.tw/"] }
+  mos: { name: 摩斯漢堡, domain: mos.com.tw, sub: fast, color: "#0a7a3d", urls: ["https://www.mos.com.tw/"] }
+  bk: { name: 漢堡王, domain: burgerking.com.tw, sub: fast, color: "#d35400", urls: ["https://www.burgerking.com.tw/"] }
+  sbux: { name: 星巴克, domain: starbucks.com.tw, sub: drink, color: "#00704a", urls: ["https://www.starbucks.com.tw/"] }
+  louisa: { name: 路易莎, domain: louisacoffee.co, sub: drink, color: "#3b2a20", urls: ["https://www.louisacoffee.co/"] }
+  kebuke: { name: 可不可熟成紅茶, domain: kebuke.com, sub: drink, color: "#1d3557", urls: ["https://www.kebuke.com/"] }
+  ubereats: { name: Uber Eats, domain: ubereats.com, sub: delivery, color: "#06c167", urls: ["https://www.ubereats.com/tw"] }
+  panda: { name: foodpanda, domain: foodpanda.com.tw, sub: delivery, color: "#d70f64", urls: ["https://www.foodpanda.com.tw/"] }
+  pizzahut: { name: 必勝客, domain: pizzahut.com.tw, sub: dine, color: "#c8102e", urls: ["https://www.pizzahut.com.tw/"] }
+  s711: { name: 7-ELEVEN, domain: 7-11.com.tw, sub: mart, color: "#00804a", urls: ["https://www.7-11.com.tw/"] }
+  fami: { name: 全家, domain: family.com.tw, sub: mart, color: "#0a8f3c", urls: ["https://www.family.com.tw/"] }
+  carrefour: { name: 家樂福, domain: carrefour.com.tw, sub: mart, color: "#004e9f", urls: ["https://www.carrefour.com.tw/"] }
+  watsons: { name: 屈臣氏, domain: watsons.com.tw, sub: daily, color: "#00a0af", urls: ["https://www.watsons.com.tw/"] }
+  cosmed: { name: 康是美, domain: cosmed.com.tw, sub: daily, color: "#e4007f", urls: ["https://www.cosmed.com.tw/"] }
+  apple: { name: Apple, domain: apple.com, sub: tech, color: "#333333", urls: ["https://www.apple.com/tw/"] }
+  tk: { name: 燦坤, domain: tkec.com.tw, sub: tech, color: "#e60012", urls: ["https://www.tkec.com.tw/"] }
+  xiaomi: { name: 小米, domain: mi.com, sub: tech, color: "#ff6900", urls: ["https://www.mi.com/tw/"] }
+  shopee: { name: 蝦皮購物, domain: shopee.tw, sub: online, color: "#ee4d2d", urls: ["https://shopee.tw/"] }
+  momo: { name: momo購物網, domain: momoshop.com.tw, sub: online, color: "#d6006f", urls: ["https://www.momoshop.com.tw/"] }
+  netflix: { name: Netflix, domain: netflix.com, sub: stream, color: "#b20710", urls: ["https://www.netflix.com/tw/"] }
+  disney: { name: Disney+, domain: disneyplus.com, sub: stream, color: "#0b1e5b", urls: ["https://www.disneyplus.com/zh-tw"] }
+  yt: { name: YouTube Premium, domain: youtube.com, sub: stream, color: "#ff0000", urls: ["https://www.youtube.com/premium"] }
+  spotify: { name: Spotify, domain: spotify.com, sub: music, color: "#1db954", urls: ["https://www.spotify.com/tw/premium/"] }
+  kkbox: { name: KKBOX, domain: kkbox.com, sub: music, color: "#09cef6", urls: ["https://www.kkbox.com/tw/tc/"] }
+  claude: { name: Claude, domain: claude.ai, sub: ai, color: "#c96442", urls: ["https://www.anthropic.com/news"] }
+  github: { name: GitHub, domain: github.com, sub: ai, color: "#24292f", urls: ["https://education.github.com/pack"] }
+  notion: { name: Notion, domain: notion.so, sub: ai, color: "#191919", urls: ["https://www.notion.so/pricing"] }
+  canva: { name: Canva, domain: canva.com, sub: ai, color: "#7d2ae8", urls: ["https://www.canva.com/zh_tw/pricing/"] }
+  cht: { name: 中華電信, domain: cht.com.tw, sub: telecom, color: "#0055a5", urls: ["https://www.cht.com.tw/"] }
+  twm: { name: 台灣大哥大, domain: taiwanmobile.com, sub: telecom, color: "#ff6600", urls: ["https://www.taiwanmobile.com/"] }
+  thsr: { name: 台灣高鐵, domain: thsrc.com.tw, sub: transit, color: "#e35205", urls: ["https://www.thsrc.com.tw/"] }
+  uber: { name: Uber, domain: uber.com, sub: transit, color: "#000000", urls: ["https://www.uber.com/tw/zh-tw/"] }
+  agoda: { name: Agoda, domain: agoda.com, sub: stay, color: "#5392f9", urls: ["https://www.agoda.com/zh-tw/deals"] }
+  vieshow: { name: 威秀影城, domain: vscinemas.com.tw, sub: movie, color: "#1a1a1a", urls: ["https://www.vscinemas.com.tw/"] }
+  steam: { name: Steam, domain: store.steampowered.com, sub: game, color: "#1b2838", urls: ["https://store.steampowered.com/?l=tchinese"] }
+  linepay: { name: LINE Pay, domain: pay.line.me, sub: wallet, color: "#06c755", urls: ["https://pay.line.me/portal/tw/main"] }
+  jko: { name: 街口支付, domain: jkopay.com, sub: wallet, color: "#c8102e", urls: ["https://www.jkopay.com/"] }
+  cathay: { name: 國泰世華, domain: cathaybk.com.tw, sub: card, color: "#00843d", urls: ["https://www.cathaybk.com.tw/cathaybk/personal/credit-card/"] }
