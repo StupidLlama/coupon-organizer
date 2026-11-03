@@ -37,6 +37,7 @@ jobs:
       - name: 抓取並整理優惠
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PYTHONUNBUFFERED: "1"   # 即時顯示紀錄；不加的話工作被取消時紀錄會整段消失
         run: python scripts/run.py --issues issues.json ${{ github.event.schedule == '30 4 * * *' && '--windowed' || '' }}
 
       - name: 有變動就存檔

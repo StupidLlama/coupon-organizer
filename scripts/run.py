@@ -12,6 +12,7 @@ import json
 import os
 import sys
 import time
+from datetime import date
 
 sys.path.insert(0, os.path.dirname(__file__))
 from common import ROOT, in_window, load_config, load_data, save_data, today  # noqa: E402
@@ -44,8 +45,12 @@ def main() -> int:
         print(f"使用模型：{models[0]}")
         only = {s for s in args.only.split(",") if s}
         gap = float(settings.get("request_gap_seconds", 7))
+        deadline = time.monotonic() + float(settings.get("max_minutes", 22)) * 60
         stop = False
-        for sid, store in cfg["stores"].items():
+        # 每天換一家店開頭：時間不夠時，排在後面的店家隔天就會輪到前面，不會一直抓不到
+        stores = list(cfg["stores"].items())
+        k = date.fromisoformat(today()).toordinal() % len(stores)
+        for sid, store in stores[k:] + stores[:k]:
             if stop:
                 break
             if only and sid not in only:
@@ -58,6 +63,10 @@ def main() -> int:
                     print(f"略過 {store['name']}：只允許台灣時間 {window} 抓取")
                 continue
             for url in store.get("urls", []):
+                if time.monotonic() > deadline:  # 超過時間上限：先停，已抓到的照樣存檔，避免整個工作被 Actions 強制取消、全部白跑
+                    print(f"已執行超過 {settings.get('max_minutes', 22)} 分鐘，剩下的店家下次再抓")
+                    stop = True
+                    break
                 text, status = fetch_text(url, int(settings.get("max_chars_per_page", 15000)))
                 if not text:
                     print(f"略過 {store['name']} {url}：{status}")
