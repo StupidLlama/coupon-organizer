@@ -5,6 +5,7 @@
 # - 很多網站是用 JavaScript 動態載入，純抓 HTML 可能拿不到內容；抓不到的店家會在 Actions 紀錄裡顯示「沒有文字」。
 # - sub 必須是下面 categories 裡的子分類代號。
 # - 選填 app_ios / app_android：App Store / Google Play 的下載頁網址。填了之後，「App 限定」的優惠詳情會出現「開啟 App」按鈕。
+# - 選填 window：只在這個台灣時段抓（例 "12:00-16:45"），給 robots.txt 有 Visit-time 的網站用。每天中午 12:30 另跑一次，只抓有 window 的店家。
 #   例：mcd: { ..., app_ios: "https://apps.apple.com/tw/app/...", app_android: "https://play.google.com/store/apps/details?id=..." }
 
 settings:
@@ -36,7 +37,7 @@ stores:
   s711: { name: 7-ELEVEN, domain: 7-11.com.tw, sub: mart, color: "#00804a", urls: ["https://www.7-11.com.tw/"] }
   fami: { name: 全家, domain: family.com.tw, sub: mart, color: "#0a8f3c", urls: [] }  # 暫停：疑似 robots.txt 禁止
   carrefour: { name: 萬家福（原家樂福）, domain: uni-prosperity.com.tw, sub: mart, color: "#004e9f", urls: [] }  # 暫停：萬家福官網是 JavaScript 動態載入
-  watsons: { name: 屈臣氏, domain: watsons.com.tw, sub: daily, color: "#00a0af", urls: [] }  # 暫停：robots.txt 只允許台灣 12:00–16:45 造訪
+  watsons: { name: 屈臣氏, domain: watsons.com.tw, sub: daily, color: "#00a0af", urls: ["https://www.watsons.com.tw/"], window: "12:00-16:45" }  # robots.txt 只允許台灣 12:00–16:45 造訪，由中午那次更新抓
   cosmed: { name: 康是美, domain: cosmed.com.tw, sub: daily, color: "#e4007f", urls: ["https://www.cosmed.com.tw/news.aspx"] }
   apple: { name: Apple, domain: apple.com, sub: tech, color: "#333333", urls: ["https://www.apple.com/tw/"] }
   tk: { name: 燦坤, domain: tk3c.com, sub: tech, color: "#e60012", urls: ["https://www.tk3c.com/publishindex.aspx?CID=142"] }

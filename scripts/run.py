@@ -5,6 +5,7 @@
   python scripts/run.py --no-fetch            # 不抓網頁，只處理回報和清理過期
   python scripts/run.py --only mcd,sbux       # 只抓指定店家（測試用）
   python scripts/run.py --issues issues.json  # 一併處理已核准的 GitHub Issue 回報
+  python scripts/run.py --windowed            # 只抓有設定 window（指定時段）的店家
 """
 import argparse
 import json
@@ -13,7 +14,7 @@ import sys
 import time
 
 sys.path.insert(0, os.path.dirname(__file__))
-from common import ROOT, load_config, load_data, save_data, today  # noqa: E402
+from common import ROOT, in_window, load_config, load_data, save_data, today  # noqa: E402
 from merge import merge  # noqa: E402
 
 
@@ -22,6 +23,7 @@ def main() -> int:
     ap.add_argument("--no-fetch", action="store_true")
     ap.add_argument("--only", default="")
     ap.add_argument("--issues", default="")
+    ap.add_argument("--windowed", action="store_true")
     args = ap.parse_args()
 
     cfg = load_config()
@@ -47,6 +49,13 @@ def main() -> int:
             if stop:
                 break
             if only and sid not in only:
+                continue
+            window = store.get("window")
+            if args.windowed and not window:
+                continue
+            if window and not in_window(window):
+                if store.get("urls"):
+                    print(f"略過 {store['name']}：只允許台灣時間 {window} 抓取")
                 continue
             for url in store.get("urls", []):
                 text, status = fetch_text(url, int(settings.get("max_chars_per_page", 15000)))

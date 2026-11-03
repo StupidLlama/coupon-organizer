@@ -1,4 +1,4 @@
-# 優惠夾 交接文件（v0.4.3）
+# 優惠夾 交接文件（v0.4.4）
 
 最後更新：2026-10-29 12:30（台灣時間）
 下一個對話請先讀完這份文件，再繼續開發。
@@ -69,6 +69,7 @@
 | v0.4.1 | 手機版：詳情頁改為全螢幕（頂部固定店家列和關閉鍵）；頁首不再固定在畫面上方；`requirements.txt` 改用 `>=`（修正 Python 3.14 無法安裝 PyYAML 6.0.2）；Gemini 模型改為自動選擇（`model: auto`） |
 | v0.4.2 | Gemini 備用模型：一次挑出最多 4 個 flash 模型，遇到 503（忙線）或 429（太頻繁／沒額度）自動換下一個，同一家店重試；錯誤訊息顯示實際原因；呼叫間隔 7 秒 → 15 秒 |
 | v0.4.3 | 來源網址：多數店家改抓「優惠／活動／最新消息」頁；找不到合規來源的 12 家暫停（`urls: []`）；麥當勞、萬家福（原家樂福）、燦坤改網域；新增 `scripts/check_urls.py` 測網址（不呼叫 Gemini） |
+| v0.4.4 | 指定時段抓取：`sources.yaml` 店家可加 `window: "12:00-16:45"`（台灣時間），時段外自動略過；Workflow 每天中午 12:30 多跑一次 `run.py --windowed`，只抓有 window 的店家；屈臣氏（robots Visit-time）恢復抓取。注意：10/29 中午那次執行時段內仍是 HTTP 403，若持續 403 就再暫停 |
 
 ## 4. 執行紀錄與發現的問題
 
@@ -137,7 +138,8 @@
 1. `fetch.py`：依 `sources.yaml` 抓網頁（先看 robots.txt）
 2. `extract.py`：查詢可用模型 → 送給 Gemini（JSON schema 輸出），只收網頁明確寫的優惠，用自己的話改寫
 3. `merge.py`：同店家＋同標題 = 同 ID；併入已核准的回報；刪掉過期，以及自動抓到但超過 `stale_days` 天沒再出現的
-4. Workflow 有變動就 commit；處理過的 Issue 自動關閉，有問題的會留言並移除 `approved`
+4. 每天兩次：早上 6:00 抓全部（有 `window` 且不在時段內的會略過）；中午 12:30 `--windowed` 只抓有 `window` 的店家（目前只有屈臣氏）
+5. Workflow 有變動就 commit；處理過的 Issue 自動關閉，有問題的會留言並移除 `approved`
 
 回報流程：使用者開 Issue → Evan 檢查後加上 `approved` → 下次更新時併入。
 
@@ -172,6 +174,6 @@ gh run view --log | Select-String "使用模型|找到|略過|無法使用|失�
 | ✅ 換成優惠／活動頁且實測抓得到 | 漢堡王 /news、星巴克門市活動、路易莎 /news、可不可 /news、必勝客優惠推薦、康是美 /news.aspx、小米新用戶、Netflix 說明中心價格頁、YouTube 說明中心學生方案、KKBOX 說明中心學生方案、Claude /pricing、Notion 教育方案、中華電信公告、Uber 優惠部落格、LINE Pay 新聞稿 |
 | 維持原網址 | 肯德基、Uber Eats、7-ELEVEN、Apple、Spotify、GitHub、台灣大哥大、Steam、街口 |
 | ❓ SSLError 待確認 | 燦坤（tk3c.com）、台灣高鐵、國泰世華（cathay-cube.com.tw） |
-| ⏸ 暫停（`urls: []`） | 麥當勞（403）、摩斯、全家（疑似 robots 禁止）、foodpanda（robots 禁止活動頁）、萬家福（JS）、屈臣氏（robots 只允許台灣 12:00–16:45）、蝦皮、momo、Agoda（JS）、Disney+（robots 禁止）、Canva、威秀（403） |
+| ⏸ 暫停（`urls: []`） | 麥當勞（403）、摩斯、全家（疑似 robots 禁止）、foodpanda（robots 禁止活動頁）、萬家福（JS）、蝦皮、momo、Agoda（JS）、Disney+（robots 禁止）、Canva、威秀（403） |
 
 發現：麥當勞台灣官網已搬到 mcdonalds.com/tw/zh-tw；家樂福 2026/6 更名萬家福（uni-prosperity.com.tw）；燦坤官方網域是 tk3c.com。暫停的店家之後可靠使用者回報，或第 10 節第 4 項 Playwright。

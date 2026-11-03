@@ -12,7 +12,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
-from common import ROOT, load_config  # noqa: E402
+from common import ROOT, in_window, load_config  # noqa: E402
 from fetch import fetch_text  # noqa: E402
 
 # 粗略判斷頁面有沒有優惠內容：數一下常見的優惠字眼
@@ -49,8 +49,10 @@ def main() -> int:
         for key, store in load_config()["stores"].items():
             if only and key not in only:
                 continue
+            window = store.get("window")
             for url in store.get("urls", []):
-                lines.append(f"{key:10} {check(url)}  {url}")
+                result = check(url) if not window or in_window(window) else f"⏸ 只允許台灣時間 {window} 測試"
+                lines.append(f"{key:10} {result}  {url}")
                 print(lines[-1], flush=True)
                 with log.open("a", encoding="utf-8") as f:  # 每測一個就存，中途中斷也看得到
                     f.write(lines[-1] + "\n")

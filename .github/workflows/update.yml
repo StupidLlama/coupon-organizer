@@ -3,6 +3,7 @@ name: 每日更新優惠資料
 on:
   schedule:
     - cron: "0 22 * * *"   # 每天 UTC 22:00 = 台灣時間早上 6:00
+    - cron: "30 4 * * *"   # 每天 UTC 04:30 = 台灣時間中午 12:30，只抓有 window 的店家（屈臣氏）
   workflow_dispatch:        # 也可以在 Actions 頁面手動執行
 
 permissions:
@@ -36,7 +37,7 @@ jobs:
       - name: 抓取並整理優惠
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/run.py --issues issues.json
+        run: python scripts/run.py --issues issues.json ${{ github.event.schedule == '30 4 * * *' && '--windowed' || '' }}
 
       - name: 有變動就存檔
         run: |

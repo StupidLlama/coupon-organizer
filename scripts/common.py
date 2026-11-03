@@ -21,6 +21,12 @@ TYPE = {"coupon": "優惠券", "sale": "特價", "event": "活動",
         "trial": "免費試用", "cashback": "點數回饋", "plan": "方案折扣"}
 
 
+def in_window(window: str) -> bool:
+    """window 格式："12:00-16:45"（台灣時間）。robots.txt 有 Visit-time 的網站用這個限制造訪時段。"""
+    start, end = (datetime.strptime(t.strip(), "%H:%M").time() for t in window.split("-"))
+    return start <= datetime.now(TAIPEI).time() <= end
+
+
 def today() -> str:
     return datetime.now(TAIPEI).date().isoformat()
 
