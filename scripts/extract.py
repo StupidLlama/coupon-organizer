@@ -36,6 +36,27 @@ def resolve_models(preferred: str, api_key: str, limit: int = 4) -> list[str]:
     return ordered[:limit]
 
 
+# 這次執行的 Gemini 用量：模型 → 次數與 token，run.py 最後存到 data/usage.json
+USAGE: dict[str, dict] = {}
+
+
+def _record(model: str, r: requests.Response) -> None:
+    u = USAGE.setdefault(model, {"requests": 0, "ok": 0, "http_429": 0, "http_5xx": 0,
+                                 "input_tokens": 0, "output_tokens": 0, "last_error": ""})
+    u["requests"] += 1
+    if r.status_code == 200:
+        u["ok"] += 1
+        meta = r.json().get("usageMetadata", {})
+        u["input_tokens"] += meta.get("promptTokenCount", 0)
+        u["output_tokens"] += meta.get("candidatesTokenCount", 0) + meta.get("thoughtsTokenCount", 0)
+    else:
+        if r.status_code == 429:
+            u["http_429"] += 1
+        elif r.status_code >= 500:
+            u["http_5xx"] += 1
+        u["last_error"] = f"HTTP {r.status_code}：{_api_message(r)}"  # 429 的訊息會寫是每分鐘還是每日額度
+
+
 class ModelBusy(Exception):
     """這個模型目前忙線（503）或沒有額度（429），可以換下一個模型再試。"""
 
@@ -92,6 +113,7 @@ def extract(store: str, url: str, text: str, model: str, api_key: str, today: st
     last = ""
     for attempt in range(2):
         r = requests.post(API.format(model=model), headers=headers, json=body, timeout=120)
+        _record(model, r)
         if r.status_code == 429 or r.status_code >= 500:  # 沒額度或伺服器忙：等一下再試一次
             last = f"HTTP {r.status_code}：{_api_message(r)}"
             time.sleep(20 * (attempt + 1))

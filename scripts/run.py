@@ -15,8 +15,22 @@ import time
 from datetime import date
 
 sys.path.insert(0, os.path.dirname(__file__))
-from common import ROOT, in_window, load_config, load_data, save_data, today  # noqa: E402
+from common import ROOT, in_window, load_config, load_data, now_iso, save_data, today  # noqa: E402
 from merge import merge  # noqa: E402
+
+
+def save_usage(usage: dict, kind: str, keep: int = 60) -> None:
+    """把這次的 Gemini 用量加到 data/usage.json（保留最近 60 次），方便之後查額度用到哪裡。"""
+    path = ROOT / "data" / "usage.json"
+    try:
+        runs = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        runs = []
+    runs.append({"time": now_iso(), "kind": kind, "models": usage})
+    path.write_text(json.dumps(runs[-keep:], ensure_ascii=False, indent=1), encoding="utf-8")
+    for m, u in usage.items():
+        print(f"用量 {m}：{u['requests']} 次（成功 {u['ok']}、429 {u['http_429']}、5xx {u['http_5xx']}），"
+              f"輸入 {u['input_tokens']} / 輸出 {u['output_tokens']} tokens {u['last_error']}")
 
 
 def main() -> int:
@@ -37,7 +51,7 @@ def main() -> int:
     if not args.no_fetch and not api_key:
         print("⚠️ 沒有設定 GEMINI_API_KEY，這次只處理回報和清理過期。")
     if not args.no_fetch and api_key:
-        from extract import ModelBusy, extract, resolve_models
+        from extract import USAGE, ModelBusy, extract, resolve_models
         from fetch import fetch_text
 
         models = resolve_models(settings.get("model", "auto"), api_key)
@@ -96,6 +110,9 @@ def main() -> int:
                 fetched_ok.add(sid)
                 print(f"{store['name']}：找到 {len(items)} 筆")
                 time.sleep(gap)
+
+    if not args.no_fetch and api_key:
+        save_usage(USAGE, "windowed" if args.windowed else "daily")
 
     issues = []
     if args.issues and os.path.exists(args.issues):
