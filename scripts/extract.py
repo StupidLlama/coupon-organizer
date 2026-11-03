@@ -33,6 +33,11 @@ def resolve_models(preferred: str, api_key: str, limit: int = 4) -> list[str]:
     ordered = sorted(flash, key=lambda n: (_version(n), -len(n)), reverse=True)
     if preferred and preferred != "auto" and preferred in names:
         ordered = [preferred] + [n for n in ordered if n != preferred]
+    # 最後一個備用放 Flash-Lite：比較不擠、免費額度大很多，flash 都 503／429 時還能整理（品質可能稍差）
+    lite = sorted((n for n in names if "flash-lite" in n and not any(w in n for w in SKIP_WORDS if w != "lite")),
+                  key=lambda n: (_version(n), -len(n)), reverse=True)
+    if lite:
+        return ordered[:limit - 1] + lite[:1]
     return ordered[:limit]
 
 
