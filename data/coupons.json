@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-04T20:26:09+08:00",
+ "updated_at": "2026-11-05T10:23:29+08:00",
  "categories": {
   "food": {
    "name": "美食",
@@ -384,7 +384,7 @@
    "store": "apple",
    "type": "sale",
    "title": "Apple Trade In 換購方案",
-   "desc": "使用符合條件的舊裝置換購新 iPhone，可享有折抵優惠。",
+   "desc": "使用符合條件的舊裝置進行換購，即可享有購買新 iPhone 的折抵優惠。",
    "start": null,
    "end": null,
    "aud": [],
@@ -392,7 +392,7 @@
    "code": "",
    "source": "https://www.apple.com/tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -409,6 +409,22 @@
    "source": "https://www.apple.com/tw/",
    "redeem_url": "",
    "checked_at": "2026-11-03T13:55:54+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "aafe6a31e8",
+   "store": "bk",
+   "type": "sale",
+   "title": "漢堡王限時優惠52元起",
+   "desc": "活動期間內享有指定漢堡與點心優惠套餐組合，最低52元起。",
+   "start": "2026-11-13",
+   "end": "2026-11-15",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.burgerking.com.tw/news",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -657,6 +673,38 @@
    "origin": "auto"
   },
   {
+   "id": "5fbc82ebcc",
+   "store": "claude",
+   "type": "sale",
+   "title": "Pro方案年繳優惠",
+   "desc": "選擇年繳訂閱方案可享折扣優惠，需預付200美元",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://claude.com/pricing",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "7ca107af7a",
+   "store": "claude",
+   "type": "sale",
+   "title": "批次處理省50%",
+   "desc": "使用批次處理功能可節省百分之五十的費用",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://claude.com/pricing",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
    "id": "c7bee2ebb0",
    "store": "cosmed",
    "type": "cashback",
@@ -690,6 +738,24 @@
    "source": "https://www.cosmed.com.tw/news.aspx",
    "redeem_url": "",
    "checked_at": "2026-11-04T10:19:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "9bd0959d40",
+   "store": "cosmed",
+   "type": "cashback",
+   "title": "icash支付滿額送點數",
+   "desc": "使用指定支付滿二千元送一百點OPENPOINT",
+   "start": "2026-10-30",
+   "end": "2026-11-05",
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://www.cosmed.com.tw/news.aspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -807,7 +873,7 @@
    "store": "cosmed",
    "type": "sale",
    "title": "OPENPOINT點數加購",
-   "desc": "OPENPOINT 點數加購優惠活動",
+   "desc": "會員可用點數進行加購活動",
    "start": "2026-10-23",
    "end": "2026-11-19",
    "aud": [],
@@ -817,7 +883,7 @@
    "code": "",
    "source": "https://www.cosmed.com.tw/news.aspx",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -825,7 +891,7 @@
    "store": "cosmed",
    "type": "event",
    "title": "LINE好友專屬優惠",
-   "desc": "LINE好友專屬優惠活動",
+   "desc": "享有LINE好友獨家優惠活動",
    "start": "2026-10-23",
    "end": "2026-11-19",
    "aud": [],
@@ -835,7 +901,7 @@
    "code": "",
    "source": "https://www.cosmed.com.tw/news.aspx",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -855,6 +921,44 @@
    "source": "https://www.cosmed.com.tw/news.aspx",
    "redeem_url": "",
    "checked_at": "2026-11-04T10:19:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "6f0ed62578",
+   "store": "cosmed",
+   "type": "event",
+   "title": "LINE好友綁定會員送禮",
+   "desc": "綁定LINE好友會員送五十元",
+   "start": "2026-10-23",
+   "end": "2026-11-19",
+   "aud": [],
+   "cond": [
+    "line",
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.cosmed.com.tw/news.aspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "27eca3f72f",
+   "store": "cosmed",
+   "type": "event",
+   "title": "金卡會員實體門市優惠",
+   "desc": "金卡會員於實體門市享專屬優惠",
+   "start": "2026-10-23",
+   "end": "2026-11-19",
+   "aud": [],
+   "cond": [
+    "member",
+    "store"
+   ],
+   "code": "",
+   "source": "https://www.cosmed.com.tw/news.aspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -891,6 +995,24 @@
    "source": "https://www.cosmed.com.tw/news.aspx",
    "redeem_url": "",
    "checked_at": "2026-11-04T10:19:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "85717bc9ff",
+   "store": "cosmed",
+   "type": "sale",
+   "title": "星展信用卡滿額贈衛生紙",
+   "desc": "刷星展信用卡消費滿一千五百八十八元送抽取式衛生紙",
+   "start": "2026-10-01",
+   "end": "2026-12-31",
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://www.cosmed.com.tw/news.aspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -1081,19 +1203,17 @@
   {
    "id": "cba6129c73",
    "store": "github",
-   "type": "trial",
+   "type": "sale",
    "title": ".TECH 網域免費 1 年",
-   "desc": "免費提供 1 個標準 .TECH 網域註冊使用 1 年。",
+   "desc": "免費獲得 1 個標準 .TECH 網域 1 年",
    "start": null,
    "end": null,
-   "aud": [
-    "student"
-   ],
+   "aud": [],
    "cond": [],
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-10-31T09:51:45+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -1243,9 +1363,9 @@
   {
    "id": "3046ef9b85",
    "store": "github",
-   "type": "plan",
+   "type": "sale",
    "title": "Testmail Essential 方案免費",
-   "desc": "學生身份期間可免費使用 Essential 方案進行自動化郵件測試。",
+   "desc": "學生在學期間可免費使用 Essential 方案",
    "start": null,
    "end": null,
    "aud": [
@@ -1255,7 +1375,7 @@
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-03T13:55:54+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -1857,7 +1977,7 @@
    "store": "github",
    "type": "sale",
    "title": "Namecheap SSL憑證免費",
-   "desc": "提供一年免費的 SSL 憑證。",
+   "desc": "學生可免費獲得 1 年 SSL 憑證",
    "start": null,
    "end": null,
    "aud": [
@@ -1867,7 +1987,7 @@
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -1875,17 +1995,15 @@
    "store": "github",
    "type": "sale",
    "title": "Name.com 免費網域",
-   "desc": "可在指定的 25 種以上網域副檔名中免費建立專案。",
+   "desc": "在指定的 25 種以上網域副檔名中建立免費專案網域",
    "start": null,
    "end": null,
-   "aud": [
-    "student"
-   ],
+   "aud": [],
    "cond": [],
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -1929,7 +2047,7 @@
    "store": "github",
    "type": "sale",
    "title": "Microsoft 365 學生優惠",
-   "desc": "學生可免費或折扣獲得內建 AI 的生產力應用程式與 1TB 雲端儲存空間。",
+   "desc": "學生可免費或享有折扣使用內建 AI 的生產力App、1TB 雲端儲存與資安防護",
    "start": null,
    "end": null,
    "aud": [
@@ -1939,7 +2057,7 @@
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -1947,7 +2065,7 @@
    "store": "github",
    "type": "sale",
    "title": "GitHub Pro 學生免費",
-   "desc": "學生身分在學期間可免費使用 GitHub Pro。",
+   "desc": "學生身分期間可免費使用 GitHub Pro",
    "start": null,
    "end": null,
    "aud": [
@@ -1957,7 +2075,7 @@
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -1983,7 +2101,7 @@
    "store": "github",
    "type": "sale",
    "title": "GitHub Copilot 學生版",
-   "desc": "已驗證學生可免費使用無限制程式碼自動完成與 AI 點數。",
+   "desc": "已驗證的學生可免費使用 AI 程式碼完成與有限的對話及 Agent 功能",
    "start": null,
    "end": null,
    "aud": [
@@ -1993,7 +2111,7 @@
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -2019,17 +2137,15 @@
    "store": "github",
    "type": "sale",
    "title": "Heroku 雲端額度",
-   "desc": "享有每個月 13 美元額度，持續 24 個月。",
+   "desc": "享有每個月 13 美元的額度，期限為 24 個月",
    "start": null,
    "end": null,
-   "aud": [
-    "student"
-   ],
+   "aud": [],
    "cond": [],
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -2037,7 +2153,7 @@
    "store": "github",
    "type": "sale",
    "title": "JetBrains 學生免費訂閱",
-   "desc": "提供學生免費的 IDE 訂閱，可每年續約。",
+   "desc": "提供學生免費的 IDE 訂閱方案，每年可進行續約",
    "start": null,
    "end": null,
    "aud": [
@@ -2047,7 +2163,7 @@
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -2267,6 +2383,262 @@
    "origin": "auto"
   },
   {
+   "id": "b26dfac717",
+   "store": "github",
+   "type": "sale",
+   "title": "Namecheap .me 網域免費註冊",
+   "desc": "學生可免費註冊 1 年 .me 網域",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "279055df09",
+   "store": "github",
+   "type": "sale",
+   "title": "Microsoft Azure 雲端服務與額度",
+   "desc": "18歲以上學生免費存取 25 種以上雲端服務並獲得 100 美元額度",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "7d601ede17",
+   "store": "github",
+   "type": "sale",
+   "title": "Notion Education 方案升級",
+   "desc": "享有 Notion Education 方案內容及額外的 AI 回應",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "245f3f53e4",
+   "store": "github",
+   "type": "sale",
+   "title": "DataCamp 3個月免費",
+   "desc": "使用 GitHub 學生帳號註冊 DataCamp 訂閱可享 3 個月免費存取",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "d9db02e35c",
+   "store": "github",
+   "type": "sale",
+   "title": "Boot.dev 3個月免費完整會員",
+   "desc": "享有 3 個月完整互動式會員權限來學習後端開發、DevOps 與資料分析",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "9ada4c81bb",
+   "store": "github",
+   "type": "sale",
+   "title": "1Password 密碼管理免費 2 年",
+   "desc": "免費使用 1Password 2 年，包含開發者工具",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "26ccf1ae97",
+   "store": "github",
+   "type": "sale",
+   "title": "Codedex Club 高級會員免費 1 個月",
+   "desc": "已驗證學生可免費獲得 1 個月 Codedex Club 高級會員",
+   "start": "2026-11-01",
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "f2cc86133f",
+   "store": "github",
+   "type": "sale",
+   "title": "Termius 專業與團隊功能免費",
+   "desc": "學生在學期間可免費使用所有 Termius Pro 與 Team 功能",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "9171cb1fa7",
+   "store": "github",
+   "type": "sale",
+   "title": "Microsoft Azure 13-17歲青少年方案",
+   "desc": "13-17 歲學生可免費使用 Azure 應用服務、函式、資料庫等多項工具",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "f589efee30",
+   "store": "github",
+   "type": "sale",
+   "title": "Camber 學生 AI 方案免費",
+   "desc": "就學期間免費使用 Camber 學生方案，包含 CPU/GPU 時數、儲存空間與 agent 訊息額度",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "9fbdfc35ed",
+   "store": "github",
+   "type": "sale",
+   "title": "Datadog Pro 帳號免費 2 年",
+   "desc": "提供包含 10 個伺服器的 Pro 帳號，免費使用 2 年",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "3db4485776",
+   "store": "github",
+   "type": "sale",
+   "title": "Educative 課程免費與訂閱折扣",
+   "desc": "享有 6 個月免費存取超過 70 門實用課程，且學生購買任何訂閱皆可享 30% 折扣",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "d44bb7d0b3",
+   "store": "github",
+   "type": "sale",
+   "title": "GitHub Codespaces Pro 級存取權",
+   "desc": "帳號內可免費使用 Pro 級別的 Codespaces 開發環境",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "6a6df79e74",
+   "store": "github",
+   "type": "sale",
+   "title": "MongoDB 雲端額度與免費認證",
+   "desc": "獲得 50 美元 MongoDB Atlas 額度、Compass 存取權與價值 150 美元的免費認證",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "c33c15da99",
+   "store": "github",
+   "type": "sale",
+   "title": "Stripe 交易費額度",
+   "desc": "獲得 25 美元 Stripe 額度以折抵金流服務相關手續費",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
    "id": "5ae019f3d2",
    "store": "jko",
    "type": "cashback",
@@ -2343,7 +2715,7 @@
    "store": "kebuke",
    "type": "sale",
    "title": "Uber Eats 指定飲品買一送一",
-   "desc": "於 Uber Eats 訂購可不可指定飲品可享限時買一送一。",
+   "desc": "透過 Uber Eats 購買指定飲品可享限時買一送一優惠。",
    "start": "2026-09-13",
    "end": null,
    "aud": [],
@@ -2351,7 +2723,7 @@
    "code": "",
    "source": "https://kebuke.com/news/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -2377,7 +2749,7 @@
    "store": "kebuke",
    "type": "sale",
    "title": "會員3週年線上寄杯8折",
-   "desc": "歡慶會員3週年，推出期間限定的線上寄杯8折優惠。",
+   "desc": "慶祝會員3週年，推出期間限定的線上寄杯8折優惠活動。",
    "start": "2026-09-01",
    "end": null,
    "aud": [],
@@ -2388,7 +2760,7 @@
    "code": "",
    "source": "https://kebuke.com/news/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -2396,7 +2768,7 @@
    "store": "kebuke",
    "type": "sale",
    "title": "線上寄杯1+1雙享組",
-   "desc": "可不可推出線上寄杯1+1雙享組優惠活動。",
+   "desc": "推出線上寄杯1+1雙享組優惠組合。",
    "start": "2026-09-09",
    "end": null,
    "aud": [],
@@ -2406,7 +2778,7 @@
    "code": "",
    "source": "https://kebuke.com/news/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -2414,7 +2786,7 @@
    "store": "kebuke",
    "type": "cashback",
    "title": "全支付天天最高10%回饋",
-   "desc": "使用全支付消費，享天天最高10%全點回饋。",
+   "desc": "使用全支付消費，可享天天最高10%全點回饋。",
    "start": null,
    "end": null,
    "aud": [],
@@ -2424,7 +2796,7 @@
    "code": "",
    "source": "https://kebuke.com/news/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -2544,8 +2916,8 @@
    "store": "linepay",
    "type": "cashback",
    "title": "韓國旅遊用LINE Pay回饋",
-   "desc": "年底前至韓國旅遊使用LINE Pay享最高25%回饋再抽666點。",
-   "start": null,
+   "desc": "年底前至韓國旅遊使用LINE Pay享最高25%回饋並可抽666點。",
+   "start": "2026-10-12",
    "end": "2026-12-31",
    "aud": [],
    "cond": [
@@ -2554,7 +2926,7 @@
    "code": "",
    "source": "https://pay.line.me/portal/tw/customer/press",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -2634,8 +3006,8 @@
    "store": "linepay",
    "type": "cashback",
    "title": "第四季天天LINE Pay優惠",
-   "desc": "指定商圈夜市消費抽最高555點，找體驗最高18%點數回饋。",
-   "start": null,
+   "desc": "指定商圈夜市消費抽最高555點，找體驗享最高18%點數回饋。",
+   "start": "2026-10-19",
    "end": null,
    "aud": [],
    "cond": [
@@ -2644,7 +3016,7 @@
    "code": "",
    "source": "https://pay.line.me/portal/tw/customer/press",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -2718,21 +3090,74 @@
    "origin": "auto"
   },
   {
-   "id": "0c806abf61",
-   "store": "louisa",
-   "type": "coupon",
-   "title": "LINE 好友現領 20 元折價券",
-   "desc": "單筆消費滿 100 元可折抵。",
-   "start": "2026-10-21",
-   "end": "2026-11-04",
+   "id": "340f7eea86",
+   "store": "linepay",
+   "type": "cashback",
+   "title": "乘車碼搭大眾運輸回饋",
+   "desc": "使用乘車碼搭乘大眾運輸每月最高享LINE POINTS 30%回饋。",
+   "start": "2026-09-30",
+   "end": null,
    "aud": [],
    "cond": [
-    "line"
+    "pay"
    ],
-   "code": "LOUISA20",
-   "source": "",
-   "checked_at": "2026-10-28T20:45:00+08:00",
-   "origin": "demo"
+   "code": "",
+   "source": "https://pay.line.me/portal/tw/customer/press",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "bbe9e4888a",
+   "store": "linepay",
+   "type": "event",
+   "title": "揪友開通帳戶送點數",
+   "desc": "揪好友開通帳戶送50點，未成年開通最高享100元超商優惠券。",
+   "start": "2026-09-30",
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://pay.line.me/portal/tw/customer/press",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "fd41a7cdde",
+   "store": "linepay",
+   "type": "event",
+   "title": "北市路邊停車繳費活動",
+   "desc": "使用LINE Pay Money繳納北市路邊停車費送66張好樂投券並可抽最高17889點。",
+   "start": "2026-09-23",
+   "end": null,
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://pay.line.me/portal/tw/customer/press",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "a8f68e25bb",
+   "store": "linepay",
+   "type": "cashback",
+   "title": "OLIVE YOUNG跨境優惠",
+   "desc": "於實體門市與官網線上購物使用LINE Pay享最高20%回饋。",
+   "start": "2026-08-26",
+   "end": null,
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://pay.line.me/portal/tw/customer/press",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
   },
   {
    "id": "9e832302be",
@@ -2757,19 +3182,20 @@
    "id": "fe0e854f9f",
    "store": "louisa",
    "type": "coupon",
-   "title": "LINE Pay 早餐咖啡現折10元",
-   "desc": "透過 LINE Pay 好康地圖領取優惠券，單筆消費滿120元可折抵10元",
+   "title": "LINE Pay早餐咖啡現折10元",
+   "desc": "打開LINE Pay好康地圖領取優惠券，單筆消費滿120元可折抵，數量有限發完為止",
    "start": "2026-10-01",
    "end": "2026-12-31",
    "aud": [],
    "cond": [
     "line",
-    "pay"
+    "pay",
+    "store"
    ],
    "code": "",
    "source": "https://www.louisacoffee.co/news",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -3052,7 +3478,7 @@
    "store": "notion",
    "type": "plan",
    "title": "Notion 教育方案（個人）",
-   "desc": "認可大專院校的學生與教師使用學校信箱驗證，即可免費升級個人教育方案。",
+   "desc": "認可大專院校的學生與教師使用學校信箱登入，即可免費升級個人教育方案。",
    "start": null,
    "end": null,
    "aud": [
@@ -3062,7 +3488,7 @@
    "code": "",
    "source": "https://www.notion.com/en-us/help/notion-for-education",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -3070,7 +3496,7 @@
    "store": "notion",
    "type": "plan",
    "title": "Notion 教育方案（學生組織）",
-   "desc": "通過審核的認可學生組織可申請免費的多人協作工作空間教育方案。",
+   "desc": "通過審核的認可學生組織，可免費獲得多成員協作的教育方案工作區。",
    "start": null,
    "end": null,
    "aud": [
@@ -3080,7 +3506,7 @@
    "code": "",
    "source": "https://www.notion.com/en-us/help/notion-for-education",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -3100,6 +3526,25 @@
    "source": "https://www.notion.com/en-us/help/notion-for-education",
    "redeem_url": "",
    "checked_at": "2026-11-04T10:19:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "de3048ee39",
+   "store": "notion",
+   "type": "trial",
+   "title": "新創企業免費試用方案",
+   "desc": "符合資格的新創公司可免費獲得 1 到 6 個月的 Business 方案與每月 AI 額度。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "startup",
+    "newbie"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://www.notion.com/en-us/help/notion-for-education",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -3151,6 +3596,22 @@
    "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
    "redeem_url": "",
    "checked_at": "2026-11-04T10:19:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "61e536a408",
+   "store": "pizzahut",
+   "type": "event",
+   "title": "40週年消費滿400送400",
+   "desc": "消費滿額送商品券，憑券於2027/1/25前可兌換對應品項。",
+   "start": null,
+   "end": "2027-01-25",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -3596,7 +4057,7 @@
    "store": "pizzahut",
    "type": "sale",
    "title": "巧克力QQ球買一送一",
-   "desc": "單點巧克力QQ球5顆買一送一優惠價$59",
+   "desc": "單點巧克力QQ球5顆買一送一。",
    "start": null,
    "end": null,
    "aud": [],
@@ -3606,7 +4067,7 @@
    "code": "",
    "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -3867,7 +4328,7 @@
    "store": "pizzahut",
    "type": "sale",
    "title": "平日單點超值飯麵送湯與QQ球",
-   "desc": "平日一到四單點指定超值系列飯麵，即送玉米濃湯與巧克力QQ球5顆",
+   "desc": "平日週一至週四單點指定超值系列飯麵，送玉米濃湯與巧克力QQ球5顆。",
    "start": null,
    "end": null,
    "aud": [],
@@ -3875,7 +4336,7 @@
    "code": "",
    "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -3883,7 +4344,7 @@
    "store": "pizzahut",
    "type": "sale",
    "title": "個人比薩第二件5折送QQ球",
-   "desc": "購買2個個人比薩，第2件指定口味享5折，再送小份巧克力QQ球",
+   "desc": "購買2個個人比薩，第2件指定口味享5折，並再送巧克力QQ球小份。",
    "start": null,
    "end": null,
    "aud": [],
@@ -3891,7 +4352,7 @@
    "code": "",
    "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -3951,17 +4412,15 @@
    "store": "pizzahut",
    "type": "sale",
    "title": "平日外帶私廚系列單點6折",
-   "desc": "13吋私廚頂級美味大比薩外帶享單點6折優惠",
+   "desc": "平日外帶13吋私廚頂級系列大比薩享6折優惠。",
    "start": null,
    "end": null,
    "aud": [],
-   "cond": [
-    "store"
-   ],
+   "cond": [],
    "code": "",
    "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -3978,6 +4437,438 @@
    "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
    "redeem_url": "",
    "checked_at": "2026-11-04T10:19:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "4bb828841b",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "外帶買大送大加碼送副食飲料",
+   "desc": "外帶大比薩送大比薩，再送副食五選一與1.25L飲料。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "defe4dcdb6",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "火山大比薩買大送大",
+   "desc": "外帶買火山大比薩送大比薩，或外送買火山大比薩送小比薩，首顆大比薩免費升級火山起司。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "0130c7d52d",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "雙11指定海鮮比薩單點199起",
+   "desc": "指定口味海鮮比薩外帶單點199元起。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "a8e4d5636d",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "雙11大比薩半價送烤雞",
+   "desc": "全口味13吋大比薩單點5折，並免費送厚燒醬烤BBQ或烤雞。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "40166c2e21",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "3個大比薩799元起",
+   "desc": "指定20種以上口味大比薩3個799元起。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "131a4d3c29",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "個人比薩或義大利麵加1元多副食",
+   "desc": "購買個人餐或義大利麵飯，加1元多一件副食。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "9739d560b8",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "個人比薩3個259元",
+   "desc": "限指定口味個人比薩3個259元起。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "0d19b1629e",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "雙人開飯豪飽餐449元起",
+   "desc": "包含小比薩1個與紙包筆管麵或紙包飯2份。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "6ac86f1961",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "全家開吃餐499元起",
+   "desc": "含大比薩、任選3樣副食與大瓶飲料。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "ddfb13fa36",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "雙11火山大比薩半價送可樂",
+   "desc": "單點大比薩升級火山系列享半價優惠並送可樂。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "aceb8848a1",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "雙11小比薩烤雞買一送一",
+   "desc": "指定口味小比薩搭配BBQ烤雞買一送一。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "1617855c82",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "雙11個人比薩101元餐",
+   "desc": "包含經典系列個人比薩、副食與飲料各1。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "3b73115d97",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "雙11義式手工薄比薩149元套餐",
+   "desc": "包含義式手工薄比薩、副食與飲料各1。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "fba6d55f93",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "雙11五倍起司焗烤千層麵單點199元",
+   "desc": "五倍起司焗烤千層麵享77折優惠。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "d6ab3a0927",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "雙11買私廚系列麵飯送個人比薩",
+   "desc": "買指定義大利麵或燉飯L經典套餐，送指定口味個人比薩。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "bbde9d4d03",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "雙11一公尺派對盒特價1212元起",
+   "desc": "內含3個大比薩與多樣豐富烤雞、副食組合。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "2dfac0c211",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "雙11抹茶可可QQ球買一送一",
+   "desc": "單點抹茶可可QQ球買一送一。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "6cff9f082e",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "雙11黃金玉米濃湯買一送一",
+   "desc": "單點玉米濃湯買一送一。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "e9df1f6e50",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "雙11單點小份雞軟骨買一送一",
+   "desc": "單點小份雞軟骨買一送一。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "17c65a20e0",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "私廚筆管麵套餐加1元送QQ球",
+   "desc": "購買指定筆管麵L或XL套餐，加1元送巧克力QQ球5顆。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "93a06a9222",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "必勝雙人套餐299元起",
+   "desc": "含指定個人比薩或紙包系列2份、指定副食2份與飲料2杯。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "6fb8c83b8d",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "手工義式薄比薩雙人餐419元起",
+   "desc": "包含義式手工薄比薩2個、副食與飲料各2份。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "3d3c7266a4",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "副食買A送B優惠",
+   "desc": "購買A區任一副食品項，即可任選B區品項一份。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "93e56780ef",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "平日外帶超值單點大比薩199元起",
+   "desc": "13吋指定10種超值口味大比薩外帶特價199元起。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "0b7c02a0f7",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "平日外帶人氣單點大比薩299元起",
+   "desc": "13吋經典口味大比薩外帶特價299元起。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "969fc427f2",
+   "store": "pizzahut",
+   "type": "sale",
+   "title": "消費滿20元加購比薩造型購物袋",
+   "desc": "凡消費滿20元以上，即可以159元加購比薩造型購物袋一個。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4020,9 +4911,9 @@
   {
    "id": "9031ddeba1",
    "store": "sbux",
-   "type": "cashback",
+   "type": "event",
    "title": "耶誕星選滿額贈星",
-   "desc": "活動期間內消費滿1,200元即可獲贈20星Bonus Star。",
+   "desc": "活動期間消費滿1,200元贈20星Bonus Star。",
    "start": "2026-11-04",
    "end": "2026-11-06",
    "aud": [],
@@ -4030,7 +4921,7 @@
    "code": "",
    "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4068,11 +4959,27 @@
    "origin": "auto"
   },
   {
+   "id": "8d3e1fbf60",
+   "store": "sbux",
+   "type": "sale",
+   "title": "購買飲料券優惠價750元",
+   "desc": "購買6張140元飲料券享優惠價750元。",
+   "start": "2026-11-01",
+   "end": "2026-11-07",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
    "id": "8b38d58252",
    "store": "sbux",
-   "type": "cashback",
+   "type": "event",
    "title": "太妃星意暖星加贈",
-   "desc": "活動期間內購買指定太妃系列商品可享Bonus Star加贈。",
+   "desc": "活動期間購買指定品項加贈Bonus Star。",
    "start": "2026-11-04",
    "end": "2026-11-08",
    "aud": [],
@@ -4080,7 +4987,7 @@
    "code": "",
    "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4097,6 +5004,22 @@
    "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
    "redeem_url": "",
    "checked_at": "2026-11-04T10:19:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "a9773b847f",
+   "store": "sbux",
+   "type": "event",
+   "title": "太妃暖心回歸指定組合加贈星星",
+   "desc": "星送禮指定組合加贈8顆星。",
+   "start": "2026-11-04",
+   "end": "2026-11-10",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4133,6 +5056,42 @@
    "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
    "redeem_url": "",
    "checked_at": "2026-11-04T10:19:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "f7cdee100c",
+   "store": "sbux",
+   "type": "event",
+   "title": "彰濱秀傳門市歡慶開幕",
+   "desc": "彰濱秀傳門市開幕期間推出歡慶活動。",
+   "start": "2026-11-04",
+   "end": "2026-11-17",
+   "aud": [],
+   "cond": [
+    "store"
+   ],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "ebced2c468",
+   "store": "sbux",
+   "type": "event",
+   "title": "台積電AP6A門市歡慶開幕",
+   "desc": "台積電AP6A門市開幕期間推出優惠活動。",
+   "start": "2026-10-29",
+   "end": "2026-11-17",
+   "aud": [],
+   "cond": [
+    "store"
+   ],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4175,7 +5134,7 @@
    "store": "sbux",
    "type": "event",
    "title": "金星禮線上限時兌換",
-   "desc": "金星禮會員可於線上參與常態品項限時兌換活動。",
+   "desc": "金星禮線上限時兌換常態品項上市。",
    "start": "2026-11-01",
    "end": "2026-11-30",
    "aud": [],
@@ -4185,7 +5144,7 @@
    "code": "",
    "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4207,6 +5166,38 @@
    "origin": "auto"
   },
   {
+   "id": "196d479c7d",
+   "store": "sbux",
+   "type": "sale",
+   "title": "法式風情可頌裝扮MINI熊寶寶組合優惠",
+   "desc": "購買法式風情可頌裝扮MINI熊寶寶組合可享優惠。",
+   "start": "2026-08-28",
+   "end": "2026-11-30",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "8a031c3843",
+   "store": "sbux",
+   "type": "event",
+   "title": "循環杯租借多贈3星",
+   "desc": "使用循環杯租借服務可額外獲得Bonus Star 3星。",
+   "start": "2026-11-01",
+   "end": "2026-11-30",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
    "id": "ee2b7c2de1",
    "store": "sbux",
    "type": "sale",
@@ -4220,6 +5211,22 @@
    "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
    "redeem_url": "",
    "checked_at": "2026-11-04T10:19:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "23a93ffc4a",
+   "store": "sbux",
+   "type": "sale",
+   "title": "星沁爽指定品項大杯99元",
+   "desc": "期間限定星沁爽指定品項大杯單一價99元。",
+   "start": "2026-11-04",
+   "end": "2026-12-01",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4238,6 +5245,40 @@
    "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
    "redeem_url": "",
    "checked_at": "2026-11-04T10:19:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "81043e0b67",
+   "store": "sbux",
+   "type": "event",
+   "title": "太妃核果風味系列集點活動",
+   "desc": "購買太妃核果風味系列飲品參與集點活動兌換優惠憑證。",
+   "start": "2026-11-04",
+   "end": "2026-12-25",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "3129ee6d2d",
+   "store": "sbux",
+   "type": "event",
+   "title": "LINE Pay第四季合作活動",
+   "desc": "第四季每週五使用LINE Pay合作活動優惠。",
+   "start": "2026-10-02",
+   "end": "2026-12-25",
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4316,9 +5357,9 @@
   {
    "id": "044daede0e",
    "store": "sbux",
-   "type": "sale",
+   "type": "event",
    "title": "Mastercard海外旅客專屬禮遇",
-   "desc": "持Mastercard海外卡的旅客可享星享甜蜜禮專屬優惠。",
+   "desc": "海外旅客使用Mastercard專屬禮遇優惠。",
    "start": "2026-11-04",
    "end": "2026-12-31",
    "aud": [],
@@ -4328,15 +5369,15 @@
    "code": "",
    "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
    "id": "7dbeef6f50",
    "store": "sbux",
-   "type": "sale",
+   "type": "event",
    "title": "街口支付第四季合作活動",
-   "desc": "使用街口支付結帳可享第四季合作優惠。",
+   "desc": "第四季使用街口支付合作優惠活動。",
    "start": "2026-10-01",
    "end": "2026-12-31",
    "aud": [],
@@ -4346,7 +5387,7 @@
    "code": "",
    "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4370,9 +5411,9 @@
   {
    "id": "896a4184f6",
    "store": "sbux",
-   "type": "sale",
+   "type": "event",
    "title": "JCB晶緻卡獨享漫遊好康",
-   "desc": "持JCB晶緻卡消費享有專屬獨享禮遇漫遊好康。",
+   "desc": "使用JCB晶緻卡享獨享漫遊禮遇好康。",
    "start": "2026-01-01",
    "end": "2026-12-31",
    "aud": [],
@@ -4382,7 +5423,79 @@
    "code": "",
    "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "2a80a11672",
+   "store": "sbux",
+   "type": "cashback",
+   "title": "uniopen聯名卡最高7%回饋",
+   "desc": "持uniopen聯名卡於指定實體門市消費或儲值最高享7% OPENPOINT點數回饋。",
+   "start": "2026-07-01",
+   "end": "2026-12-31",
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "ad51d80140",
+   "store": "sbux",
+   "type": "cashback",
+   "title": "聯名卡與icash Pay最高回饋16%",
+   "desc": "使用uniopen聯名卡結合icash Pay於指定日消費享最高16%回饋。",
+   "start": "2026-07-01",
+   "end": "2026-12-31",
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "74ac9a76de",
+   "store": "sbux",
+   "type": "sale",
+   "title": "uniopen聯名卡每週一二優惠",
+   "desc": "每週一享飲料好友分享，每週二指定飲料糕點組合享8折優惠。",
+   "start": "2026-07-01",
+   "end": "2026-12-31",
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "72aac55bc5",
+   "store": "sbux",
+   "type": "cashback",
+   "title": "icash Pay週日消費滿額回饋7%",
+   "desc": "每週日使用icash Pay消費滿額享回饋。",
+   "start": "2026-07-01",
+   "end": "2026-12-31",
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4390,7 +5503,7 @@
    "store": "sbux",
    "type": "sale",
    "title": "內用飲料續杯5折",
-   "desc": "於店內享用飲料後，續杯可享5折優惠。",
+   "desc": "於門市內用飲料可享續杯5折優惠。",
    "start": "2025-02-12",
    "end": null,
    "aud": [],
@@ -4400,7 +5513,7 @@
    "code": "",
    "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4473,6 +5586,79 @@
    "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
    "redeem_url": "",
    "checked_at": "2026-11-04T10:19:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "038e3c6538",
+   "store": "sbux",
+   "type": "sale",
+   "title": "星巴克珍食計畫7折",
+   "desc": "每日晚間7點過後購買指定糕點享七折優惠。",
+   "start": "2023-01-01",
+   "end": null,
+   "aud": [],
+   "cond": [
+    "store"
+   ],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "9e87402ba9",
+   "store": "sbux",
+   "type": "event",
+   "title": "星禮程會員綁定uniopen累積點數",
+   "desc": "綁定後於門市消費可同步累積星星與OPENPOINT點數。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "4d426f5b47",
+   "store": "sbux",
+   "type": "event",
+   "title": "購物提袋開放金星禮兌換",
+   "desc": "金星級會員專屬開放以金星禮兌換星巴克購物提袋。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "c124745701",
+   "store": "sbux",
+   "type": "plan",
+   "title": "會員咖啡月享LINE訂閱方案",
+   "desc": "星巴克咖啡訂閱服務推出LINE訂閱方案。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "line",
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4687,6 +5873,43 @@
    "source": "https://www.spotify.com/tw/premium/",
    "redeem_url": "",
    "checked_at": "2026-11-04T10:19:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "48f48e4f6c",
+   "store": "spotify",
+   "type": "trial",
+   "title": "個人方案首月免費體驗",
+   "desc": "未曾試用過 Premium 的新用戶可享前一個月免費，之後每月 $168。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "newbie"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://www.spotify.com/tw/premium/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "5e83989e46",
+   "store": "spotify",
+   "type": "trial",
+   "title": "學生方案首月免費體驗",
+   "desc": "符合資格的高教機構學生可享前一個月免費，之後每月 $88，限未試用過者。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student",
+    "newbie"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://www.spotify.com/tw/premium/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4918,7 +6141,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Mycelarium 特惠",
-   "desc": "遊戲限時打8折，入手價$3.99",
+   "desc": "特惠價 $3.99 (原價 $4.99，折扣 20%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -4926,7 +6149,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4934,7 +6157,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Potato Please 特惠",
-   "desc": "遊戲限時打9折，入手價$8.99",
+   "desc": "特惠價 $8.99 (原價 $9.99，折扣 10%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -4942,7 +6165,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4950,7 +6173,7 @@
    "store": "steam",
    "type": "sale",
    "title": "弗萊明莊園命案 特惠",
-   "desc": "遊戲限時打9折，入手價$16.19",
+   "desc": "特惠價 $16.19 (原價 $17.99，折扣 10%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -4958,7 +6181,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4966,7 +6189,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Beat For Speed 特惠",
-   "desc": "遊戲限時打8折，入手價$11.99",
+   "desc": "特惠價 $11.99 (原價 $14.99，折扣 20%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -4974,7 +6197,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4982,7 +6205,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Mayday: The Survival Island 特惠",
-   "desc": "遊戲限時打8折，入手價$11.19",
+   "desc": "特惠價 $11.19 (原價 $13.99，折扣 20%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -4990,7 +6213,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -4998,7 +6221,7 @@
    "store": "steam",
    "type": "sale",
    "title": "守城英雄傳 特惠",
-   "desc": "遊戲限時打56折，入手價$9.46",
+   "desc": "特惠價 $9.46 (原價 $16.99，折扣 44%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5006,7 +6229,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5030,7 +6253,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Queen's Domain 特惠",
-   "desc": "遊戲限時打85折，入手價$16.99",
+   "desc": "特惠價 $16.99 (原價 $19.99，折扣 15%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5038,7 +6261,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5046,7 +6269,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Rip It! Card Collector 特惠",
-   "desc": "遊戲限時打9折，入手價$6.29",
+   "desc": "特惠價 $6.29 (原價 $6.99，折扣 10%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5054,7 +6277,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5062,7 +6285,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Rat Game 特惠",
-   "desc": "遊戲限時打9折，入手價$5.39",
+   "desc": "特惠價 $5.39 (原價 $5.99，折扣 10%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5070,7 +6293,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5078,7 +6301,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Finals Week 特惠",
-   "desc": "遊戲限時打62折，入手價$4.95",
+   "desc": "特惠價 $4.95 (原價 $7.99，折扣 38%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5086,7 +6309,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5094,7 +6317,7 @@
    "store": "steam",
    "type": "sale",
    "title": "S.O.N.A.R. - 潛艇菜鳥團 特惠",
-   "desc": "遊戲限時打85折，入手價$8.49",
+   "desc": "特惠價 $8.49 (原價 $9.99，折扣 15%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5102,7 +6325,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5110,7 +6333,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Deadly Days: Roadtrip 特惠",
-   "desc": "遊戲限時打65折，入手價$9.74",
+   "desc": "特惠價 $9.74 (原價 $14.99，折扣 35%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5118,7 +6341,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5126,7 +6349,7 @@
    "store": "steam",
    "type": "sale",
    "title": "深空當鋪：可能是偷的 特惠",
-   "desc": "遊戲限時打9折，入手價$17.99",
+   "desc": "特惠價 $17.99 (原價 $19.99，折扣 10%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5134,7 +6357,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5158,7 +6381,7 @@
    "store": "steam",
    "type": "sale",
    "title": "控制: 共振 特惠",
-   "desc": "遊戲限時打8折，入手價$47.99",
+   "desc": "特惠價 $47.99 (原價 $59.99，折扣 20%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5166,15 +6389,15 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
    "id": "8264b7ae39",
    "store": "steam",
    "type": "sale",
-   "title": "邊緣禁地®4 特惠",
-   "desc": "遊戲限時打5折，入手價$34.99",
+   "title": "邊緣禁地4 特惠",
+   "desc": "特惠價 $34.99 (原價 $69.99，折扣 50%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5182,7 +6405,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5206,7 +6429,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Age of Wonders 4 特惠",
-   "desc": "遊戲限時打4折，入手價$19.99",
+   "desc": "特惠價 $19.99 (原價 $49.99，折扣 60%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5214,7 +6437,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5270,7 +6493,7 @@
    "store": "steam",
    "type": "sale",
    "title": "007 初露鋒芒 特惠",
-   "desc": "遊戲限時打6折，入手價$47.99",
+   "desc": "特惠價 $47.99 (原價 $79.99，折扣 40%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5278,7 +6501,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5286,7 +6509,7 @@
    "store": "steam",
    "type": "sale",
    "title": "刺客教條：黑旗 同步重置 特惠",
-   "desc": "遊戲限時打75折，入手價$44.99",
+   "desc": "特惠價 $44.99 (原價 $59.99，折扣 25%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5294,7 +6517,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5302,7 +6525,7 @@
    "store": "steam",
    "type": "sale",
    "title": "PEAK 特惠",
-   "desc": "遊戲限時打62折，入手價$4.95",
+   "desc": "特惠價 $4.95 (原價 $7.99，折扣 38%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5310,7 +6533,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5318,7 +6541,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Grand Theft Auto V 強化版 特惠",
-   "desc": "遊戲限時打5折，入手價$14.99",
+   "desc": "特惠價 $14.99 (原價 $29.99，折扣 50%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5326,7 +6549,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5334,7 +6557,7 @@
    "store": "steam",
    "type": "sale",
    "title": "No Man's Sky 無人深空 特惠",
-   "desc": "遊戲限時打4折，入手價$23.99",
+   "desc": "特惠價 $23.99 (原價 $59.99，折扣 60%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5342,7 +6565,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5350,7 +6573,7 @@
    "store": "steam",
    "type": "sale",
    "title": "程式農場 特惠",
-   "desc": "遊戲限時打7折，入手價$6.99",
+   "desc": "特惠價 $6.99 (原價 $9.99，折扣 30%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5358,7 +6581,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5366,7 +6589,7 @@
    "store": "steam",
    "type": "sale",
    "title": "R.E.P.O. 特惠",
-   "desc": "遊戲限時打65折，入手價$6.49",
+   "desc": "特惠價 $6.49 (原價 $9.99，折扣 35%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5374,7 +6597,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5382,7 +6605,7 @@
    "store": "steam",
    "type": "sale",
    "title": "邊緣禁地3 特惠",
-   "desc": "遊戲限時打1折，入手價$5.99",
+   "desc": "特惠價 $5.99 (原價 $59.99，折扣 90%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5390,7 +6613,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5398,7 +6621,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Rust 特惠",
-   "desc": "遊戲限時打5折，入手價$19.99",
+   "desc": "特惠價 $19.99 (原價 $39.99，折扣 50%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5406,7 +6629,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5430,7 +6653,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Leaf it Alone 特惠",
-   "desc": "遊戲限時打5折，入手價$2.99",
+   "desc": "特惠價 $2.99 (原價 $5.99，折扣 50%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5438,7 +6661,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5446,7 +6669,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Raft 特惠",
-   "desc": "遊戲限時打67折，入手價$13.39",
+   "desc": "特惠價 $13.39 (原價 $19.99，折扣 33%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5454,7 +6677,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5462,7 +6685,7 @@
    "store": "steam",
    "type": "sale",
    "title": "我們到了嗎？ 特惠",
-   "desc": "遊戲限時打6折，入手價$4.79",
+   "desc": "特惠價 $4.79 (原價 $7.99，折扣 40%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5470,7 +6693,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5478,7 +6701,7 @@
    "store": "steam",
    "type": "sale",
    "title": "光與影：33號遠征隊 特惠",
-   "desc": "遊戲限時打8折，入手價$39.99",
+   "desc": "特惠價 $39.99 (原價 $49.99，折扣 20%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5486,7 +6709,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5542,7 +6765,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Dying Light: The Beast 特惠",
-   "desc": "遊戲限時打5折，入手價$29.99",
+   "desc": "特惠價 $29.99 (原價 $59.99，折扣 50%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5550,7 +6773,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5558,7 +6781,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Gray Zone Warfare 特惠",
-   "desc": "遊戲限時打65折，入手價$25.99",
+   "desc": "特惠價 $25.99 (原價 $39.99，折扣 35%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5566,7 +6789,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5574,7 +6797,7 @@
    "store": "steam",
    "type": "sale",
    "title": "方舟: 生存飛升 特惠",
-   "desc": "遊戲限時打25折，入手價$11.24",
+   "desc": "特惠價 $11.24 (原價 $44.99，折扣 75%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5582,7 +6805,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5590,7 +6813,7 @@
    "store": "steam",
    "type": "sale",
    "title": "刺客教條：暗影者 特惠",
-   "desc": "遊戲限時打4折，入手價$27.99",
+   "desc": "特惠價 $27.99 (原價 $69.99，折扣 60%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5598,7 +6821,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5606,7 +6829,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Teardown 特惠",
-   "desc": "遊戲限時打5折，入手價$14.99",
+   "desc": "特惠價 $14.99 (原價 $29.99，折扣 50%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5614,7 +6837,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5638,7 +6861,7 @@
    "store": "steam",
    "type": "sale",
    "title": "鐵巢重砲 特惠",
-   "desc": "遊戲限時打75折，入手價$14.99",
+   "desc": "特惠價 $14.99 (原價 $19.99，折扣 25%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5646,7 +6869,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5670,7 +6893,7 @@
    "store": "steam",
    "type": "sale",
    "title": "冰汽時代2 特惠",
-   "desc": "遊戲限時打45折，入手價$20.24",
+   "desc": "特惠價 $20.24 (原價 $44.99，折扣 55%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5678,7 +6901,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5702,7 +6925,7 @@
    "store": "steam",
    "type": "sale",
    "title": "Red Dead Redemption 特惠",
-   "desc": "遊戲限時打5折，入手價$24.99",
+   "desc": "特惠價 $24.99 (原價 $49.99，折扣 50%)",
    "start": null,
    "end": null,
    "aud": [],
@@ -5710,7 +6933,7 @@
    "code": "",
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5727,6 +6950,262 @@
    "source": "https://store.steampowered.com/?l=tchinese",
    "redeem_url": "",
    "checked_at": "2026-11-04T10:19:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "911f6d635a",
+   "store": "steam",
+   "type": "sale",
+   "title": "Playrooms 特惠",
+   "desc": "特惠價 $5.59 (原價 $6.99，折扣 20%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "7e40b755cb",
+   "store": "steam",
+   "type": "sale",
+   "title": "VOID/BREAKER 特惠",
+   "desc": "特惠價 $17.99 (原價 $29.99，折扣 40%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "a5f9b6703d",
+   "store": "steam",
+   "type": "sale",
+   "title": "Lightyear Frontier 特惠",
+   "desc": "特惠價 $23.99 (原價 $29.99，折扣 20%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "793ca6586b",
+   "store": "steam",
+   "type": "sale",
+   "title": "夢幻櫻樓閣 特惠",
+   "desc": "特惠價 $9.59 (原價 $11.99，折扣 20%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "ba98ad1572",
+   "store": "steam",
+   "type": "sale",
+   "title": "Horses of Hoofprint Bay 特惠",
+   "desc": "特惠價 $22.94 (原價 $26.99，折扣 15%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "be8eb0dc7a",
+   "store": "steam",
+   "type": "sale",
+   "title": "Hull Rupture 特惠",
+   "desc": "特惠價 $13.49 (原價 $14.99，折扣 10%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "b256dda125",
+   "store": "steam",
+   "type": "sale",
+   "title": "二手遊戲店模擬器 特惠",
+   "desc": "特惠價 $9.52 (原價 $19.98，折扣 52%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "2392836996",
+   "store": "steam",
+   "type": "sale",
+   "title": "Loftia 特惠",
+   "desc": "特惠價 $24.89 (原價 $29.99，折扣 17%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "9a17c373c4",
+   "store": "steam",
+   "type": "sale",
+   "title": "Football Manager 27 預購優惠",
+   "desc": "預購特惠價 $53.99 (原價 $59.99，折扣 10%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "40b5184bcb",
+   "store": "steam",
+   "type": "sale",
+   "title": "DreamWorks Shrek 2 預購優惠",
+   "desc": "預購特惠價 $26.99 (原價 $29.99，折扣 10%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "3896e01648",
+   "store": "steam",
+   "type": "sale",
+   "title": "ALTEREDBLOOD+ 特惠",
+   "desc": "特惠價 $8.49 (原價 $9.99，折扣 15%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "956d9208cf",
+   "store": "steam",
+   "type": "sale",
+   "title": "Trails in the Sky 1st Chapter 特惠",
+   "desc": "特惠價 $29.99 (原價 $59.99，折扣 50%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "7699c254c4",
+   "store": "steam",
+   "type": "sale",
+   "title": "遙遙西土 特惠",
+   "desc": "特惠價 $15.99 (原價 $19.99，折扣 20%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "32fa8a9308",
+   "store": "steam",
+   "type": "sale",
+   "title": "The Walking Dead 經典系列 特惠",
+   "desc": "特惠價 $4.99 (原價 $49.99，折扣 90%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "0927760aec",
+   "store": "steam",
+   "type": "sale",
+   "title": "Anno 117: Pax Romana 特惠",
+   "desc": "特惠價 $35.99 (原價 $59.99，折扣 40%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "c56d8b52e7",
+   "store": "steam",
+   "type": "sale",
+   "title": "絕對魔權 特惠",
+   "desc": "特惠價 $14.99 (原價 $24.99，折扣 40%)",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://store.steampowered.com/?l=tchinese",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -5998,9 +7477,9 @@
   {
    "id": "9e8d3e6805",
    "store": "thsr",
-   "type": "cashback",
+   "type": "event",
    "title": "高鐵會員聰明轉點",
-   "desc": "會員點數互轉或聯促優惠享受更多回饋",
+   "desc": "高鐵會員進行點數互轉或合作轉點可享好康",
    "start": null,
    "end": null,
    "aud": [],
@@ -6010,7 +7489,7 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -6052,7 +7531,7 @@
    "store": "thsr",
    "type": "sale",
    "title": "早鳥優惠",
-   "desc": "提前預購指定車次指定座位享早鳥折扣",
+   "desc": "提前預購指定車次享有早鳥優惠票價",
    "start": null,
    "end": null,
    "aud": [],
@@ -6060,7 +7539,7 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -6068,7 +7547,7 @@
    "store": "thsr",
    "type": "sale",
    "title": "回數票優惠",
-   "desc": "購買回數票享有優惠方案",
+   "desc": "購買回數票享有特定折扣方案",
    "start": null,
    "end": null,
    "aud": [],
@@ -6076,7 +7555,7 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -6084,7 +7563,7 @@
    "store": "thsr",
    "type": "sale",
    "title": "大學生優惠",
-   "desc": "大專院校學生搭乘指定車次享優惠",
+   "desc": "大專院校學生搭乘指定車次享有專屬優惠",
    "start": null,
    "end": null,
    "aud": [
@@ -6094,7 +7573,7 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -6120,7 +7599,7 @@
    "store": "thsr",
    "type": "event",
    "title": "月月Go有禮",
-   "desc": "會員每月參與活動享專屬回饋與好禮",
+   "desc": "會員每月參與活動可獲得對應好禮或優惠",
    "start": null,
    "end": null,
    "aud": [],
@@ -6130,13 +7609,13 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
    "id": "6d2d4aa05b",
    "store": "thsr",
-   "type": "sale",
+   "type": "plan",
    "title": "高鐵假期送住宿",
    "desc": "訂購高鐵假期套裝行程享有贈送住宿優惠",
    "start": null,
@@ -6146,15 +7625,15 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
    "id": "4caf486e5c",
    "store": "thsr",
-   "type": "sale",
+   "type": "plan",
    "title": "高鐵假期送租車",
-   "desc": "訂購高鐵假期套裝行程享有贈送租車優惠",
+   "desc": "訂購高鐵假期指定專案享有贈送租車優惠",
    "start": null,
    "end": null,
    "aud": [],
@@ -6162,7 +7641,7 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -6188,7 +7667,7 @@
    "store": "thsr",
    "type": "event",
    "title": "新會員限定優惠",
-   "desc": "新加入會員可享專屬限定優惠活動",
+   "desc": "新註冊高鐵會員可享有的限定好禮或優惠",
    "start": null,
    "end": null,
    "aud": [
@@ -6200,7 +7679,7 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -6222,9 +7701,9 @@
   {
    "id": "c9f3337d74",
    "store": "thsr",
-   "type": "sale",
+   "type": "plan",
    "title": "國旅搭高鐵秋遊趣",
-   "desc": "秋季國旅搭配高鐵旅遊享有特惠",
+   "desc": "結合秋季國內旅遊的高鐵交通與觀光優惠方案",
    "start": null,
    "end": null,
    "aud": [],
@@ -6232,15 +7711,15 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
    "id": "0946679fa6",
    "store": "thsr",
-   "type": "sale",
+   "type": "plan",
    "title": "飯店聯票秋遊趣",
-   "desc": "高鐵車票結合飯店住宿的秋季聯票優惠",
+   "desc": "高鐵車票搭配秋季合作飯店住宿的聯票優惠",
    "start": null,
    "end": null,
    "aud": [],
@@ -6250,15 +7729,15 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
    "id": "3d6d3aa95d",
    "store": "thsr",
-   "type": "sale",
+   "type": "plan",
    "title": "永續美好慢遊台灣",
-   "desc": "推動永續旅遊的高鐵相關行程優惠",
+   "desc": "響應永續理念的台灣在地慢遊旅遊專案優惠",
    "start": null,
    "end": null,
    "aud": [],
@@ -6266,15 +7745,15 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
    "id": "eaeb2083a5",
    "store": "thsr",
-   "type": "sale",
+   "type": "plan",
    "title": "新車假期",
-   "desc": "結合新車主題的高鐵假期旅遊優惠",
+   "desc": "搭乘新車相關主題的高鐵假期旅遊優惠方案",
    "start": null,
    "end": null,
    "aud": [],
@@ -6282,7 +7761,7 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -6301,6 +7780,92 @@
    "source": "https://www.thsrc.com.tw/ArticleContent/530e869c-479d-441a-a4b4-61a8166827e9",
    "redeem_url": "",
    "checked_at": "2026-11-04T10:19:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "f0cf9bb6dc",
+   "store": "thsr",
+   "type": "sale",
+   "title": "29天前預購優惠",
+   "desc": "於乘車日前29天預購指定車次享有優惠",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "1315d840f2",
+   "store": "thsr",
+   "type": "cashback",
+   "title": "TGo點數365兌換",
+   "desc": "使用TGo會員點數於點數365平台兌換商品或優惠",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "84804fc531",
+   "store": "thsr",
+   "type": "sale",
+   "title": "指定信用卡優惠",
+   "desc": "刷指定銀行信用卡購買高鐵相關產品享優惠",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "122b682bb8",
+   "store": "thsr",
+   "type": "plan",
+   "title": "慢遊苗彰雲旅遊專案",
+   "desc": "搭乘高鐵結合苗栗、彰化、雲林景點的旅遊方案",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "3b0d120ef8",
+   "store": "thsr",
+   "type": "sale",
+   "title": "大學生指定車次 5 折起",
+   "desc": "大專院校學生購買指定車次標準車廂對號座可享 5 折、75 折或 88 折優惠，乘車時須攜帶本人實體學生證正本備查。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/ArticleContent/530e869c-479d-441a-a4b4-61a8166827e9",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -6493,8 +8058,8 @@
    "id": "4bd0fe2b21",
    "store": "xiaomi",
    "type": "coupon",
-   "title": "下載 App 領 98 折優惠券",
-   "desc": "下載小米商城 App 即可獲贈 98 折優惠券。",
+   "title": "下載 APP 領 98 折優惠券",
+   "desc": "下載並開啟小米商城 APP 即可領取全站 98 折優惠券。",
    "start": null,
    "end": null,
    "aud": [],
@@ -6504,7 +8069,7 @@
    "code": "",
    "source": "https://www.mi.com/tw/new-user/",
    "redeem_url": "",
-   "checked_at": "2026-10-31T09:51:45+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -6665,7 +8230,7 @@
    "store": "xiaomi",
    "type": "coupon",
    "title": "新用戶專享 100 元現金券",
-   "desc": "新會員可領取全館通用百元折價券，領取後需於 7 天內使用完畢。",
+   "desc": "每日限量領取，全場商品均可抵用，領取後有效期限 7 天且不含運費。",
    "start": null,
    "end": null,
    "aud": [
@@ -6677,7 +8242,7 @@
    "code": "",
    "source": "https://www.mi.com/tw/new-user/",
    "redeem_url": "",
-   "checked_at": "2026-11-03T13:55:54+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -6978,6 +8543,181 @@
    "origin": "auto"
   },
   {
+   "id": "7ccba986ea",
+   "store": "xiaomi",
+   "type": "coupon",
+   "title": "新用戶專享 95 折折價券",
+   "desc": "最高可折 NT$500，部分商品除外，領取後 7 天內有效且不免運。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "newbie"
+   ],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.mi.com/tw/new-user/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "a0b3cc3f35",
+   "store": "xiaomi",
+   "type": "plan",
+   "title": "學生認證專屬教育優惠",
+   "desc": "通過學生身份認證即可享有專屬產品購買折扣。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://www.mi.com/tw/new-user/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "81e0b6e46e",
+   "store": "xiaomi",
+   "type": "coupon",
+   "title": "會員填寫生日領 95 折券與生日禮",
+   "desc": "補全電子郵件與生日資訊即可獲得生日好禮及 95 折優惠券。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.mi.com/tw/new-user/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "c93970c228",
+   "store": "xiaomi",
+   "type": "plan",
+   "title": "企業批量直購滿額送好禮",
+   "desc": "企業進行官方批量採購，單筆訂單達到指定金額即贈送好禮。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "startup"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://www.mi.com/tw/new-user/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "cf0c65aa5a",
+   "store": "xiaomi",
+   "type": "cashback",
+   "title": "註冊並下載 APP 賺 80 積分",
+   "desc": "完成 Mi ID 註冊登入與下載小米商城 APP，即贈 80 積分可抵現。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "newbie"
+   ],
+   "cond": [
+    "member",
+    "app"
+   ],
+   "code": "",
+   "source": "https://www.mi.com/tw/new-user/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "1d1e6ba172",
+   "store": "xiaomi",
+   "type": "trial",
+   "title": "指定裝置免費體驗 Google AI Pro 3 個月",
+   "desc": "購買並使用指定小米裝置即可獲得 3 個月 Google AI Pro 免費試用。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.mi.com/tw/new-user/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "98f04e021a",
+   "store": "xiaomi",
+   "type": "trial",
+   "title": "指定裝置享 YouTube Premium 最多 3 個月免費",
+   "desc": "符合條件的小米裝置用戶最高可享有 3 個月 YouTube Premium 免費體驗。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.mi.com/tw/new-user/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "0693a38dc8",
+   "store": "xiaomi",
+   "type": "trial",
+   "title": "購機免費送 Google One 100GB 6 個月",
+   "desc": "使用符合資格的小米裝置即可領取 6 個月 100GB Google One 雲端空間。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.mi.com/tw/new-user/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "7d0aafdbed",
+   "store": "xiaomi",
+   "type": "trial",
+   "title": "指定裝置享 Spotify Premium 免費 4 個月",
+   "desc": "使用符合資格的小米裝置即可獲得最高 4 個月 Spotify 無廣告音樂體驗。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.mi.com/tw/new-user/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "bfc6a14d83",
+   "store": "xiaomi",
+   "type": "sale",
+   "title": "全場消費滿 800 元享免運費",
+   "desc": "於小米官網購物單筆訂單金額滿 NT$800 即享免運優惠。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.mi.com/tw/new-user/",
+   "redeem_url": "",
+   "checked_at": "2026-11-05T10:23:29+08:00",
+   "origin": "auto"
+  },
+  {
    "id": "005ff63388",
    "store": "yt",
    "type": "plan",
@@ -7037,7 +8777,7 @@
    "store": "yt",
    "type": "plan",
    "title": "YouTube學生方案優惠",
-   "desc": "高等教育機構學生可享YouTube Premium或Music學生方案折扣，需透過SheerID驗證身分，最長可享4年。",
+   "desc": "符合高等教育機構在學身分並透過SheerID驗證者，可享學生折扣價訂閱，最多連續4年。",
    "start": null,
    "end": null,
    "aud": [
@@ -7047,7 +8787,7 @@
    "code": "",
    "source": "https://support.google.com/youtube/answer/9158808",
    "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
+   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   }
  ]
