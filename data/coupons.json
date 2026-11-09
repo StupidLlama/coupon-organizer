@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-08T19:28:13+08:00",
+ "updated_at": "2026-11-09T10:00:00+08:00",
  "categories": {
   "food": {
    "name": "美食",
@@ -875,57 +875,76 @@
    "origin": "auto"
   },
   {
-   "id": "eeefbaab91",
-   "store": "cosmed",
-   "type": "coupon",
-   "title": "保養品滿 1,000 折 150",
-   "desc": "LINE 好友專屬，線上線下皆可用。",
-   "start": "2026-10-25",
-   "end": "2026-11-08",
+   "id": "0553b7ef34",
+   "store": "claude",
+   "type": "plan",
+   "title": "Claude Pro 個人方案年繳優惠",
+   "desc": "選擇年繳訂閱享每月 17 美元優惠價，需預付整年 200 美元，比月繳省下 15%。",
+   "start": null,
+   "end": null,
    "aud": [],
    "cond": [
-    "line"
-   ],
-   "code": "COS150",
-   "source": "",
-   "checked_at": "2026-10-28T20:45:00+08:00",
-   "origin": "demo"
-  },
-  {
-   "id": "8e017da03d",
-   "store": "cosmed",
-   "type": "sale",
-   "title": "中信卡友刷卡優惠",
-   "desc": "活動期間持中國信託信用卡消費滿1500元享85折優惠",
-   "start": "2026-11-06",
-   "end": "2026-11-08",
-   "aud": [],
-   "cond": [
-    "pay",
-    "store"
+    "bundle"
    ],
    "code": "",
-   "source": "https://www.cosmed.com.tw/news.aspx",
+   "source": "https://claude.com/pricing",
    "redeem_url": "",
-   "checked_at": "2026-11-06T10:28:44+08:00",
+   "checked_at": "2026-11-09T10:00:00+08:00",
    "origin": "auto"
   },
   {
-   "id": "50618e6e62",
-   "store": "cosmed",
-   "type": "sale",
-   "title": "刷中信卡滿1500享85折",
-   "desc": "活動期間內使用中國信託信用卡消費滿1500元享85折優惠",
-   "start": "2026-11-06",
-   "end": "2026-11-08",
-   "aud": [],
+   "id": "d716572f9c",
+   "store": "claude",
+   "type": "plan",
+   "title": "Claude Team 團隊方案年繳優惠",
+   "desc": "團隊方案採年繳訂閱，標準席位每席每月 20 美元、進階席位 100 美元，享原價 8 折。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "startup"
+   ],
    "cond": [
-    "pay"
+    "bundle"
    ],
    "code": "",
-   "source": "https://www.cosmed.com.tw/news.aspx",
+   "source": "https://claude.com/pricing",
    "redeem_url": "",
-   "checked_at": "2026-11-07T10:02:21+08:00",
+   "checked_at": "2026-11-09T10:00:00+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "0d72e32f72",
+   "store": "claude",
+   "type": "plan",
+   "title": "Claude 大學校園教育方案優惠",
+   "desc": "大專院校學生與教職員可享全校型專屬折扣費率，並享有教學研究專用 API 額度。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student",
+    "worker"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://claude.com/pricing",
+   "redeem_url": "",
+   "checked_at": "2026-11-09T10:00:00+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "ea77c437c9",
+   "store": "claude",
+   "type": "sale",
+   "title": "Claude API 批次處理 5 折優惠",
+   "desc": "使用 Batch 批次處理非同步工作負載，API 代幣費率享有 50% 折扣優惠。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://claude.com/pricing",
+   "redeem_url": "",
+   "checked_at": "2026-11-09T10:00:00+08:00",
    "origin": "auto"
   },
   {
@@ -6460,38 +6479,6 @@
    "source": "",
    "checked_at": "2026-10-28T20:45:00+08:00",
    "origin": "demo"
-  },
-  {
-   "id": "8b38d58252",
-   "store": "sbux",
-   "type": "event",
-   "title": "太妃星意暖星加贈",
-   "desc": "活動期間購買指定品項加贈Bonus Star。",
-   "start": "2026-11-04",
-   "end": "2026-11-08",
-   "aud": [],
-   "cond": [],
-   "code": "",
-   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-05T10:23:29+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "2080d799e4",
-   "store": "sbux",
-   "type": "event",
-   "title": "太妃星意暖星加贈Bonus Star",
-   "desc": "購買指定品項享暖星加贈Bonus Star。",
-   "start": "2026-11-04",
-   "end": "2026-11-08",
-   "aud": [],
-   "cond": [],
-   "code": "",
-   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-07T10:02:21+08:00",
-   "origin": "auto"
   },
   {
    "id": "c424a0434b",
