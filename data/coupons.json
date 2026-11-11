@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-10T20:54:00+08:00",
+ "updated_at": "2026-11-11T10:12:27+08:00",
  "categories": {
   "food": {
    "name": "美食",
@@ -3739,7 +3739,7 @@
    "store": "kkbox",
    "type": "plan",
    "title": "KKBOX 青年學生優惠方案",
-   "desc": "限高中職及25歲以下大專在學生申請，透過官網或超商購買並完成學生證與教育信箱驗證，享專屬天數優惠。",
+   "desc": "25歲以下大專院校生與高中職生，經教育信箱與學生證審核通過後，可享青年學生方案專屬優惠，每人限購一組。",
    "start": null,
    "end": null,
    "aud": [
@@ -3751,7 +3751,7 @@
    "code": "",
    "source": "https://help.kkbox.com/tw/zh-tw/billing/pay-types/1847?p=kkbox",
    "redeem_url": "",
-   "checked_at": "2026-11-10T12:24:19+08:00",
+   "checked_at": "2026-11-11T10:12:27+08:00",
    "origin": "auto"
   },
   {
@@ -4299,6 +4299,114 @@
    "origin": "auto"
   },
   {
+   "id": "b7e96da9f6",
+   "store": "linepay",
+   "type": "coupon",
+   "title": "ITF 旅展 LINE Pay 領券與點數回饋",
+   "desc": "使用 LINE Pay 每天可領最高 520 元優惠券，買星宇航空機票享 3% 點數回饋還能抽機票。",
+   "start": "2026-11-05",
+   "end": null,
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://pay.line.me/portal/tw/customer/press",
+   "redeem_url": "",
+   "checked_at": "2026-11-11T10:12:27+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "0941bd8998",
+   "store": "linepay",
+   "type": "event",
+   "title": "第四季天天 LINE Pay 商圈抽點與回饋",
+   "desc": "於指定商圈與夜市消費可抽最高 555 點，使用找體驗服務最高享 18% 點數回饋。",
+   "start": "2026-10-19",
+   "end": null,
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://pay.line.me/portal/tw/customer/press",
+   "redeem_url": "",
+   "checked_at": "2026-11-11T10:12:27+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "05336baabd",
+   "store": "linepay",
+   "type": "cashback",
+   "title": "韓國旅遊刷 LINE Pay 最高享 25% 回饋",
+   "desc": "年底前於韓國旅遊使用 LINE Pay 消費，享最高 25% 回饋，還可再抽 666 點。",
+   "start": "2026-10-12",
+   "end": null,
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://pay.line.me/portal/tw/customer/press",
+   "redeem_url": "",
+   "checked_at": "2026-11-11T10:12:27+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "dfe0afc282",
+   "store": "linepay",
+   "type": "cashback",
+   "title": "LINE Pay Money 乘車回饋與開戶送好禮",
+   "desc": "使用乘車碼搭乘大眾運輸最高享 30% 回饋，邀請好友開通送 50 點，未成年開通最高享百元超商券。",
+   "start": "2026-09-30",
+   "end": null,
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://pay.line.me/portal/tw/customer/press",
+   "redeem_url": "",
+   "checked_at": "2026-11-11T10:12:27+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "9f5558b655",
+   "store": "linepay",
+   "type": "event",
+   "title": "北市路邊停車費繳費送抽獎券",
+   "desc": "以 LINE Pay Money 繳納台北市路邊停車費，贈送 66 張好樂投券，有機會抽最高 17889 點。",
+   "start": "2026-09-23",
+   "end": null,
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://pay.line.me/portal/tw/customer/press",
+   "redeem_url": "",
+   "checked_at": "2026-11-11T10:12:27+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "861ef7ff7e",
+   "store": "linepay",
+   "type": "cashback",
+   "title": "OLIVE YOUNG 門市與官網跨境支付享回饋",
+   "desc": "於 OLIVE YOUNG 實體門市或線上官網使用 LINE Pay 跨境支付，享最高 20% 回饋。",
+   "start": "2026-08-26",
+   "end": null,
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://pay.line.me/portal/tw/customer/press",
+   "redeem_url": "",
+   "checked_at": "2026-11-11T10:12:27+08:00",
+   "origin": "auto"
+  },
+  {
    "id": "9e832302be",
    "store": "louisa",
    "type": "sale",
@@ -4774,6 +4882,67 @@
    "source": "https://www.notion.com/en-us/help/notion-for-education",
    "redeem_url": "",
    "checked_at": "2026-11-07T10:02:21+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "892b7ae6f6",
+   "store": "notion",
+   "type": "plan",
+   "title": "大專院校個人師生免費教育方案",
+   "desc": "大專院校師生以學校信箱註冊驗證，即可免費享有單人工作區教育方案，每年需重新驗證在學或任教身分。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.notion.com/en-us/help/notion-for-education",
+   "redeem_url": "",
+   "checked_at": "2026-11-11T10:12:27+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "d399fd9e94",
+   "store": "notion",
+   "type": "plan",
+   "title": "學生自治與社團組織免費教育方案",
+   "desc": "認證大專院校之學生組織代表可線上申請，核准後享有支援多人協作與檔案上傳的免費教育版工作區。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.notion.com/en-us/help/notion-for-education",
+   "redeem_url": "",
+   "checked_at": "2026-11-11T10:12:27+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "9950a26374",
+   "store": "notion",
+   "type": "trial",
+   "title": "新創團隊享最多6個月商務方案免費",
+   "desc": "符合資格之新創且非現有付費客戶，申請通過可獲 1 至 6 個月免費 Notion 商務方案及每月 AI 額度。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "startup",
+    "newbie"
+   ],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.notion.com/en-us/help/notion-for-education",
+   "redeem_url": "",
+   "checked_at": "2026-11-11T10:12:27+08:00",
    "origin": "auto"
   },
   {
@@ -6526,70 +6695,6 @@
    "origin": "demo"
   },
   {
-   "id": "c424a0434b",
-   "store": "sbux",
-   "type": "cashback",
-   "title": "星送禮太妃暖心加贈8星",
-   "desc": "透過星送禮購買指定組合可額外獲得8顆星。",
-   "start": "2026-11-04",
-   "end": "2026-11-10",
-   "aud": [],
-   "cond": [],
-   "code": "",
-   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "a9773b847f",
-   "store": "sbux",
-   "type": "event",
-   "title": "太妃暖心回歸指定組合加贈星星",
-   "desc": "星送禮指定組合加贈8顆星。",
-   "start": "2026-11-04",
-   "end": "2026-11-10",
-   "aud": [],
-   "cond": [],
-   "code": "",
-   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-05T10:23:29+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "096f0865bf",
-   "store": "sbux",
-   "type": "event",
-   "title": "星送禮太妃暖心指定組合加贈8星",
-   "desc": "透過星送禮購買指定太妃組合加贈8顆星。",
-   "start": "2026-11-04",
-   "end": "2026-11-10",
-   "aud": [],
-   "cond": [],
-   "code": "",
-   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-06T10:28:44+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "850cd873dd",
-   "store": "sbux",
-   "type": "event",
-   "title": "太妃暖心回歸指定組合加贈8星",
-   "desc": "星送禮指定組合加贈8顆星。",
-   "start": "2026-11-04",
-   "end": "2026-11-10",
-   "aud": [],
-   "cond": [],
-   "code": "",
-   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-07T10:02:21+08:00",
-   "origin": "auto"
-  },
-  {
    "id": "7f93ca4e75",
    "store": "sbux",
    "type": "sale",
@@ -7901,6 +8006,43 @@
    "source": "https://www.spotify.com/tw/premium/",
    "redeem_url": "",
    "checked_at": "2026-11-06T10:28:44+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "148b7aef92",
+   "store": "spotify",
+   "type": "trial",
+   "title": "Premium Individual 個人方案首月免費試用",
+   "desc": "僅限未曾試用過 Premium 的新用戶，可享首月 0 元試用，次月起每月 168 元，可隨時取消。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "newbie"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://www.spotify.com/tw/premium/",
+   "redeem_url": "",
+   "checked_at": "2026-11-11T10:12:27+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "86aabda217",
+   "store": "spotify",
+   "type": "trial",
+   "title": "Premium Student 學生方案首月免費與優惠價",
+   "desc": "經認證之大專院校學生且未曾試用者，享首月免費試用，之後每月優惠價 88 元，可隨時取消。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student",
+    "newbie"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://www.spotify.com/tw/premium/",
+   "redeem_url": "",
+   "checked_at": "2026-11-11T10:12:27+08:00",
    "origin": "auto"
   },
   {
@@ -12451,6 +12593,24 @@
    "source": "https://www.thsrc.com.tw/ArticleContent/530e869c-479d-441a-a4b4-61a8166827e9",
    "redeem_url": "",
    "checked_at": "2026-11-10T12:24:19+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "9bb49e71ad",
+   "store": "thsr",
+   "type": "plan",
+   "title": "大學生搭乘高鐵指定車次享 5 折起優惠",
+   "desc": "大專院校在學生搭乘指定車次標準車廂對號座，享 5 折、75 折或 88 折，乘車須持學生證正本備查。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/ArticleContent/530e869c-479d-441a-a4b4-61a8166827e9",
+   "redeem_url": "",
+   "checked_at": "2026-11-11T10:12:27+08:00",
    "origin": "auto"
   },
   {

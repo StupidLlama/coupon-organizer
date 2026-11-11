@@ -282,5 +282,20 @@
   "time": "2026-11-10T20:54:00+08:00",
   "kind": "windowed",
   "models": {}
+ },
+ {
+  "time": "2026-11-11T10:12:27+08:00",
+  "kind": "daily",
+  "models": {
+   "gemini-3.8-flash": {
+    "requests": 9,
+    "ok": 9,
+    "http_429": 0,
+    "http_5xx": 0,
+    "input_tokens": 13353,
+    "output_tokens": 7843,
+    "last_error": ""
+   }
+  }
  }
 ]
