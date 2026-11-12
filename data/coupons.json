@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-11T20:03:51+08:00",
+ "updated_at": "2026-11-12T11:11:56+08:00",
  "categories": {
   "food": {
    "name": "美食",
@@ -4445,41 +4445,6 @@
    "origin": "auto"
   },
   {
-   "id": "2a8827f35d",
-   "store": "momo",
-   "type": "cashback",
-   "title": "指定信用卡刷卡 12% 回饋",
-   "desc": "需事先登錄活動，回饋上限 500 元。",
-   "start": "2026-10-21",
-   "end": "2026-11-11",
-   "aud": [],
-   "cond": [
-    "pay"
-   ],
-   "code": "",
-   "source": "",
-   "checked_at": "2026-10-28T20:45:00+08:00",
-   "origin": "demo"
-  },
-  {
-   "id": "6f37356dec",
-   "store": "mos",
-   "type": "cashback",
-   "title": "會員點數 2 倍送",
-   "desc": "登入 MOS Order App 消費即自動累積。",
-   "start": "2026-10-14",
-   "end": "2026-11-11",
-   "aud": [],
-   "cond": [
-    "member",
-    "app"
-   ],
-   "code": "",
-   "source": "",
-   "checked_at": "2026-10-28T20:45:00+08:00",
-   "origin": "demo"
-  },
-  {
    "id": "ba83882f5f",
    "store": "netflix",
    "type": "plan",
@@ -7717,23 +7682,6 @@
    "redeem_url": "",
    "checked_at": "2026-11-07T10:02:21+08:00",
    "origin": "auto"
-  },
-  {
-   "id": "8272bed738",
-   "store": "shopee",
-   "type": "coupon",
-   "title": "雙 11 免運券＋全站 11% 回饋",
-   "desc": "App 領券中心領取，每日限量。",
-   "start": "2026-10-14",
-   "end": "2026-11-11",
-   "aud": [],
-   "cond": [
-    "app"
-   ],
-   "code": "",
-   "source": "",
-   "checked_at": "2026-10-28T20:45:00+08:00",
-   "origin": "demo"
   },
   {
    "id": "6505b21cbc",
@@ -12828,23 +12776,6 @@
    "cond": [
     "store"
    ],
-   "code": "",
-   "source": "",
-   "checked_at": "2026-10-28T20:45:00+08:00",
-   "origin": "demo"
-  },
-  {
-   "id": "72e3d7278d",
-   "store": "xiaomi",
-   "type": "sale",
-   "title": "雙 11 預熱：手機最高折 3,000",
-   "desc": "指定機型，官方商城下單。",
-   "start": "2026-10-21",
-   "end": "2026-11-11",
-   "aud": [
-    "student"
-   ],
-   "cond": [],
    "code": "",
    "source": "",
    "checked_at": "2026-10-28T20:45:00+08:00",
