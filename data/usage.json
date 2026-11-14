@@ -387,5 +387,20 @@
   "time": "2026-11-13T20:31:21+08:00",
   "kind": "windowed",
   "models": {}
+ },
+ {
+  "time": "2026-11-14T10:35:43+08:00",
+  "kind": "daily",
+  "models": {
+   "gemini-3.8-flash": {
+    "requests": 8,
+    "ok": 4,
+    "http_429": 0,
+    "http_5xx": 4,
+    "input_tokens": 4981,
+    "output_tokens": 3569,
+    "last_error": "HTTP 503：This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+   }
+  }
  }
 ]

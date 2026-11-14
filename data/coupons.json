@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13T20:31:21+08:00",
+ "updated_at": "2026-11-14T10:35:43+08:00",
  "categories": {
   "food": {
    "name": "美食",
@@ -12606,7 +12606,7 @@
    "store": "thsr",
    "type": "sale",
    "title": "高鐵早鳥優惠",
-   "desc": "提前預購指定車次票券可享不同程度的票價折扣。",
+   "desc": "提早預訂指定車次高鐵車票，可享有折扣優惠，數量有限售完為止。",
    "start": null,
    "end": null,
    "aud": [],
@@ -12614,7 +12614,7 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-07T10:02:21+08:00",
+   "checked_at": "2026-11-14T10:35:43+08:00",
    "origin": "auto"
   },
   {
@@ -12640,7 +12640,7 @@
    "store": "thsr",
    "type": "plan",
    "title": "高鐵回數票優惠",
-   "desc": "頻繁搭乘旅客購買回數票方案可享優惠價格。",
+   "desc": "頻繁搭乘指定區間之旅客，購買指定次數回數票享專屬乘車折扣。",
    "start": null,
    "end": null,
    "aud": [],
@@ -12648,7 +12648,7 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-03T13:55:54+08:00",
+   "checked_at": "2026-11-14T10:35:43+08:00",
    "origin": "auto"
   },
   {
@@ -13234,7 +13234,7 @@
    "store": "thsr",
    "type": "sale",
    "title": "刷指定銀行信用卡享高鐵優惠",
-   "desc": "刷配合之指定銀行信用卡購票，享專屬折抵、升等或紅利優惠。",
+   "desc": "使用指定合作銀行信用卡刷卡購票，可享票價折扣或升等商務車廂等權益。",
    "start": null,
    "end": null,
    "aud": [],
@@ -13244,7 +13244,7 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-08T09:37:43+08:00",
+   "checked_at": "2026-11-14T10:35:43+08:00",
    "origin": "auto"
   },
   {
@@ -13306,7 +13306,7 @@
    "store": "thsr",
    "type": "event",
    "title": "高鐵會員月月Go有禮",
-   "desc": "高鐵會員專屬每月搭乘或消費活動，達指定門檻享禮遇與回饋。",
+   "desc": "高鐵會員當月符合指定搭乘次數或活動規範，即可享有加碼回饋禮。",
    "start": null,
    "end": null,
    "aud": [],
@@ -13316,7 +13316,7 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-08T09:37:43+08:00",
+   "checked_at": "2026-11-14T10:35:43+08:00",
    "origin": "auto"
   },
   {
@@ -13407,6 +13407,116 @@
    "source": "https://www.thsrc.com.tw/ArticleContent/530e869c-479d-441a-a4b4-61a8166827e9",
    "redeem_url": "",
    "checked_at": "2026-11-11T10:12:27+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "26dc7b46ed",
+   "store": "thsr",
+   "type": "sale",
+   "title": "大學生購票優惠",
+   "desc": "在學大學生預訂指定車次標準車廂對號座，可享指定折扣優惠。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-14T10:35:43+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "69eecf46b3",
+   "store": "thsr",
+   "type": "event",
+   "title": "高鐵新會員限定活動",
+   "desc": "加入高鐵會員即享新會員限定專屬回饋及優惠內容。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "newbie"
+   ],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-14T10:35:43+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "6fb2b7234f",
+   "store": "thsr",
+   "type": "cashback",
+   "title": "TGo點數365兌換平台",
+   "desc": "高鐵TGo會員可透過累積之點數兌換嚴選商品、車票折抵或各式票券。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-14T10:35:43+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "47069b1f8a",
+   "store": "thsr",
+   "type": "event",
+   "title": "高鐵會員轉點聯促活動",
+   "desc": "高鐵TGo會員將合作通路點數轉換為高鐵點數，享加碼或專屬好康。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-14T10:35:43+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "a1e7212daa",
+   "store": "thsr",
+   "type": "plan",
+   "title": "高鐵假期送住宿專案",
+   "desc": "購買高鐵來回車票搭配指定飯店住宿之套裝行程享優惠補助。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "bundle"
+   ],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-14T10:35:43+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "dcbf1a0890",
+   "store": "thsr",
+   "type": "plan",
+   "title": "高鐵假期送租車專案",
+   "desc": "購買高鐵來回車票搭配指定格上或和運租車服務享超值優惠組合價。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "bundle"
+   ],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-14T10:35:43+08:00",
    "origin": "auto"
   },
   {
