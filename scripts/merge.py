@@ -122,7 +122,9 @@ def merge(data: dict, cfg: dict, found: dict[str, list[dict]], fetched_ok: set[s
             else:
                 rejected.append((iss["number"], why))
 
-    # 3. 清理：過期、自動抓的太久沒再出現、關掉示範資料
+    # 3. 清理：過期、自動抓的沒再出現、關掉示範資料
+    # 這次「有抓到至少一筆」的網頁；Gemini 回空陣列（可能是解析失敗）的網頁不算，避免整批誤刪
+    seen_sources = {raw.get("_source") for items in found.values() for raw in items if raw.get("_source")}
     stale_days = int(settings.get("stale_days", 14))
     keep_demo = bool(settings.get("keep_demo", True))
     kept = []
@@ -133,6 +135,10 @@ def merge(data: dict, cfg: dict, found: dict[str, list[dict]], fetched_ok: set[s
         if c.get("origin") == "demo" and not keep_demo:
             continue
         if c.get("origin") == "auto" and c["store"] in fetched_ok:
+            # 同一個網頁這次有抓到優惠，舊的卻沒再出現 → 多半是 Gemini 換了標題的重複項或已下架，直接移除
+            if c.get("source") in seen_sources and c["checked_at"][:10] < t:
+                log.append(f"這次沒再出現，移除：{c['title']}")
+                continue
             if (date.fromisoformat(t) - date.fromisoformat(c["checked_at"][:10])).days > stale_days:
                 log.append(f"太久沒出現，移除：{c['title']}")
                 continue
