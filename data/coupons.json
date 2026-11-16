@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15T10:05:36+08:00",
+ "updated_at": "2026-11-16T10:10:40+08:00",
  "categories": {
   "food": {
    "name": "美食",
@@ -147,7 +147,7 @@
    "domain": "watsons.com.tw",
    "sub": "daily",
    "color": "#00a0af",
-   "url": "https://www.watsons.com.tw/"
+   "url": "https://watsons.com.tw/"
   },
   "cosmed": {
    "name": "康是美",
@@ -441,22 +441,6 @@
    "source": "https://www.apple.com/tw/",
    "redeem_url": "",
    "checked_at": "2026-11-15T10:05:36+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "aafe6a31e8",
-   "store": "bk",
-   "type": "sale",
-   "title": "漢堡王限時優惠52元起",
-   "desc": "活動期間內享有指定漢堡與點心優惠套餐組合，最低52元起。",
-   "start": "2026-11-13",
-   "end": "2026-11-15",
-   "aud": [],
-   "cond": [],
-   "code": "",
-   "source": "https://www.burgerking.com.tw/news",
-   "redeem_url": "",
-   "checked_at": "2026-11-05T10:23:29+08:00",
    "origin": "auto"
   },
   {
@@ -6689,42 +6673,6 @@
    "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
    "redeem_url": "",
    "checked_at": "2026-11-15T10:05:36+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "8afd52b998",
-   "store": "s711",
-   "type": "cashback",
-   "title": "消費滿 100 送 10 點",
-   "desc": "OPENPOINT 會員綁定後自動回饋。",
-   "start": "2026-09-28",
-   "end": "2026-11-15",
-   "aud": [],
-   "cond": [
-    "member",
-    "app"
-   ],
-   "code": "",
-   "source": "",
-   "checked_at": "2026-10-28T20:45:00+08:00",
-   "origin": "demo"
-  },
-  {
-   "id": "7f93ca4e75",
-   "store": "sbux",
-   "type": "sale",
-   "title": "foodomo雙11雙杯組240元",
-   "desc": "透過foodomo外送平台購買指定雙杯組享特價240元。",
-   "start": "2026-11-04",
-   "end": "2026-11-15",
-   "aud": [],
-   "cond": [
-    "app"
-   ],
-   "code": "",
-   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
    "origin": "auto"
   },
   {

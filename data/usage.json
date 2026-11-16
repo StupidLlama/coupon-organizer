@@ -449,5 +449,20 @@
     "last_error": ""
    }
   }
+ },
+ {
+  "time": "2026-11-16T10:10:40+08:00",
+  "kind": "daily",
+  "models": {
+   "gemini-3.8-flash": {
+    "requests": 4,
+    "ok": 1,
+    "http_429": 0,
+    "http_5xx": 3,
+    "input_tokens": 1036,
+    "output_tokens": 679,
+    "last_error": "HTTP 503：This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+   }
+  }
  }
 ]
