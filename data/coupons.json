@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-18T11:52:09+08:00",
+ "updated_at": "2026-11-19T11:30:17+08:00",
  "categories": {
   "food": {
    "name": "美食",
@@ -2351,24 +2351,6 @@
    "origin": "auto"
   },
   {
-   "id": "3f815215ab",
-   "store": "sbux",
-   "type": "event",
-   "title": "金星級會員獨享雙倍贈星",
-   "desc": "金星級會員於指定日期獨享雙倍贈星活動。",
-   "start": "2026-11-18",
-   "end": "2026-11-18",
-   "aud": [],
-   "cond": [
-    "member"
-   ],
-   "code": "",
-   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
    "id": "72665fb58f",
    "store": "sbux",
    "type": "event",
@@ -4017,25 +3999,6 @@
     "bundle"
    ],
    "code": "",
-   "source": "",
-   "checked_at": "2026-10-28T20:45:00+08:00",
-   "origin": "demo"
-  },
-  {
-   "id": "6629b25e63",
-   "store": "uber",
-   "type": "coupon",
-   "title": "機場接送 85 折",
-   "desc": "輸入代碼後於 App 預約行程。",
-   "start": "2026-10-25",
-   "end": "2026-11-18",
-   "aud": [
-    "worker"
-   ],
-   "cond": [
-    "app"
-   ],
-   "code": "AIRPORT15",
    "source": "",
    "checked_at": "2026-10-28T20:45:00+08:00",
    "origin": "demo"
