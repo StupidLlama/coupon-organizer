@@ -1,0 +1,48 @@
+name: 每週整理回報錯誤
+
+on:
+  schedule:
+    - cron: "0 1 * * 1"   # 每週一 UTC 01:00 = 台灣時間早上 9:00
+  workflow_dispatch:       # 也可以在 Actions 頁面手動執行
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: update-coupons    # 跟每日更新共用，避免同時寫入
+  cancel-in-progress: false
+
+jobs:
+  reports:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 安裝套件
+        run: pip install -r requirements.txt
+
+      - name: 整理新的回報
+        run: python scripts/reports.py
+
+      - name: 有新回報就開 Issue 並記錄進度
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ ! -f reports.md ]; then
+            echo "沒有新回報"
+            exit 0
+          fi
+          gh issue create --title "回報錯誤整理 $(TZ=Asia/Taipei date +%F)" --body-file reports.md
+          git config user.name "github-actions[bot]"
+          git config user.email "41898810+github-actions[bot]@users.noreply.github.com"
+          git add data/reports_state.json
+          git commit -m "記錄回報整理進度 $(TZ=Asia/Taipei date +%F)"
+          git pull --rebase
+          git push

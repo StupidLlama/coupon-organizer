@@ -6,6 +6,8 @@
   python scripts/run.py --only mcd,sbux       # 只抓指定店家（測試用）
   python scripts/run.py --issues issues.json  # 一併處理已核准的 GitHub Issue 回報
   python scripts/run.py --windowed            # 只抓有設定 window（指定時段）的店家
+  python scripts/run.py --only-tips           # 只跑線索來源（部落格），測試用
+  python scripts/run.py --no-tips             # 不跑線索來源
 """
 import argparse
 import json
@@ -39,6 +41,8 @@ def main() -> int:
     ap.add_argument("--only", default="")
     ap.add_argument("--issues", default="")
     ap.add_argument("--windowed", action="store_true")
+    ap.add_argument("--only-tips", action="store_true")
+    ap.add_argument("--no-tips", action="store_true")
     args = ap.parse_args()
 
     cfg = load_config()
@@ -51,7 +55,7 @@ def main() -> int:
     if not args.no_fetch and not api_key:
         print("⚠️ 沒有設定 GEMINI_API_KEY，這次只處理回報和清理過期。")
     if not args.no_fetch and api_key:
-        from extract import USAGE, ModelBusy, extract, resolve_models
+        from extract import USAGE, ModelBusy, extract, extract_tips, resolve_models
         from fetch import fetch_text
 
         models = resolve_models(settings.get("model", "auto"), api_key)
@@ -60,10 +64,55 @@ def main() -> int:
         only = {s for s in args.only.split(",") if s}
         gap = float(settings.get("request_gap_seconds", 7))
         deadline = time.monotonic() + float(settings.get("max_minutes", 22)) * 60
+
+        def ask(call, label: str):
+            """呼叫 Gemini；這個模型忙線或沒額度就換下一個候選模型再試。所有模型都不能用時回傳 None。"""
+            while models:
+                try:
+                    return call(models[0])
+                except ModelBusy as e:
+                    print(f"{models[0]} 無法使用（{e}），改用下一個模型")
+                    models.pop(0)
+                    if models:
+                        print(f"使用模型：{models[0]}")
+                except PermissionError as e:
+                    print(e)
+                    models.clear()
+                except Exception as e:  # 其他錯誤只影響這一次
+                    print(f"Gemini 失敗 {label}：{e}")
+                    return []
+            print("所有候選模型都無法使用，停止這次更新，已抓到的資料仍會保存。")
+            return None
+
         stop = False
+
+        # 1. 線索來源（部落格／媒體）：一個網址涵蓋很多店家，所以排在前面
+        if not (args.no_tips or args.windowed or only):
+            from tips import due, load_seen, new_articles, save_seen
+            seen = load_seen()
+            for tid, tip in (cfg.get("tips") or {}).items():
+                if stop or not tip.get("url") or not due(tip):
+                    continue
+                arts, status = new_articles(tip, seen)
+                print(f"線索 {tip['name']}：{status}")
+                if not arts:
+                    continue
+                items = ask(lambda m: extract_tips(tip["name"], arts, cfg["stores"], m, api_key, today()), tip["name"])
+                if items is None:
+                    stop = True
+                    break
+                for a in arts:
+                    seen[a["url"]] = today()
+                for it in items:
+                    found.setdefault(it.pop("store"), []).append(it)
+                print(f"線索 {tip['name']}：找到 {len(items)} 筆（{len({i['_source'] for i in items})} 篇文章）")
+                time.sleep(gap)
+            save_seen(seen)
+
+        # 2. 各店家官網
         # 每天換一家店開頭：時間不夠時，排在後面的店家隔天就會輪到前面，不會一直抓不到
-        stores = list(cfg["stores"].items())
-        k = date.fromisoformat(today()).toordinal() % len(stores)
+        stores = [] if args.only_tips else list(cfg["stores"].items())
+        k = date.fromisoformat(today()).toordinal() % max(len(stores), 1)
         for sid, store in stores[k:] + stores[:k]:
             if stop:
                 break
@@ -85,23 +134,8 @@ def main() -> int:
                 if not text:
                     print(f"略過 {store['name']} {url}：{status}")
                     continue
-                items = None
-                while models and items is None:
-                    try:
-                        items = extract(store["name"], url, text, models[0], api_key, today())
-                    except ModelBusy as e:  # 這個模型忙線或沒額度：換下一個候選模型，同一個網頁再試
-                        print(f"{models[0]} 無法使用（{e}），改用下一個模型")
-                        models.pop(0)
-                        if models:
-                            print(f"使用模型：{models[0]}")
-                    except PermissionError as e:
-                        print(e)
-                        models.clear()
-                    except Exception as e:  # 其他錯誤只影響這個網頁
-                        print(f"Gemini 失敗 {store['name']}：{e}")
-                        items = []
-                if not models:
-                    print("所有候選模型都無法使用，停止這次更新，已抓到的資料仍會保存。")
+                items = ask(lambda m: extract(store["name"], url, text, m, api_key, today()), store["name"])
+                if items is None:
                     stop = True
                     break
                 for it in items:

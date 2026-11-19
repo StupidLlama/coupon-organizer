@@ -1,6 +1,6 @@
-# 優惠夾 交接文件（v0.4.5）
+# 優惠夾 交接文件（v0.4.7）
 
-最後更新：2026-10-29 12:30（台灣時間）
+最後更新：2026-11-19 12:00（台灣時間）
 下一個對話請先讀完這份文件，再繼續開發。
 
 ---
@@ -71,6 +71,8 @@
 | v0.4.3 | 來源網址：多數店家改抓「優惠／活動／最新消息」頁；找不到合規來源的 12 家暫停（`urls: []`）；麥當勞、萬家福（原家樂福）、燦坤改網域；新增 `scripts/check_urls.py` 測網址（不呼叫 Gemini） |
 | v0.4.4 | 指定時段抓取：`sources.yaml` 店家可加 `window: "12:00-16:45"`（台灣時間），時段外自動略過；Workflow 每天中午 12:30 多跑一次 `run.py --windowed`，只抓有 window 的店家；屈臣氏（robots Visit-time）恢復抓取。注意：10/29 中午那次執行時段內仍是 HTTP 403，若持續 403 就再暫停。修正：11/3 的更新（資料 10/31 後沒變，11/1–11/2 可能也是）跑超過 30 分鐘被 Actions 取消、結果全沒存（紀錄也因輸出緩衝而空白）→ 新增 `max_minutes: 22` 時間上限（到時先存檔）、`PYTHONUNBUFFERED`、每天輪流換開頭店家。用量紀錄：每次執行把各模型的次數、成功／429／5xx、token 存到 `data/usage.json`（保留 60 次），Claude 可直接從 GitHub 讀。AI Studio 用量頁（11/3）顯示錯誤大多是 503 忙線、429 很少，每天約 20–47 次請求。候選模型最後一個改放最新的穩定版 Flash-Lite 當備用 |
 | v0.4.5 | （2026-11-15）①重複優惠：某網頁這次有抓到優惠，就移除同網頁沒再出現的舊自動優惠（Gemini 每天改寫標題→新 ID，Steam 曾累積 283 筆）；回空陣列的網頁不刪 ②`fetch.py` 每頁下載最多 45 秒、連線 10 秒，避免慢網站吃光 22 分鐘 ③屈臣氏改回暫停、移除中午 windowed 排程（GitHub 排程延遲 7–9 小時，永遠在時段外）；`window` 功能保留 ④觀察：每日排程實際約台灣 10:00 才跑完 |
+| v0.4.6 | （2026-11-15）①新增 13 家官網：吉野家、拉亞、春水堂、王品集團、壽司郎、美廉社、小北百貨、全國電子、MyVideo、Microsoft 365、WeMo、iRent、Trip.com（使用者本機 check_urls 實測過）②**線索來源**：`sources.yaml` 新增 `tips:`（好康情報誌、蘋果仁、美麗佳人 RSS；食尚玩家懶人包列表頁；今周刊每週；SOGI 暫停），`scripts/tips.py` 只挑標題有優惠字眼的新文章（記在 `data/tips_seen.json`），每個來源最多 2–3 篇合併成一次 Gemini 呼叫，Gemini 對到店家代號；這類優惠 `origin: "tip"`、`via: 來源名稱`、`source: 原文網址`，官網已有同一筆就以官網為準，沒寫到期日的保留 `tip_days`（7）天 ③**回報錯誤**：`scripts/reports.py`＋`.github/workflows/reports.yml` 每週一 9:00 讀 Google 表單回覆 CSV（`settings.report_csv`），把新回報依優惠合併成一個 Issue；表單網址還沒給。網站上的回報按鈕和「情報來源」標示要改 index.html，等介面改版那串完成再做 |
+| v0.4.7 | （2026-11-19）今天吃什麼／下一樣買什麼：Gemini 同一次呼叫順便標 `meal`／`price`／`item`；新增 `recommend.js`（前端規則推薦），首頁卡片等 v0.5 介面改完再接，見第 13 節 |
 
 ## 4. 執行紀錄與發現的問題
 
@@ -105,12 +107,14 @@
 |---|---|
 | `index.html` | 整個網站（HTML＋CSS＋JS 一個檔），讀取 `data/coupons.json`。頁面路由：`#explore`、`#for-you`、`#wallet`、`#c-優惠編號` |
 | `data/coupons.json` | 優惠資料（由腳本產生，GitHub Actions 會自動 commit） |
-| `sources.yaml` | 設定（`model: auto`、`request_gap_seconds: 15`、`stale_days`、`keep_demo`）、分類、39 家店的抓取網址 |
+| `sources.yaml` | 設定（`model: auto`、`request_gap_seconds: 15`、`stale_days`、`keep_demo`）、分類、52 家店的抓取網址、線索來源 `tips` |
 | `scripts/common.py` | 共用常數與讀寫 |
 | `scripts/fetch.py` | 抓網頁，檢查 robots.txt，轉純文字 |
 | `scripts/extract.py` | Gemini 呼叫。v0.4.2：`resolve_models()` 回傳候選模型清單；`extract()` 遇到 429/503 重試 2 次後丟出 `ModelBusy`，遇到 401/403 丟出 `PermissionError` |
 | `scripts/merge.py` | 去重、併入回報、清理過期 |
-| `scripts/run.py` | 主程式。v0.4.2：遇到 `ModelBusy` 就換下一個候選模型、同一網頁重試；全部模型都不行才停止 |
+| `scripts/tips.py` | 線索來源（部落格）：讀 RSS／列表頁、關鍵字挑新優惠文、抓內文。`python scripts/tips.py` 可測試（不呼叫 Gemini） |
+| `scripts/reports.py` | 每週整理 Google 表單的回報錯誤，產生 `reports.md`（Actions 用它開 Issue）；進度記在 `data/reports_state.json` |
+| `scripts/run.py` | 主程式。v0.4.6：先跑線索來源再跑官網；`--only-tips`、`--no-tips`。v0.4.2：遇到 `ModelBusy` 就換下一個候選模型、同一網頁重試；全部模型都不行才停止 |
 | `.github/workflows/update.yml` | 每日 22:00 UTC 執行，也可手動 `gh workflow run update.yml` |
 | `.github/ISSUE_TEMPLATE/` | 回報新優惠、回報失效 |
 | `requirements.txt` | `requests>=2.32.3`、`beautifulsoup4>=4.12.3`、`PyYAML>=6.0.3` |
@@ -126,7 +130,8 @@
    "id": "10 碼 hash（店家＋標題）", "store": "mcd", "type": "coupon",
    "title": "...", "desc": "...", "start": "2026-10-25", "end": "2026-11-02",
    "aud": ["student"], "cond": ["app"], "code": "", "source": "https://...", "redeem_url": "（選填）",
-   "checked_at": "...", "origin": "demo | auto | report"
+   "checked_at": "...", "origin": "demo | auto | report | tip", "via": "（tip 才有）情報來源名稱",
+   "meal": ["lunch", "dinner"], "price": 259, "item": "個人比薩×3"
  }]
 }
 ```
@@ -134,6 +139,7 @@
 - `aud`：student、worker、startup、family、senior、newbie
 - `cond`：member、app、line、pay、bundle、store
 - `end` 為 null 代表長期有效
+- `meal`、`price`、`item`（v0.4.7，選填，有值才存）：Gemini 在同一次呼叫順便標記，給「今天吃什麼」推薦用。`meal`：breakfast 早餐、lunch 午餐、snack 下午茶、dinner 晚餐、late 宵夜、drink 飲料；`price` 是優惠後最低售價（折扣金額、滿額門檻不算）
 
 ## 8. 自動更新流程
 1. `fetch.py`：依 `sources.yaml` 抓網頁（先看 robots.txt）
@@ -178,3 +184,19 @@ gh run view --log | Select-String "使用模型|找到|略過|無法使用|失�
 | ⏸ 暫停（`urls: []`） | 麥當勞（403）、摩斯、全家（疑似 robots 禁止）、foodpanda（robots 禁止活動頁）、萬家福（JS）、蝦皮、momo、Agoda（JS）、Disney+（robots 禁止）、Canva、威秀（403） |
 
 發現：麥當勞台灣官網已搬到 mcdonalds.com/tw/zh-tw；家樂福 2026/6 更名萬家福（uni-prosperity.com.tw）；燦坤官方網域是 tk3c.com。暫停的店家之後可靠使用者回報，或第 10 節第 4 項 Playwright。
+
+## 12. 線索來源與回報錯誤（v0.4.6，2026-11-15）
+調查清單：專案檔案 `source-urls/新增店家清單_2026-11.md`（官網）、`source-urls/優惠部落格清單_2026-11.md`（部落格，含 robots／著作權評估）。
+
+- **原則**：部落格文章有著作權，只抽事實（店家、品項、價格、日期）讓 Gemini 改寫，附「情報來源」＋原文連結，不轉貼原文和圖片，不沿用文章裡的聯盟／短網址。網站上要提醒「以官方公告為準」。
+- **使用者決定**：6 家部落格都接（1B）；顯示方式＝標情報來源＋回報錯誤按鈕、累積一段時間一起檢查（2A）；壽星優惠之後人工整理固定頁，不自動抓 roo.cash（3A，它擋 Google-Extended）。
+- **還沒做**：①index.html：tip 優惠顯示「情報來源：via」與「以官方公告為準」，每張優惠加「回報錯誤」按鈕（用 `settings.report_form` 的預先填入連結，把 `ID123`、`STORE` 換成優惠代號和店家）②使用者建好 Google 表單後填 `report_form`、`report_csv` ③今周刊網址、食尚玩家列表頁要看第一次執行紀錄確認抓得到；SOGI 還沒有列表頁
+- **額度**：每天約多 13（官網）＋ 4–5（部落格）次 Gemini 呼叫。
+- **不建議的來源**：爭鮮（robots 擋 AI 爬蟲）、頂呱呱（robots 只寫 `disallow: *`）、達美樂／Klook（403）、大樹藥局／易遊網（JS）、PTT、Dcard、ShopBack、窩客島。
+
+## 13. 今天吃什麼／下一樣買什麼（v0.4.7，2026-11-19）
+- **使用者決定（答案卷 A1 B1 C1 D1）**：前端規則推薦＋資料標記（不另外每天叫 Gemini 寫推薦，省額度）；首頁上方卡片；時段＝早餐、午餐、下午茶、晚餐、宵夜；「下一樣買什麼」一起做。加店家由 v0.4.6 那 13 家負責。
+- **已做**：①`extract.py` SCHEMA＋提示詞加 `meal`／`price`／`item`（官網和部落格兩種都有），不多一次呼叫 ②`merge.py` 存這三個欄位；舊優惠下次被抓到時就會補上 ③根目錄新增 `recommend.js`：`Recommend.run(deals, {fav, used, me})` 回傳 `{meal, eat:[{d, why}], buy:[{d, why}]}`，各最多 3 筆、每家店最多 1 筆。
+- **推薦規則**：依瀏覽器時間判斷時段（5–10 早餐、10–14 午餐、14–17 下午茶、17–21 晚餐、其他宵夜）；美食優惠沒有 `meal` 時依子分類猜（drink→早餐／下午茶，fast→全天，dine→午晚餐，delivery→午晚餐宵夜）；加分：收藏或用過的店、符合身分、3 天內到期、有售價（150 元以下多加）；每天換一批（依日期的固定亂數）；限定身分但不符合的、已使用的不推；時段內不到 3 家時用其他美食優惠補。「下一樣買什麼」：美食以外，加分看你收藏／用過的子分類、快到期、當月檔期（11 月＝雙 11／週年慶：網購、日用美妝、電子、超商量販）。
+- **還沒做**：index.html 首頁上方加「今天吃什麼」票根卡（沿用 v0.5 票根樣式，等介面那串改完 index.html 再加，避免同時改同一檔）：`<script src="recommend.js"></script>`，prepare() 後呼叫 `Recommend.run`，每筆用 `ticket(d,{showStore:true})` 畫，加上 `why` 原因小字。
+- **限制**：真實美食資料目前只有必勝客、星巴克、可不可、路易莎、漢堡王、Uber Eats；v0.4.6 的吉野家、春水堂、壽司郎、拉亞、王品等上線後才會比較多樣。

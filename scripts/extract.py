@@ -4,7 +4,7 @@ import time
 
 import requests
 
-from common import AUD, COND, TYPE
+from common import AUD, COND, MEAL, TYPE
 
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 LIST_API = "https://generativelanguage.googleapis.com/v1beta/models"
@@ -86,10 +86,19 @@ SCHEMA = {
             "aud": {"type": "ARRAY", "items": {"type": "STRING", "enum": list(AUD)}},
             "cond": {"type": "ARRAY", "items": {"type": "STRING", "enum": list(COND)}},
             "code": {"type": "STRING", "description": "優惠碼，沒有就留空字串"},
+            "meal": {"type": "ARRAY", "items": {"type": "STRING", "enum": list(MEAL)},
+                     "description": "吃的喝的才填：適合哪些時段；不是餐飲就給空陣列"},
+            "price": {"type": "INTEGER", "description": "優惠後的最低售價（新台幣整數），網頁沒寫明售價就填 0；折扣金額或滿額門檻不算售價"},
+            "item": {"type": "STRING", "description": "實際買到或吃到什麼，15 字以內，例如「大比薩＋烤雞」；看不出來就留空字串"},
         },
-        "required": ["title", "desc", "type", "start", "end", "aud", "cond", "code"],
+        "required": ["title", "desc", "type", "start", "end", "aud", "cond", "code", "meal", "price", "item"],
     },
 }
+
+MEAL_RULES = """meal：只有吃的喝的才填，依品項判斷適合的時段，可以多選：
+  breakfast=早餐 lunch=午餐 snack=下午茶或點心 dinner=晚餐 late=宵夜 drink=飲料；不是餐飲就給空陣列。
+price：優惠後的最低售價（整數，新台幣），例如「個人比薩 3 個 $259」填 259；只寫「現折 10 元」「滿 400 送 400」「8 折」這種沒有售價的填 0。
+item：實際買到或吃到什麼，15 字以內；看不出來就留空字串。"""
 
 PROMPT = """你是優惠資料整理員。以下是「{store}」網頁（{url}）的文字內容，今天是 {today}（台灣時間）。
 
@@ -101,7 +110,10 @@ PROMPT = """你是優惠資料整理員。以下是「{store}」網頁（{url}�
   student=學生 worker=上班族 startup=新創或企業 family=家庭或多人 senior=長者 newbie=新用戶或首購
 - cond（使用條件）同樣只填網頁明確寫的：member=會員 app=App 限定 line=LINE 限定 pay=指定支付或信用卡 bundle=綁約 store=門市限定
 - 標題和說明用繁體中文、用自己的話改寫，不要整段照抄網頁。
+- meal、price、item 是給「今天吃什麼」推薦用的（規則見下方）。
 - 沒有任何優惠就回傳空陣列。
+
+{meal_rules}
 
 網頁內容：
 ---
@@ -109,10 +121,10 @@ PROMPT = """你是優惠資料整理員。以下是「{store}」網頁（{url}�
 ---"""
 
 
-def extract(store: str, url: str, text: str, model: str, api_key: str, today: str) -> list[dict]:
+def _generate(prompt: str, schema: dict, model: str, api_key: str) -> list[dict]:
     body = {
-        "contents": [{"parts": [{"text": PROMPT.format(store=store, url=url, today=today, text=text)}]}],
-        "generationConfig": {"responseMimeType": "application/json", "responseSchema": SCHEMA, "temperature": 0.1},
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"responseMimeType": "application/json", "responseSchema": schema, "temperature": 0.1},
     }
     headers = {"x-goog-api-key": api_key, "Content-Type": "application/json"}
     last = ""
@@ -133,3 +145,51 @@ def extract(store: str, url: str, text: str, model: str, api_key: str, today: st
             return []
         return items if isinstance(items, list) else []
     raise ModelBusy(last)
+
+
+def extract(store: str, url: str, text: str, model: str, api_key: str, today: str) -> list[dict]:
+    return _generate(PROMPT.format(store=store, url=url, today=today, text=text, meal_rules=MEAL_RULES), SCHEMA, model, api_key)
+
+
+TIP_PROMPT = """你是優惠資料整理員。以下是優惠整理網站「{via}」的 {n} 篇文章，今天是 {today}（台灣時間）。
+這些是第三方整理，不是店家官方公告。
+
+請找出文章裡寫到、目前或即將有效的優惠，並對到下面的店家代號：
+{stores}
+
+規則：
+- store 填上面清單裡的代號；清單裡沒有的店家就填 other。
+- article 填這筆優惠出自第幾篇文章（從 1 開始）。
+- 只收文章裡真的有寫的優惠，不要猜測或補充；沒有寫到期日就留空字串。
+- 已經過期的不要收；只是新品上市、沒有任何折扣的不要收。
+- aud、cond 只在文章明確寫出限定時才填（規則同下）：
+  aud：student=學生 worker=上班族 startup=新創或企業 family=家庭或多人 senior=長者 newbie=新用戶或首購
+  cond：member=會員 app=App 限定 line=LINE 限定 pay=指定支付或信用卡 bundle=綁約 store=門市限定
+- 標題和說明用繁體中文、用自己的話重新寫，只保留事實（品項、價格、折扣、日期、條件），不要照抄文章的句子、評語或推薦語。
+- 沒有任何優惠就回傳空陣列。
+{meal_rules}
+
+{articles}"""
+
+
+def tip_schema(store_ids: list[str]) -> dict:
+    item = json.loads(json.dumps(SCHEMA["items"]))  # 複製一份再加欄位
+    item["properties"]["store"] = {"type": "STRING", "enum": store_ids + ["other"]}
+    item["properties"]["article"] = {"type": "INTEGER", "description": "出自第幾篇文章，從 1 開始"}
+    item["required"] = item["required"] + ["store", "article"]
+    return {"type": "ARRAY", "items": item}
+
+
+def extract_tips(via: str, articles: list[dict], stores: dict, model: str, api_key: str, today: str) -> list[dict]:
+    """一次把多篇文章交給 Gemini。回傳的每筆優惠帶 store（店家代號）和 _source（原文網址）。"""
+    store_list = "、".join(f"{sid}={s['name']}" for sid, s in stores.items())
+    body = "\n\n".join(f"【第 {i} 篇】{a['title']}\n---\n{a['text']}\n---" for i, a in enumerate(articles, 1))
+    prompt = TIP_PROMPT.format(via=via, n=len(articles), today=today, stores=store_list, articles=body, meal_rules=MEAL_RULES)
+    out = []
+    for it in _generate(prompt, tip_schema(list(stores)), model, api_key):
+        n = it.get("article")
+        if it.get("store") in stores and isinstance(n, int) and 1 <= n <= len(articles):
+            it["_source"] = articles[n - 1]["url"]
+            it["_via"] = via
+            out.append(it)
+    return out

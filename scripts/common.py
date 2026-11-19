@@ -19,6 +19,8 @@ COND = {"member": "會員限定", "app": "App 限定", "line": "LINE 限定",
         "pay": "指定支付", "bundle": "綁約限定", "store": "門市限定"}
 TYPE = {"coupon": "優惠券", "sale": "特價", "event": "活動",
         "trial": "免費試用", "cashback": "點數回饋", "plan": "方案折扣"}
+# 美食優惠適合的時段（給網站的「今天吃什麼」推薦用）
+MEAL = {"breakfast": "早餐", "lunch": "午餐", "snack": "下午茶", "dinner": "晚餐", "late": "宵夜", "drink": "飲料"}
 
 
 def in_window(window: str) -> bool:

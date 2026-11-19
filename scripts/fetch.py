@@ -27,8 +27,8 @@ def allowed(url: str) -> bool:
     return True if rp is None else rp.can_fetch(USER_AGENT, url)
 
 
-def fetch_text(url: str, max_chars: int = 15000) -> tuple[str | None, str]:
-    """回傳 (文字, 狀態說明)。失敗時文字是 None。"""
+def fetch_raw(url: str) -> tuple[requests.Response | None, str]:
+    """下載網頁原始內容（先檢查 robots.txt）。回傳 (回應, 狀態說明)；失敗時回應是 None。"""
     if not allowed(url):
         return None, "robots.txt 不允許抓取"
     try:
@@ -50,11 +50,23 @@ def fetch_text(url: str, max_chars: int = 15000) -> tuple[str | None, str]:
         return None, f"連線失敗：{e.__class__.__name__}"
     r._content = body
     r.encoding = r.apparent_encoding or r.encoding
-    soup = BeautifulSoup(r.text, "html.parser")
+    return r, "ok"
+
+
+def html_to_text(html: str) -> str:
+    soup = BeautifulSoup(html, "html.parser")
     for tag in soup(["script", "style", "noscript", "svg", "iframe", "header", "footer", "nav"]):
         tag.decompose()
     text = re.sub(r"\n\s*\n+", "\n", soup.get_text("\n"))
-    text = re.sub(r"[ \t　]+", " ", text).strip()
+    return re.sub(r"[ \t　]+", " ", text).strip()
+
+
+def fetch_text(url: str, max_chars: int = 15000) -> tuple[str | None, str]:
+    """回傳 (文字, 狀態說明)。失敗時文字是 None。"""
+    r, status = fetch_raw(url)
+    if r is None:
+        return None, status
+    text = html_to_text(r.text)
     if len(text) < 80:
         return None, "沒有文字（可能是 JavaScript 動態載入的網頁）"
     return text[:max_chars], "ok"

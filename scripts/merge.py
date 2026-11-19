@@ -2,21 +2,21 @@
 import re
 from datetime import date
 
-from common import AUD, COND, TYPE, coupon_id, now_iso, today, valid_date
+from common import AUD, COND, MEAL, TYPE, coupon_id, now_iso, today, valid_date
 
 LABEL_TO_AUD = {v: k for k, v in AUD.items()}
 LABEL_TO_COND = {v: k for k, v in COND.items()}
 LABEL_TO_TYPE = {v: k for k, v in TYPE.items()}
 
 
-def clean_item(store: str, raw: dict, origin: str, source: str = "") -> dict | None:
+def clean_item(store: str, raw: dict, origin: str, source: str = "", via: str = "") -> dict | None:
     title = str(raw.get("title", "")).strip()[:60]
     if not title or raw.get("type") not in TYPE:
         return None
     end = valid_date(raw.get("end"))
     if end and end < today():
         return None
-    return {
+    item = {
         "id": coupon_id(store, title),
         "store": store,
         "type": raw["type"],
@@ -32,6 +32,22 @@ def clean_item(store: str, raw: dict, origin: str, source: str = "") -> dict | N
         "checked_at": now_iso(),
         "origin": origin,
     }
+    # 推薦用的欄位（Gemini 標記，選填）：有值才存，資料檔不會變太大
+    meal = [m for m in dict.fromkeys(raw.get("meal") or []) if m in MEAL]
+    if meal:
+        item["meal"] = meal
+    try:
+        price = int(raw.get("price") or 0)
+    except (TypeError, ValueError):
+        price = 0
+    if 0 < price < 100000:
+        item["price"] = price
+    food = str(raw.get("item") or "").strip()[:30]
+    if food:
+        item["item"] = food
+    if via:  # 線索來源（部落格／媒體）的名稱；source 是原文網址
+        item["via"] = via
+    return item
 
 
 def store_public(s: dict) -> dict:
@@ -92,15 +108,18 @@ def merge(data: dict, cfg: dict, found: dict[str, list[dict]], fetched_ok: set[s
     # 1. 新抓到的：同 ID 就更新內容與確認時間，否則新增
     for store, items in found.items():
         for raw in items:
-            item = clean_item(store, raw, "auto", raw.get("_source", ""))
+            via = raw.get("_via", "")
+            item = clean_item(store, raw, "tip" if via else "auto", raw.get("_source", ""), via)
             if not item:
                 continue
             old = by_id.get(item["id"])
+            if old and via and old.get("origin") in ("report", "auto"):
+                continue  # 官網或使用者回報已經有同一筆，以官方為準
             if old and old.get("origin") == "report":
                 old["checked_at"] = item["checked_at"]  # 使用者回報的內容優先保留
             else:
                 by_id[item["id"]] = item
-                log.append(f"{'更新' if old else '新增'}：{stores[store]['name']}｜{item['title']}")
+                log.append(f"{'更新' if old else '新增'}{'（' + via + '）' if via else ''}：{stores[store]['name']}｜{item['title']}")
 
     # 2. 使用者回報（已加上 approved 標籤的 issue）
     for iss in issues:
@@ -126,6 +145,7 @@ def merge(data: dict, cfg: dict, found: dict[str, list[dict]], fetched_ok: set[s
     # 這次「有抓到至少一筆」的網頁；Gemini 回空陣列（可能是解析失敗）的網頁不算，避免整批誤刪
     seen_sources = {raw.get("_source") for items in found.values() for raw in items if raw.get("_source")}
     stale_days = int(settings.get("stale_days", 14))
+    tip_days = int(settings.get("tip_days", 7))
     keep_demo = bool(settings.get("keep_demo", True))
     kept = []
     for c in by_id.values():
@@ -142,6 +162,9 @@ def merge(data: dict, cfg: dict, found: dict[str, list[dict]], fetched_ok: set[s
             if (date.fromisoformat(t) - date.fromisoformat(c["checked_at"][:10])).days > stale_days:
                 log.append(f"太久沒出現，移除：{c['title']}")
                 continue
+        if c.get("origin") == "tip" and not c.get("end") and (date.fromisoformat(t) - date.fromisoformat(c["checked_at"][:10])).days > tip_days:
+            log.append(f"線索來源的優惠沒寫到期日、已超過 {tip_days} 天，移除：{c['title']}")
+            continue
         if c["store"] not in stores:
             continue
         kept.append(c)
