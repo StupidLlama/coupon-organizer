@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-19T11:30:17+08:00",
+ "updated_at": "2026-11-20T11:19:36+08:00",
  "categories": {
   "food": {
    "name": "美食",
@@ -79,6 +79,20 @@
    "color": "#d35400",
    "url": "https://www.burgerking.com.tw/news"
   },
+  "yoshinoya": {
+   "name": "吉野家",
+   "domain": "yoshinoya.com.tw",
+   "sub": "fast",
+   "color": "#f08300",
+   "url": "https://yoshinoya.com.tw/news/"
+  },
+  "laya": {
+   "name": "拉亞漢堡",
+   "domain": "laya.com.tw",
+   "sub": "fast",
+   "color": "#f5a200",
+   "url": "https://www.laya.com.tw/news/"
+  },
   "sbux": {
    "name": "星巴克",
    "domain": "starbucks.com.tw",
@@ -99,6 +113,13 @@
    "sub": "drink",
    "color": "#1d3557",
    "url": "https://kebuke.com/news/"
+  },
+  "chunshui": {
+   "name": "春水堂",
+   "domain": "chunshuitang.com.tw",
+   "sub": "drink",
+   "color": "#7a5c3e",
+   "url": "https://www.chunshuitang.com.tw/news/activity/"
   },
   "ubereats": {
    "name": "Uber Eats",
@@ -121,6 +142,20 @@
    "color": "#c8102e",
    "url": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp"
   },
+  "wowprime": {
+   "name": "王品集團",
+   "domain": "wowprime.com",
+   "sub": "dine",
+   "color": "#8b1e2d",
+   "url": "https://www.wowprime.com/zh-tw/news/media"
+  },
+  "sushiro": {
+   "name": "壽司郎",
+   "domain": "sushiro.com.tw",
+   "sub": "dine",
+   "color": "#d7000f",
+   "url": "https://www.sushiro.com.tw/Announcement/List"
+  },
   "s711": {
    "name": "7-ELEVEN",
    "domain": "7-11.com.tw",
@@ -141,6 +176,20 @@
    "sub": "mart",
    "color": "#004e9f",
    "url": "https://uni-prosperity.com.tw/"
+  },
+  "simplemart": {
+   "name": "美廉社",
+   "domain": "simplemart.com.tw",
+   "sub": "mart",
+   "color": "#e2231a",
+   "url": "https://www.simplemart.com.tw/ec99/ushop20097/new2.asp"
+  },
+  "showba": {
+   "name": "小北百貨",
+   "domain": "showba.com.tw",
+   "sub": "mart",
+   "color": "#e60033",
+   "url": "https://www.showba.com.tw/news_list?newsType=2&menuid=2"
   },
   "watsons": {
    "name": "屈臣氏",
@@ -177,6 +226,13 @@
    "color": "#ff6900",
    "url": "https://www.mi.com/tw/new-user/"
   },
+  "elife": {
+   "name": "全國電子",
+   "domain": "elifemall.com.tw",
+   "sub": "tech",
+   "color": "#0055a5",
+   "url": "https://www.elifemall.com.tw/"
+  },
   "shopee": {
    "name": "蝦皮購物",
    "domain": "shopee.tw",
@@ -211,6 +267,13 @@
    "sub": "stream",
    "color": "#ff0000",
    "url": "https://support.google.com/youtube/answer/9158808"
+  },
+  "myvideo": {
+   "name": "MyVideo",
+   "domain": "myvideo.net.tw",
+   "sub": "stream",
+   "color": "#ff5a00",
+   "url": "https://www.myvideo.net.tw/TWM_Video/Portal/servlet_announce.jsp"
   },
   "spotify": {
    "name": "Spotify",
@@ -247,6 +310,13 @@
    "color": "#191919",
    "url": "https://www.notion.com/en-us/help/notion-for-education"
   },
+  "ms365": {
+   "name": "Microsoft 365",
+   "domain": "microsoft.com",
+   "sub": "ai",
+   "color": "#d83b01",
+   "url": "https://www.microsoft.com/zh-tw/microsoft-365/buy/compare-all-microsoft-365-products-b"
+  },
   "canva": {
    "name": "Canva",
    "domain": "canva.com",
@@ -282,12 +352,33 @@
    "color": "#000000",
    "url": "https://www.uber.com/tw/zh-tw/blog/ride/ride-promotions/"
   },
+  "wemo": {
+   "name": "WeMo Scooter",
+   "domain": "wemoscooter.com",
+   "sub": "transit",
+   "color": "#00b0b9",
+   "url": "https://www.wemoscooter.com/event-news"
+  },
+  "irent": {
+   "name": "iRent",
+   "domain": "irentcar.com.tw",
+   "sub": "transit",
+   "color": "#00a0e9",
+   "url": "https://www.irentcar.com.tw/marketing/irent/couponcode/index.html"
+  },
   "agoda": {
    "name": "Agoda",
    "domain": "agoda.com",
    "sub": "stay",
    "color": "#5392f9",
    "url": "https://agoda.com/"
+  },
+  "trip": {
+   "name": "Trip.com",
+   "domain": "trip.com",
+   "sub": "stay",
+   "color": "#287dfa",
+   "url": "https://tw.trip.com/blog/tw-promo-code/"
   },
   "vieshow": {
    "name": "威秀影城",
@@ -523,11 +614,11 @@
    "origin": "demo"
   },
   {
-   "id": "5fbc82ebcc",
+   "id": "76d44784a0",
    "store": "claude",
-   "type": "sale",
-   "title": "Pro方案年繳優惠",
-   "desc": "選擇年度訂閱可享Pro方案折扣，平均每月17美元",
+   "type": "plan",
+   "title": "Claude Pro 方案年繳優惠",
+   "desc": "選擇年繳方案享每月 17 美元優惠價，預付 200 美元，相較每月 20 美元更划算。",
    "start": null,
    "end": null,
    "aud": [],
@@ -537,15 +628,52 @@
    "code": "",
    "source": "https://claude.com/pricing",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
+   "checked_at": "2026-11-20T11:19:36+08:00",
    "origin": "auto"
   },
   {
-   "id": "7ca107af7a",
+   "id": "754b9d4223",
+   "store": "claude",
+   "type": "plan",
+   "title": "Claude Team 團隊方案年繳折扣",
+   "desc": "團隊標準席位年繳享每席每月 20 美元，進階席位年繳每席每月 100 美元。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "bundle"
+   ],
+   "code": "",
+   "source": "https://claude.com/pricing",
+   "redeem_url": "",
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "3244dfc236",
+   "store": "claude",
+   "type": "plan",
+   "title": "Claude 大學教育方案優惠",
+   "desc": "針對大專院校師生與職員提供全校性專案，享專屬折扣費率與學習資源。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student",
+    "worker"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://claude.com/pricing",
+   "redeem_url": "",
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "ea77c437c9",
    "store": "claude",
    "type": "sale",
-   "title": "批次處理省50%",
-   "desc": "使用批次處理功能可節省50%費用",
+   "title": "Claude API 批次處理 5 折優惠",
+   "desc": "非即時性非同步任務使用批次處理（Batch processing），可享 50% 費用折扣。",
    "start": null,
    "end": null,
    "aud": [],
@@ -553,228 +681,7 @@
    "code": "",
    "source": "https://claude.com/pricing",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "0e9c53d101",
-   "store": "claude",
-   "type": "trial",
-   "title": "程式碼執行每日免費時數",
-   "desc": "每個組織每天可享有50小時免費的程式碼執行使用時數",
-   "start": null,
-   "end": null,
-   "aud": [],
-   "cond": [],
-   "code": "",
-   "source": "https://claude.com/pricing",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "bcad6d7af1",
-   "store": "cosmed",
-   "type": "event",
-   "title": "LINE好友綁定會員送50元",
-   "desc": "透過LINE好友綁定會員即可獲得50元",
-   "start": "2026-10-23",
-   "end": "2026-11-19",
-   "aud": [],
-   "cond": [
-    "member",
-    "line"
-   ],
-   "code": "",
-   "source": "https://www.cosmed.com.tw/news.aspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-07T10:02:21+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "fddb92d7f4",
-   "store": "cosmed",
-   "type": "sale",
-   "title": "OPENPOINT點數加價購",
-   "desc": "會員活動期間可使用OPENPOINT點數進行指定商品的加價購優惠。",
-   "start": "2026-10-23",
-   "end": "2026-11-19",
-   "aud": [],
-   "cond": [
-    "member"
-   ],
-   "code": "",
-   "source": "https://www.cosmed.com.tw/news.aspx",
-   "redeem_url": "",
-   "checked_at": "2026-10-31T09:51:45+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "3ff3831d50",
-   "store": "cosmed",
-   "type": "sale",
-   "title": "LINE好友專屬限定優惠",
-   "desc": "LINE好友於活動期間可享有專屬商品優惠與好康特價。",
-   "start": "2026-10-23",
-   "end": "2026-11-19",
-   "aud": [],
-   "cond": [
-    "line"
-   ],
-   "code": "",
-   "source": "https://www.cosmed.com.tw/news.aspx",
-   "redeem_url": "",
-   "checked_at": "2026-10-31T09:51:45+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "bef113c15c",
-   "store": "cosmed",
-   "type": "sale",
-   "title": "金卡會員門市專屬優惠",
-   "desc": "金卡會員於實體門市消費，可享有專屬指定優惠與權益。",
-   "start": "2026-10-23",
-   "end": "2026-11-19",
-   "aud": [],
-   "cond": [
-    "member",
-    "store"
-   ],
-   "code": "",
-   "source": "https://www.cosmed.com.tw/news.aspx",
-   "redeem_url": "",
-   "checked_at": "2026-10-31T09:51:45+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "5206ad4c4f",
-   "store": "cosmed",
-   "type": "event",
-   "title": "LINE好友綁定會員送$50",
-   "desc": "LINE好友綁定會員送50元優惠",
-   "start": "2026-10-23",
-   "end": "2026-11-19",
-   "aud": [],
-   "cond": [
-    "member",
-    "line"
-   ],
-   "code": "",
-   "source": "https://www.cosmed.com.tw/news.aspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "50a3d5653a",
-   "store": "cosmed",
-   "type": "sale",
-   "title": "OPENPOINT點數加購",
-   "desc": "活動期間享有OPENPOINT點數加購優惠",
-   "start": "2026-10-23",
-   "end": "2026-11-19",
-   "aud": [],
-   "cond": [
-    "member"
-   ],
-   "code": "",
-   "source": "https://www.cosmed.com.tw/news.aspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-07T10:02:21+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "cb4eeb7d2e",
-   "store": "cosmed",
-   "type": "event",
-   "title": "LINE好友專屬優惠",
-   "desc": "LINE好友獨享的指定優惠活動",
-   "start": "2026-10-23",
-   "end": "2026-11-19",
-   "aud": [],
-   "cond": [
-    "line"
-   ],
-   "code": "",
-   "source": "https://www.cosmed.com.tw/news.aspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-07T10:02:21+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "c371e24d9d",
-   "store": "cosmed",
-   "type": "event",
-   "title": "金卡專屬優惠",
-   "desc": "實體門市限定金卡會員專屬優惠",
-   "start": "2026-10-23",
-   "end": "2026-11-19",
-   "aud": [],
-   "cond": [
-    "member",
-    "store"
-   ],
-   "code": "",
-   "source": "https://www.cosmed.com.tw/news.aspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-04T10:19:44+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "6f0ed62578",
-   "store": "cosmed",
-   "type": "event",
-   "title": "LINE好友綁定會員送禮",
-   "desc": "綁定LINE好友會員送五十元",
-   "start": "2026-10-23",
-   "end": "2026-11-19",
-   "aud": [],
-   "cond": [
-    "line",
-    "member"
-   ],
-   "code": "",
-   "source": "https://www.cosmed.com.tw/news.aspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-05T10:23:29+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "27eca3f72f",
-   "store": "cosmed",
-   "type": "event",
-   "title": "金卡會員實體門市優惠",
-   "desc": "金卡會員於實體門市享專屬優惠",
-   "start": "2026-10-23",
-   "end": "2026-11-19",
-   "aud": [],
-   "cond": [
-    "member",
-    "store"
-   ],
-   "code": "",
-   "source": "https://www.cosmed.com.tw/news.aspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-05T10:23:29+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "dcd84b7fad",
-   "store": "cosmed",
-   "type": "event",
-   "title": "金卡會員專屬優惠",
-   "desc": "金卡會員專屬好康，限實體門市使用",
-   "start": "2026-10-23",
-   "end": "2026-11-19",
-   "aud": [],
-   "cond": [
-    "member",
-    "store"
-   ],
-   "code": "",
-   "source": "https://www.cosmed.com.tw/news.aspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-07T10:02:21+08:00",
+   "checked_at": "2026-11-20T11:19:36+08:00",
    "origin": "auto"
   },
   {
@@ -890,453 +797,203 @@
    "origin": "demo"
   },
   {
-   "id": "7c00b82303",
+   "id": "70321924cd",
    "store": "github",
-   "type": "sale",
-   "title": "Name.com 免費網域",
-   "desc": "使用超過 25 種指定免費網域副檔名建立專案",
+   "type": "plan",
+   "title": "GitHub 學生免費享有 GitHub Pro",
+   "desc": "具備學生身分期間可免費使用 GitHub Pro 專業版完整協作與程式碼管理功能。",
    "start": null,
    "end": null,
    "aud": [
     "student"
    ],
-   "cond": [],
+   "cond": [
+    "member"
+   ],
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
+   "checked_at": "2026-11-20T11:19:36+08:00",
    "origin": "auto"
   },
   {
-   "id": "1129fc66ac",
+   "id": "bfd9decd81",
    "store": "github",
-   "type": "sale",
-   "title": "Microsoft Azure 雲端點數",
-   "desc": "提供 25 個以上雲端服務與 100 美元額度，限 18 歲以上學生",
+   "type": "plan",
+   "title": "GitHub Copilot 學生版免費使用",
+   "desc": "通過驗證的學生可免費使用 AI 程式碼自動完成，並享有每月 AI 點數額度。",
    "start": null,
    "end": null,
    "aud": [
     "student"
    ],
-   "cond": [],
+   "cond": [
+    "member"
+   ],
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
+   "checked_at": "2026-11-20T11:19:36+08:00",
    "origin": "auto"
   },
   {
-   "id": "f2c19ab33c",
+   "id": "bf20c03e77",
    "store": "github",
-   "type": "sale",
-   "title": "Microsoft 365 學生優惠",
-   "desc": "免費或折扣取得具 AI 功能的生產力應用程式與 1TB 雲端空間",
+   "type": "plan",
+   "title": "Microsoft Azure 學生 100 美元額度",
+   "desc": "年滿 18 歲學生無需信用卡，可免費存取超過 25 項雲端服務並獲贈 100 美元折抵金。",
    "start": null,
    "end": null,
    "aud": [
     "student"
    ],
-   "cond": [],
+   "cond": [
+    "member"
+   ],
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
+   "checked_at": "2026-11-20T11:19:36+08:00",
    "origin": "auto"
   },
   {
-   "id": "245f3f53e4",
+   "id": "f3613441b5",
+   "store": "github",
+   "type": "plan",
+   "title": "JetBrains 學生全系列 IDE 免費訂閱",
+   "desc": "在學學生可免費使用 IntelliJ IDEA、PyCharm 等專業開發工具，每年可申請續期。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://education.github.com/pack",
+   "redeem_url": "",
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "693a24fc42",
    "store": "github",
    "type": "trial",
-   "title": "DataCamp 3個月免費",
-   "desc": "透過學生帳號註冊可獲得 3 個月免費存取權",
+   "title": "1Password 密碼管理器 2 年免費",
+   "desc": "學生可享 1Password 免費使用 2 年，方案包含開發者相關進階工具。",
    "start": null,
    "end": null,
    "aud": [
     "student"
    ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "b522cb2057",
-   "store": "github",
-   "type": "sale",
-   "title": "Namecheap 網域註冊優惠",
-   "desc": "可免費獲得 1 年 .me 網域註冊",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
+   "cond": [
+    "member"
    ],
-   "cond": [],
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
+   "checked_at": "2026-11-20T11:19:36+08:00",
    "origin": "auto"
   },
   {
-   "id": "b3e8b0e7df",
-   "store": "github",
-   "type": "sale",
-   "title": "Namecheap SSL憑證",
-   "desc": "免費獲得 1 年 SSL 憑證",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "5b2b732380",
-   "store": "github",
-   "type": "sale",
-   "title": ".TECH 網域優惠",
-   "desc": "免費獲得 1 個標準 .TECH 網域 1 年",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "33b16d3902",
-   "store": "github",
-   "type": "sale",
-   "title": "GitHub Pro 免費使用",
-   "desc": "學生身分期間可免費使用 GitHub Pro",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "1ed5d92d68",
-   "store": "github",
-   "type": "sale",
-   "title": "Notion Education 方案",
-   "desc": "享有 Notion Education 方案所有功能並包含額外 AI 回應",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "c000496d12",
-   "store": "github",
-   "type": "sale",
-   "title": "GitHub Copilot Student",
-   "desc": "驗證學生身分即可使用 AI 程式碼自動完成與點數額度",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "aacb7fa911",
-   "store": "github",
-   "type": "sale",
-   "title": "Heroku 雲端點數",
-   "desc": "享有每個月 13 美元點數，持續 24 個月",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "a9a260eab1",
-   "store": "github",
-   "type": "sale",
-   "title": "JetBrains 學生訂閱",
-   "desc": "提供學生免費訂閱方案，需每年續約",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "5c8d83f400",
+   "id": "90b1c199f1",
    "store": "github",
    "type": "trial",
-   "title": "Boot.dev 完整互動會員",
-   "desc": "享有 3 個月免費存取完整互動程式課程",
+   "title": "DataCamp 線上學習 3 個月免費",
+   "desc": "透過 GitHub 學生帳號註冊 DataCamp 訂閱，即可獲得 3 個月免費學習數據科學課程。",
    "start": null,
    "end": null,
    "aud": [
     "student"
    ],
-   "cond": [],
+   "cond": [
+    "member"
+   ],
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
+   "checked_at": "2026-11-20T11:19:36+08:00",
    "origin": "auto"
   },
   {
-   "id": "962d163180",
+   "id": "25313370c8",
    "store": "github",
-   "type": "sale",
-   "title": "1Password 密碼管理",
-   "desc": "免費使用 2 年，包含開發者工具",
+   "type": "plan",
+   "title": "Heroku 雲端平台 24 個月折抵金",
+   "desc": "學生可連續 24 個月每月享有 13 美元信用額度，用於部署與管理雲端應用。",
    "start": null,
    "end": null,
    "aud": [
     "student"
    ],
-   "cond": [],
+   "cond": [
+    "member"
+   ],
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
+   "checked_at": "2026-11-20T11:19:36+08:00",
    "origin": "auto"
   },
   {
-   "id": "166fdbc530",
+   "id": "f60c0695c0",
    "store": "github",
-   "type": "sale",
-   "title": "Termius Pro 與 Team",
-   "desc": "學生期間免費使用所有 Pro 與 Team 功能",
+   "type": "plan",
+   "title": "Namecheap 免費 .me 域名與 SSL 憑證 1 年",
+   "desc": "學生方案可享有 1 年免費註冊 .me 網域名稱，以及 1 年免費 SSL 安全憑證。",
    "start": null,
    "end": null,
    "aud": [
     "student"
    ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "a87e2f9f2f",
-   "store": "github",
-   "type": "sale",
-   "title": "Educative 課程免費與折扣",
-   "desc": "享有 6 個月免費存取 70 多門課程，且訂閱享 7 折優惠",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
+   "cond": [
+    "member"
    ],
-   "cond": [],
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
+   "checked_at": "2026-11-20T11:19:36+08:00",
    "origin": "auto"
   },
   {
-   "id": "587669be19",
-   "store": "github",
-   "type": "sale",
-   "title": "MongoDB 開發者點數",
-   "desc": "獲得 50 美元 Atlas 點數及認證免費存取",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "15bd4cff93",
-   "store": "github",
-   "type": "sale",
-   "title": "Datadog Pro 帳戶",
-   "desc": "免費使用 Pro 帳戶與 10 台伺服器 2 年",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "95005f12d8",
+   "id": "c02bf2f6ec",
    "store": "github",
    "type": "trial",
-   "title": "Codédex Club 會員",
-   "desc": "驗證學生身分可免費獲得 1 個月高級會員",
-   "start": "2026-11-01",
-   "end": null,
-   "aud": [
-    "student"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "3f61660764",
-   "store": "github",
-   "type": "sale",
-   "title": "Microsoft Azure 青少版",
-   "desc": "針對 13 至 17 歲學生免費提供特定雲端與資料庫服務",
+   "title": "FrontendMasters 前端課程 6 個月免費",
+   "desc": "學生可獲得 6 個月免費存取權限，自由學習所有 JavaScript 與前端工程課程及工作坊。",
    "start": null,
    "end": null,
    "aud": [
     "student"
    ],
-   "cond": [],
+   "cond": [
+    "member"
+   ],
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
+   "checked_at": "2026-11-20T11:19:36+08:00",
    "origin": "auto"
   },
   {
-   "id": "950e35535c",
+   "id": "abc0aae452",
    "store": "github",
-   "type": "sale",
-   "title": "Testmail Essential 方案",
-   "desc": "學生期間免費使用 Essential 方案",
+   "type": "plan",
+   "title": "Notion Education 教育方案與 AI 額度",
+   "desc": "學生可免費享有 Notion Education 方案權限，並額外包含更多 AI 回應額度。",
    "start": null,
    "end": null,
    "aud": [
     "student"
    ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "bbe40270ef",
-   "store": "github",
-   "type": "sale",
-   "title": "GitHub Codespaces Pro級存取",
-   "desc": "免費獲得 Pro 級別的 Codespaces 開發環境存取權",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
+   "cond": [
+    "member"
    ],
-   "cond": [],
    "code": "",
    "source": "https://education.github.com/pack",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "e4a6b73953",
-   "store": "github",
-   "type": "sale",
-   "title": "GitHub Pages 網頁空間",
-   "desc": "每個帳號可免費獲得一個網站與無限專案網站",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "33dd4d6cc7",
-   "store": "github",
-   "type": "sale",
-   "title": "Stripe 交易手續費抵免",
-   "desc": "獲得 25 美元 Stripe 點數以抵免相關產品費用",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "544a7875c1",
-   "store": "github",
-   "type": "trial",
-   "title": "FrontendMasters 課程暢讀",
-   "desc": "免費 6 個月存取所有課程與工作坊",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://education.github.com/pack",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
+   "checked_at": "2026-11-20T11:19:36+08:00",
    "origin": "auto"
   },
   {
@@ -1644,6 +1301,84 @@
    "origin": "auto"
   },
   {
+   "id": "a042688b2a",
+   "store": "ms365",
+   "type": "trial",
+   "title": "Microsoft 365 個人版免費試用一個月",
+   "desc": "適合一人使用，可享一個月免費試用，期滿將依所選方案自動續約，可隨時至微軟帳戶取消。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.microsoft.com/zh-tw/microsoft-365/buy/compare-all-microsoft-365-products-b",
+   "redeem_url": "",
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto",
+   "item": "個人版一個月試用"
+  },
+  {
+   "id": "28bd3d9ff6",
+   "store": "ms365",
+   "type": "trial",
+   "title": "Microsoft 365 家用版免費試用一個月",
+   "desc": "支援 1 至 6 人共用，享有 1 個月免費試用期，期滿會自動續訂，可隨時在帳戶中取消。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "family"
+   ],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.microsoft.com/zh-tw/microsoft-365/buy/compare-all-microsoft-365-products-b",
+   "redeem_url": "",
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto",
+   "item": "家用版一個月試用"
+  },
+  {
+   "id": "5cd670bbfc",
+   "store": "ms365",
+   "type": "trial",
+   "title": "Microsoft 365 進階版免費試用一個月",
+   "desc": "含進階 Copilot 與 AI 功能，提供一個月免費試用，期滿將自動續費，可隨時取消訂閱。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.microsoft.com/zh-tw/microsoft-365/buy/compare-all-microsoft-365-products-b",
+   "redeem_url": "",
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto",
+   "item": "進階版一個月試用"
+  },
+  {
+   "id": "a8b9eb1e9b",
+   "store": "ms365",
+   "type": "plan",
+   "title": "Microsoft 365 大專院校學生專屬優惠",
+   "desc": "針對大專院校學生提供的專屬 Microsoft 365 優惠方案，享有課業所需生產力工具。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://www.microsoft.com/zh-tw/microsoft-365/buy/compare-all-microsoft-365-products-b",
+   "redeem_url": "",
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto",
+   "item": "學生專屬優惠方案"
+  },
+  {
    "id": "ba83882f5f",
    "store": "netflix",
    "type": "plan",
@@ -1743,59 +1478,68 @@
    "origin": "demo"
   },
   {
-   "id": "bfa5eca6a4",
+   "id": "6103ccf038",
    "store": "notion",
    "type": "plan",
-   "title": "學生組織教育方案免費",
-   "desc": "經過驗證且符合資格的學生組織，可免費申請多人協作的教育方案工作區。",
+   "title": "大專院校師生免費升級教育方案",
+   "desc": "認證大專院校師生使用學校信箱註冊，即可免費升級為個人教育方案，每年需重新驗證。",
    "start": null,
    "end": null,
    "aud": [
     "student"
    ],
-   "cond": [],
+   "cond": [
+    "member"
+   ],
    "code": "",
    "source": "https://www.notion.com/en-us/help/notion-for-education",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto",
+   "item": "Notion教育方案"
   },
   {
-   "id": "d0c7355f51",
+   "id": "fbaf981277",
    "store": "notion",
    "type": "plan",
-   "title": "學生與教師教育方案免費",
-   "desc": "認可院校的學生與教師使用學校信箱驗證，可免費升級單人教育方案。",
+   "title": "大專學生組織免費申請教育方案",
+   "desc": "符合資格的高等教育學生組織可線上提出申請，通過後團隊成員可免費共同協作。",
    "start": null,
    "end": null,
    "aud": [
     "student"
    ],
-   "cond": [],
+   "cond": [
+    "member"
+   ],
    "code": "",
    "source": "https://www.notion.com/en-us/help/notion-for-education",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto",
+   "item": "學生組織教育方案"
   },
   {
-   "id": "06681a6f7b",
+   "id": "9950a26374",
    "store": "notion",
    "type": "trial",
-   "title": "新創企業商務方案免費試用",
-   "desc": "符合條件的新創公司可免費獲得 1 到 6 個月的 Notion 商業方案與 AI 額度。",
+   "title": "新創團隊享最多6個月商務方案免費",
+   "desc": "符合資格之新創未付費新客戶，可申請獲得 1 至 6 個月免費商務方案及每月 AI 點數。",
    "start": null,
    "end": null,
    "aud": [
     "startup",
     "newbie"
    ],
-   "cond": [],
+   "cond": [
+    "member"
+   ],
    "code": "",
    "source": "https://www.notion.com/en-us/help/notion-for-education",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto",
+   "item": "商務方案免費體驗"
   },
   {
    "id": "bd4aa5329c",
@@ -2351,22 +2095,6 @@
    "origin": "auto"
   },
   {
-   "id": "72665fb58f",
-   "store": "sbux",
-   "type": "event",
-   "title": "暖冬心意星送禮活動",
-   "desc": "參與星送禮活動傳遞暖冬心意。",
-   "start": "2026-11-16",
-   "end": "2026-11-19",
-   "aud": [],
-   "cond": [],
-   "code": "",
-   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
    "id": "5f2f08d27a",
    "store": "sbux",
    "type": "event",
@@ -2801,6 +2529,25 @@
    "origin": "demo"
   },
   {
+   "id": "1f18735d4a",
+   "store": "spotify",
+   "type": "trial",
+   "title": "Premium 個人方案免費試用 3 個月",
+   "desc": "新用戶享前 3 個月免費，期滿後每月 168 元，可隨時取消。",
+   "start": null,
+   "end": "2026-12-31",
+   "aud": [
+    "newbie"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://www.spotify.com/tw/premium/",
+   "redeem_url": "",
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto",
+   "item": "個人方案3個月"
+  },
+  {
    "id": "09f1a62965",
    "store": "spotify",
    "type": "plan",
@@ -2818,29 +2565,11 @@
    "origin": "demo"
   },
   {
-   "id": "6dd812cf44",
+   "id": "c29192d753",
    "store": "spotify",
    "type": "trial",
-   "title": "個人方案首月免費試用",
-   "desc": "個人方案首月 $0，之後每月 $168，限未試用過的使用者",
-   "start": null,
-   "end": null,
-   "aud": [
-    "newbie"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://www.spotify.com/tw/premium/",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "7a33b0a109",
-   "store": "spotify",
-   "type": "trial",
-   "title": "學生方案首月免費",
-   "desc": "學生首月 $0，之後每月 $88，限認證高教機構學生且未試用過",
+   "title": "Premium 學生方案首月免費試用",
+   "desc": "通過大專院校驗證且未曾試用的學生，首月免費，後續每月 88 元。",
    "start": null,
    "end": null,
    "aud": [
@@ -2851,8 +2580,9 @@
    "code": "",
    "source": "https://www.spotify.com/tw/premium/",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto",
+   "item": "學生方案1個月"
   },
   {
    "id": "d25de21753",
@@ -3754,6 +3484,22 @@
    "origin": "demo"
   },
   {
+   "id": "ede5dd7fac",
+   "store": "thsr",
+   "type": "sale",
+   "title": "11/27 指定紅眼班次享77折優惠",
+   "desc": "2026年11月27日限定，提供指定10班紅眼班次列車，購票搭乘享全面77折優惠。",
+   "start": "2026-11-17",
+   "end": "2026-11-27",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto"
+  },
+  {
    "id": "1b0e557905",
    "store": "thsr",
    "type": "sale",
@@ -3773,205 +3519,11 @@
    "origin": "demo"
   },
   {
-   "id": "8eec96a058",
-   "store": "thsr",
-   "type": "cashback",
-   "title": "刷指定銀行信用卡優惠",
-   "desc": "刷合作銀行之指定信用卡購票即享有優惠折扣或權益加碼。",
-   "start": null,
-   "end": null,
-   "aud": [],
-   "cond": [
-    "pay"
-   ],
-   "code": "",
-   "source": "https://www.thsrc.com.tw/",
-   "redeem_url": "",
-   "checked_at": "2026-11-17T12:47:15+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "0391870378",
+   "id": "e438c7962d",
    "store": "thsr",
    "type": "sale",
-   "title": "高鐵早鳥優惠",
-   "desc": "提早預訂高鐵車票即可享早鳥折扣票價。",
-   "start": null,
-   "end": null,
-   "aud": [],
-   "cond": [],
-   "code": "",
-   "source": "https://www.thsrc.com.tw/",
-   "redeem_url": "",
-   "checked_at": "2026-11-17T12:47:15+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "08cfc4a8c9",
-   "store": "thsr",
-   "type": "sale",
-   "title": "高鐵回數票優惠",
-   "desc": "購買高鐵回數票即可享受多次搭乘的優惠折扣。",
-   "start": null,
-   "end": null,
-   "aud": [],
-   "cond": [],
-   "code": "",
-   "source": "https://www.thsrc.com.tw/",
-   "redeem_url": "",
-   "checked_at": "2026-11-17T12:47:15+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "f3c39e312b",
-   "store": "thsr",
-   "type": "sale",
-   "title": "高鐵新會員限定優惠",
-   "desc": "新註冊高鐵會員獨享專屬迎賓好禮與限定活動優惠。",
-   "start": null,
-   "end": null,
-   "aud": [
-    "newbie"
-   ],
-   "cond": [
-    "member"
-   ],
-   "code": "",
-   "source": "https://www.thsrc.com.tw/",
-   "redeem_url": "",
-   "checked_at": "2026-11-17T12:47:15+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "9e8d3e6805",
-   "store": "thsr",
-   "type": "cashback",
-   "title": "高鐵會員聰明轉點",
-   "desc": "高鐵會員可將合作夥伴點數轉換為高鐵點數享更多權益。",
-   "start": null,
-   "end": null,
-   "aud": [],
-   "cond": [
-    "member"
-   ],
-   "code": "",
-   "source": "https://www.thsrc.com.tw/",
-   "redeem_url": "",
-   "checked_at": "2026-11-17T12:47:15+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "620124c5f9",
-   "store": "thsr",
-   "type": "sale",
-   "title": "大學生優惠",
-   "desc": "符合資格之大學生預訂高鐵指定車次享有專屬折扣優惠。",
-   "start": null,
-   "end": null,
-   "aud": [
-    "student"
-   ],
-   "cond": [],
-   "code": "",
-   "source": "https://www.thsrc.com.tw/",
-   "redeem_url": "",
-   "checked_at": "2026-11-17T12:47:15+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "6d2d4aa05b",
-   "store": "thsr",
-   "type": "plan",
-   "title": "高鐵假期送住宿",
-   "desc": "購買高鐵假期指定行程組合即可享有免費飯店住宿包套優惠。",
-   "start": null,
-   "end": null,
-   "aud": [],
-   "cond": [
-    "bundle"
-   ],
-   "code": "",
-   "source": "https://www.thsrc.com.tw/",
-   "redeem_url": "",
-   "checked_at": "2026-11-17T12:47:15+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "4caf486e5c",
-   "store": "thsr",
-   "type": "plan",
-   "title": "高鐵假期送租車",
-   "desc": "預訂高鐵假期指定專案組合免費贈送指定天數租車服務。",
-   "start": null,
-   "end": null,
-   "aud": [],
-   "cond": [
-    "bundle"
-   ],
-   "code": "",
-   "source": "https://www.thsrc.com.tw/",
-   "redeem_url": "",
-   "checked_at": "2026-11-17T12:47:15+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "0946679fa6",
-   "store": "thsr",
-   "type": "plan",
-   "title": "飯店聯票秋遊趣",
-   "desc": "訂購合作飯店並加購高鐵車票即可享受車票聯票優惠折扣。",
-   "start": null,
-   "end": null,
-   "aud": [],
-   "cond": [
-    "bundle"
-   ],
-   "code": "",
-   "source": "https://www.thsrc.com.tw/",
-   "redeem_url": "",
-   "checked_at": "2026-11-17T12:47:15+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "f0cf9bb6dc",
-   "store": "thsr",
-   "type": "sale",
-   "title": "29天前預購優惠",
-   "desc": "於乘車日前29天提前預購高鐵旅遊行程即享特定優惠。",
-   "start": null,
-   "end": null,
-   "aud": [],
-   "cond": [],
-   "code": "",
-   "source": "https://www.thsrc.com.tw/",
-   "redeem_url": "",
-   "checked_at": "2026-11-17T12:47:15+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "d27f9d0622",
-   "store": "thsr",
-   "type": "cashback",
-   "title": "點數365 TGo點數兌換",
-   "desc": "高鐵 TGo 會員可使用累積之點數兌換精選商品與禮券。",
-   "start": null,
-   "end": null,
-   "aud": [],
-   "cond": [
-    "member"
-   ],
-   "code": "",
-   "source": "https://www.thsrc.com.tw/",
-   "redeem_url": "",
-   "checked_at": "2026-11-17T12:47:15+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "cd5cae7b64",
-   "store": "thsr",
-   "type": "sale",
-   "title": "高鐵大學生指定車次 5 折起",
-   "desc": "大專院校學生購買指定車次標準車廂對號座可享 5 折、75 折或 88 折優惠，乘車時須攜帶實體學生證或在學證明備查。",
+   "title": "高鐵大學生指定車次享5折起優惠",
+   "desc": "大專院校在學學生搭乘指定車次標準車廂對號座享5折、75折或88折，乘車時須出示有效學生證或在學證明備查。",
    "start": null,
    "end": null,
    "aud": [
@@ -3981,8 +3533,10 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/ArticleContent/530e869c-479d-441a-a4b4-61a8166827e9",
    "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto",
+   "price": 20,
+   "item": "高鐵指定車次對號座車票"
   },
   {
    "id": "7a53030954",
@@ -4199,6 +3753,80 @@
    "source": "",
    "checked_at": "2026-10-28T20:45:00+08:00",
    "origin": "demo"
+  },
+  {
+   "id": "32de370b4a",
+   "store": "wemo",
+   "type": "cashback",
+   "title": "指定銀行結帳最高享 10% 回饋",
+   "desc": "騎乘 WeMo 結帳使用指定銀行付款，最高享 10% 回饋。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://www.wemoscooter.com/event-news",
+   "redeem_url": "",
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "9f70db17bc",
+   "store": "wemo",
+   "type": "sale",
+   "title": "新用戶加入享趟趟起步價 0 元",
+   "desc": "現在加入 WeMo，享每趟起步價 0 元優惠。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "newbie"
+   ],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.wemoscooter.com/event-news",
+   "redeem_url": "",
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "b0520f5f46",
+   "store": "wemo",
+   "type": "coupon",
+   "title": "看十年騎乘回顧送騎乘券抽手機",
+   "desc": "將 App 更新至最新版並觀看十年騎乘回顧，即可獲得騎乘券並抽獎。",
+   "start": "2026-10-12",
+   "end": null,
+   "aud": [],
+   "cond": [
+    "app"
+   ],
+   "code": "",
+   "source": "https://www.wemoscooter.com/event-news",
+   "redeem_url": "",
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "2a77bb355a",
+   "store": "wemo",
+   "type": "trial",
+   "title": "入住雀客新戶享首日免費騎",
+   "desc": "活動期間訂房入住全台雀客，新用戶享首日免費騎乘。",
+   "start": "2026-09-18",
+   "end": null,
+   "aud": [
+    "newbie"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://www.wemoscooter.com/event-news",
+   "redeem_url": "",
+   "checked_at": "2026-11-20T11:19:36+08:00",
+   "origin": "auto"
   },
   {
    "id": "95bc1fe603",
