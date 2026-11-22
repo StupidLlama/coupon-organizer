@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21T11:27:05+08:00",
+ "updated_at": "2026-11-22T10:26:38+08:00",
  "categories": {
   "food": {
    "name": "美食",
@@ -487,6 +487,102 @@
    "origin": "auto"
   },
   {
+   "id": "7438d0b14b",
+   "store": "bk",
+   "type": "sale",
+   "title": "漢堡王感雞有你套餐229元起",
+   "desc": "國王辣雞腿堡套餐特價229元、皇家華堡套餐特價259元，附雞薯條、6塊雞塊及中杯飲料。",
+   "start": null,
+   "end": "2026-11-29",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://supertaste.tvbs.com.tw/pack/362540",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "tip",
+   "meal": [
+    "lunch",
+    "dinner"
+   ],
+   "price": 229,
+   "item": "漢堡套餐配雞薯條雞塊中飲",
+   "via": "食尚玩家"
+  },
+  {
+   "id": "0fe1447e2d",
+   "store": "bk",
+   "type": "coupon",
+   "title": "漢堡王人氣點心買一送一",
+   "desc": "憑年終優惠券享雞塊、薯條、辣薯球、洋蔥圈等指定5款人氣點心買一送一，最低49元起。",
+   "start": null,
+   "end": "2027-01-01",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://supertaste.tvbs.com.tw/pack/362540",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "tip",
+   "meal": [
+    "snack",
+    "lunch",
+    "dinner",
+    "late"
+   ],
+   "price": 49,
+   "item": "指定點心2份",
+   "via": "食尚玩家"
+  },
+  {
+   "id": "0b3ff84c7f",
+   "store": "bk",
+   "type": "coupon",
+   "title": "漢堡王1+1自由配49元起",
+   "desc": "年終狂歡優惠券提供1+1自由配49元起優惠，品項與使用限制依券面公告為準。",
+   "start": null,
+   "end": "2027-01-01",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://supertaste.tvbs.com.tw/pack/362540",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "tip",
+   "meal": [
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "price": 49,
+   "item": "1+1自由配",
+   "via": "食尚玩家"
+  },
+  {
+   "id": "e185681183",
+   "store": "bk",
+   "type": "coupon",
+   "title": "漢堡王指定漢堡任選2個129元",
+   "desc": "年終優惠券享4款指定漢堡任選2個只要129元，各門市供應情況以官方公告為準。",
+   "start": null,
+   "end": "2027-01-01",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://supertaste.tvbs.com.tw/pack/362540",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "tip",
+   "meal": [
+    "lunch",
+    "dinner",
+    "late"
+   ],
+   "price": 129,
+   "item": "指定漢堡2個",
+   "via": "食尚玩家"
+  },
+  {
    "id": "ffcfe78e8d",
    "store": "canva",
    "type": "trial",
@@ -543,42 +639,6 @@
    "origin": "demo"
   },
   {
-   "id": "232e43bb2d",
-   "store": "cht",
-   "type": "sale",
-   "title": "AppleCare Services 加購優惠",
-   "desc": "申辦指定方案可享 AppleCare Services 加購優惠",
-   "start": "2026-10-30",
-   "end": null,
-   "aud": [],
-   "cond": [
-    "bundle"
-   ],
-   "code": "",
-   "source": "https://www.cht.com.tw/home/consumer/customer-service/announce",
-   "redeem_url": "",
-   "checked_at": "2026-11-06T10:28:44+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "4e8180204f",
-   "store": "cht",
-   "type": "sale",
-   "title": "雙11網路門市 95折優惠",
-   "desc": "網路門市雙11活動期間申辦指定方案享95折",
-   "start": "2026-10-30",
-   "end": null,
-   "aud": [],
-   "cond": [
-    "store"
-   ],
-   "code": "",
-   "source": "https://www.cht.com.tw/home/consumer/customer-service/announce",
-   "redeem_url": "",
-   "checked_at": "2026-11-06T10:28:44+08:00",
-   "origin": "auto"
-  },
-  {
    "id": "01e7c34c6a",
    "store": "claude",
    "type": "plan",
@@ -614,11 +674,11 @@
    "origin": "demo"
   },
   {
-   "id": "76d44784a0",
+   "id": "0a66904bc6",
    "store": "claude",
    "type": "plan",
-   "title": "Claude Pro 方案年繳優惠",
-   "desc": "選擇年繳方案享每月 17 美元優惠價，預付 200 美元，相較每月 20 美元更划算。",
+   "title": "Claude Pro 年繳訂閱優惠",
+   "desc": "採年繳方案預付200美元，相當於每月17美元，比月繳方案省下費用。",
    "start": null,
    "end": null,
    "aud": [],
@@ -628,15 +688,16 @@
    "code": "",
    "source": "https://claude.com/pricing",
    "redeem_url": "",
-   "checked_at": "2026-11-20T11:19:36+08:00",
-   "origin": "auto"
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto",
+   "item": "Claude Pro 年繳方案"
   },
   {
-   "id": "754b9d4223",
+   "id": "9b97c1d255",
    "store": "claude",
    "type": "plan",
-   "title": "Claude Team 團隊方案年繳折扣",
-   "desc": "團隊標準席位年繳享每席每月 20 美元，進階席位年繳每席每月 100 美元。",
+   "title": "Claude Team 團隊年繳方案折扣",
+   "desc": "團隊方案採年繳計費，標準席位每月20美元、進階席位每月100美元。",
    "start": null,
    "end": null,
    "aud": [],
@@ -646,34 +707,35 @@
    "code": "",
    "source": "https://claude.com/pricing",
    "redeem_url": "",
-   "checked_at": "2026-11-20T11:19:36+08:00",
-   "origin": "auto"
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto",
+   "item": "Claude Team 席位訂閱"
   },
   {
-   "id": "3244dfc236",
+   "id": "95e389e9bf",
    "store": "claude",
    "type": "plan",
-   "title": "Claude 大學教育方案優惠",
-   "desc": "針對大專院校師生與職員提供全校性專案，享專屬折扣費率與學習資源。",
+   "title": "Claude 教育方案優惠",
+   "desc": "大學院校學生與教職員可享專屬折扣方案，提供專用API額度與學習功能。",
    "start": null,
    "end": null,
    "aud": [
-    "student",
-    "worker"
+    "student"
    ],
    "cond": [],
    "code": "",
    "source": "https://claude.com/pricing",
    "redeem_url": "",
-   "checked_at": "2026-11-20T11:19:36+08:00",
-   "origin": "auto"
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto",
+   "item": "Claude 教育方案"
   },
   {
-   "id": "ea77c437c9",
+   "id": "ed3586c0b5",
    "store": "claude",
    "type": "sale",
-   "title": "Claude API 批次處理 5 折優惠",
-   "desc": "非即時性非同步任務使用批次處理（Batch processing），可享 50% 費用折扣。",
+   "title": "Claude API 批次處理半價優惠",
+   "desc": "使用非同步批次處理（Batch processing）工作負載，可享API計費5折。",
    "start": null,
    "end": null,
    "aud": [],
@@ -681,8 +743,9 @@
    "code": "",
    "source": "https://claude.com/pricing",
    "redeem_url": "",
-   "checked_at": "2026-11-20T11:19:36+08:00",
-   "origin": "auto"
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto",
+   "item": "Claude API 批次處理"
   },
   {
    "id": "8b7959e721",
@@ -1069,6 +1132,29 @@
    "origin": "auto"
   },
   {
+   "id": "81f50a1d22",
+   "store": "kfc",
+   "type": "coupon",
+   "title": "肯德基指定個人餐特價111元",
+   "desc": "指定3款個人餐優惠價111元，含炸雞、雞塊搭配蛋撻或飲料等組合，須依官方規定購買。",
+   "start": null,
+   "end": "2026-11-23",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://supertaste.tvbs.com.tw/pack/362540",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "tip",
+   "meal": [
+    "lunch",
+    "dinner"
+   ],
+   "price": 111,
+   "item": "個人餐",
+   "via": "食尚玩家"
+  },
+  {
    "id": "d5ba090c01",
    "store": "kfc",
    "type": "sale",
@@ -1086,6 +1172,77 @@
    "source": "",
    "checked_at": "2026-10-28T20:45:00+08:00",
    "origin": "demo"
+  },
+  {
+   "id": "a830b13a48",
+   "store": "kfc",
+   "type": "coupon",
+   "title": "肯德基原味蛋撻買6送6",
+   "desc": "限時原味蛋撻買6顆送6顆，部分方案須使用指定優惠券或代碼，適用門市依官方公告為準。",
+   "start": null,
+   "end": "2026-11-30",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://supertaste.tvbs.com.tw/pack/362540",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "tip",
+   "meal": [
+    "snack",
+    "lunch",
+    "dinner"
+   ],
+   "item": "原味蛋撻12顆",
+   "via": "食尚玩家"
+  },
+  {
+   "id": "b49ff596e4",
+   "store": "kfc",
+   "type": "coupon",
+   "title": "肯德基7塊炸雞桶特價299元",
+   "desc": "7塊炸雞桶限時特價299元，部分優惠須使用指定優惠券或代碼，適用門市依官方規定。",
+   "start": null,
+   "end": "2026-11-30",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://supertaste.tvbs.com.tw/pack/362540",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "tip",
+   "meal": [
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "price": 299,
+   "item": "7塊炸雞桶",
+   "via": "食尚玩家"
+  },
+  {
+   "id": "1c31a630da",
+   "store": "kfc",
+   "type": "sale",
+   "title": "肯德基漫威聯名末日派對盒62折",
+   "desc": "漫威聯名限定末日派對盒享限時62折，集結無骨雞腿霸、起司條、薯條及蛋撻搭4款沾醬。",
+   "start": "2026-11-24",
+   "end": "2027-01-04",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://supertaste.tvbs.com.tw/pack/362540",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "tip",
+   "meal": [
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "price": 888,
+   "item": "末日派對盒",
+   "via": "食尚玩家"
   },
   {
    "id": "c882cf561e",
@@ -1304,8 +1461,8 @@
    "id": "a042688b2a",
    "store": "ms365",
    "type": "trial",
-   "title": "Microsoft 365 個人版免費試用一個月",
-   "desc": "適合一人使用，可享一個月免費試用，期滿將依所選方案自動續約，可隨時至微軟帳戶取消。",
+   "title": "Microsoft 365 個人版 免費試用一個月",
+   "desc": "適合單人使用，包含 Office 工具與 1TB 雲端空間，登入帳戶可免費試用一個月。",
    "start": null,
    "end": null,
    "aud": [],
@@ -1315,16 +1472,15 @@
    "code": "",
    "source": "https://www.microsoft.com/zh-tw/microsoft-365/buy/compare-all-microsoft-365-products-b",
    "redeem_url": "",
-   "checked_at": "2026-11-20T11:19:36+08:00",
-   "origin": "auto",
-   "item": "個人版一個月試用"
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto"
   },
   {
    "id": "28bd3d9ff6",
    "store": "ms365",
    "type": "trial",
-   "title": "Microsoft 365 家用版免費試用一個月",
-   "desc": "支援 1 至 6 人共用，享有 1 個月免費試用期，期滿會自動續訂，可隨時在帳戶中取消。",
+   "title": "Microsoft 365 家用版 免費試用一個月",
+   "desc": "適合最多 6 人共用，享 2TB 雲端空間與安全防護，登入帳戶即可免費試用一個月。",
    "start": null,
    "end": null,
    "aud": [
@@ -1336,16 +1492,15 @@
    "code": "",
    "source": "https://www.microsoft.com/zh-tw/microsoft-365/buy/compare-all-microsoft-365-products-b",
    "redeem_url": "",
-   "checked_at": "2026-11-20T11:19:36+08:00",
-   "origin": "auto",
-   "item": "家用版一個月試用"
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto"
   },
   {
    "id": "5cd670bbfc",
    "store": "ms365",
    "type": "trial",
-   "title": "Microsoft 365 進階版免費試用一個月",
-   "desc": "含進階 Copilot 與 AI 功能，提供一個月免費試用，期滿將自動續費，可隨時取消訂閱。",
+   "title": "Microsoft 365 進階版 免費試用一個月",
+   "desc": "包含進階 Copilot AI 功能與大容量儲存空間，登入帳戶享有免費試用一個月。",
    "start": null,
    "end": null,
    "aud": [],
@@ -1355,16 +1510,15 @@
    "code": "",
    "source": "https://www.microsoft.com/zh-tw/microsoft-365/buy/compare-all-microsoft-365-products-b",
    "redeem_url": "",
-   "checked_at": "2026-11-20T11:19:36+08:00",
-   "origin": "auto",
-   "item": "進階版一個月試用"
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto"
   },
   {
-   "id": "a8b9eb1e9b",
+   "id": "1677a7dd2e",
    "store": "ms365",
    "type": "plan",
-   "title": "Microsoft 365 大專院校學生專屬優惠",
-   "desc": "針對大專院校學生提供的專屬 Microsoft 365 優惠方案，享有課業所需生產力工具。",
+   "title": "大專院校學生專屬方案優惠",
+   "desc": "限定大專院校在學學生享有專屬 Microsoft 365 訂閱優惠，提供課業必備工具。",
    "start": null,
    "end": null,
    "aud": [
@@ -1374,9 +1528,8 @@
    "code": "",
    "source": "https://www.microsoft.com/zh-tw/microsoft-365/buy/compare-all-microsoft-365-products-b",
    "redeem_url": "",
-   "checked_at": "2026-11-20T11:19:36+08:00",
-   "origin": "auto",
-   "item": "學生專屬優惠方案"
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto"
   },
   {
    "id": "ba83882f5f",
@@ -1482,7 +1635,7 @@
    "store": "notion",
    "type": "plan",
    "title": "大專院校師生免費升級教育方案",
-   "desc": "認證大專院校師生使用學校信箱註冊，即可免費升級為個人教育方案，每年需重新驗證。",
+   "desc": "使用認可大專院校教育信箱作為主要帳號，可免費升級單人工作區至教育方案，每年需重新驗證在學或任教身分。",
    "start": null,
    "end": null,
    "aud": [
@@ -1494,16 +1647,16 @@
    "code": "",
    "source": "https://www.notion.com/en-us/help/notion-for-education",
    "redeem_url": "",
-   "checked_at": "2026-11-20T11:19:36+08:00",
+   "checked_at": "2026-11-22T10:26:38+08:00",
    "origin": "auto",
    "item": "Notion教育方案"
   },
   {
-   "id": "fbaf981277",
+   "id": "1a4edd2197",
    "store": "notion",
    "type": "plan",
-   "title": "大專學生組織免費申請教育方案",
-   "desc": "符合資格的高等教育學生組織可線上提出申請，通過後團隊成員可免費共同協作。",
+   "title": "大專院校學生社團免費教育方案",
+   "desc": "認證大專院校之學生組織提出申請核准後，可免費升級多人工作區至教育方案，提供成員免費協作與30天歷史紀錄。",
    "start": null,
    "end": null,
    "aud": [
@@ -1515,16 +1668,16 @@
    "code": "",
    "source": "https://www.notion.com/en-us/help/notion-for-education",
    "redeem_url": "",
-   "checked_at": "2026-11-20T11:19:36+08:00",
+   "checked_at": "2026-11-22T10:26:38+08:00",
    "origin": "auto",
    "item": "學生組織教育方案"
   },
   {
-   "id": "9950a26374",
+   "id": "92dc5e74a7",
    "store": "notion",
    "type": "trial",
-   "title": "新創團隊享最多6個月商務方案免費",
-   "desc": "符合資格之新創未付費新客戶，可申請獲得 1 至 6 個月免費商務方案及每月 AI 點數。",
+   "title": "新創團隊享最長6個月免費商業版",
+   "desc": "符合資格之新創未付費新客戶申請通過，可享1至6個月免費 Notion 商業方案，並包含每月 AI 額度。",
    "start": null,
    "end": null,
    "aud": [
@@ -1537,9 +1690,9 @@
    "code": "",
    "source": "https://www.notion.com/en-us/help/notion-for-education",
    "redeem_url": "",
-   "checked_at": "2026-11-20T11:19:36+08:00",
+   "checked_at": "2026-11-22T10:26:38+08:00",
    "origin": "auto",
-   "item": "商務方案免費體驗"
+   "item": "商業方案1-6個月"
   },
   {
    "id": "bd4aa5329c",
@@ -1559,6 +1712,32 @@
    "source": "",
    "checked_at": "2026-10-28T20:45:00+08:00",
    "origin": "demo"
+  },
+  {
+   "id": "e7761fdea3",
+   "store": "pizzahut",
+   "type": "coupon",
+   "title": "必勝客外帶3個6吋鬆厚比薩198元",
+   "desc": "憑食尚玩家優惠券外帶指定6吋鬆厚比薩3個特價198元，口味及門市限制依券面公告為準。",
+   "start": null,
+   "end": "2026-12-03",
+   "aud": [],
+   "cond": [
+    "store"
+   ],
+   "code": "",
+   "source": "https://supertaste.tvbs.com.tw/pack/362540",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "tip",
+   "meal": [
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "price": 198,
+   "item": "6吋鬆厚比薩3個",
+   "via": "食尚玩家"
   },
   {
    "id": "b9d89c8401",
@@ -2090,24 +2269,6 @@
    "cond": [],
    "code": "",
    "source": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp",
-   "redeem_url": "",
-   "checked_at": "2026-11-18T11:52:09+08:00",
-   "origin": "auto"
-  },
-  {
-   "id": "5f2f08d27a",
-   "store": "sbux",
-   "type": "event",
-   "title": "慶豐華榮門市開幕慶活動",
-   "desc": "慶豐華榮門市歡慶開幕推出相關優惠活動。",
-   "start": "2026-11-08",
-   "end": "2026-11-21",
-   "aud": [],
-   "cond": [
-    "store"
-   ],
-   "code": "",
-   "source": "https://www.starbucks.com.tw/stores/allevent.jspx",
    "redeem_url": "",
    "checked_at": "2026-11-18T11:52:09+08:00",
    "origin": "auto"
@@ -3484,11 +3645,11 @@
    "origin": "demo"
   },
   {
-   "id": "ede5dd7fac",
+   "id": "94e932d317",
    "store": "thsr",
    "type": "sale",
-   "title": "11/27 指定紅眼班次享77折優惠",
-   "desc": "2026年11月27日限定，提供指定10班紅眼班次列車，購票搭乘享全面77折優惠。",
+   "title": "11/27指定紅眼班次全面77折",
+   "desc": "11月27日當天提供10班指定紅眼班次列車，購票享全面77折優惠。",
    "start": "2026-11-17",
    "end": "2026-11-27",
    "aud": [],
@@ -3496,8 +3657,9 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/",
    "redeem_url": "",
-   "checked_at": "2026-11-20T11:19:36+08:00",
-   "origin": "auto"
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto",
+   "item": "紅眼班次車票"
   },
   {
    "id": "1b0e557905",
@@ -3519,11 +3681,141 @@
    "origin": "demo"
   },
   {
-   "id": "e438c7962d",
+   "id": "c248446719",
+   "store": "thsr",
+   "type": "plan",
+   "title": "高鐵大學生優惠方案",
+   "desc": "符合在學身分之大學生，預約搭乘指定車次可享學生專屬優惠票價。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "student"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto",
+   "item": "高鐵車票"
+  },
+  {
+   "id": "160e9b44ad",
    "store": "thsr",
    "type": "sale",
-   "title": "高鐵大學生指定車次享5折起優惠",
-   "desc": "大專院校在學學生搭乘指定車次標準車廂對號座享5折、75折或88折，乘車時須出示有效學生證或在學證明備查。",
+   "title": "高鐵早鳥優惠方案",
+   "desc": "提前預訂高鐵指定車次對號座車票，即可享早鳥票價折扣。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto",
+   "item": "高鐵車票"
+  },
+  {
+   "id": "551e3aa41a",
+   "store": "thsr",
+   "type": "event",
+   "title": "高鐵新會員限定禮遇",
+   "desc": "註冊加入高鐵TGo會員，享專屬新會員限定好康與活動優惠。",
+   "start": null,
+   "end": null,
+   "aud": [
+    "newbie"
+   ],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "a1fa3e6f55",
+   "store": "thsr",
+   "type": "plan",
+   "title": "刷指定銀行信用卡享高鐵優惠",
+   "desc": "搭乘高鐵刷指定合作銀行信用卡購票，可享票價折抵或專屬卡友禮遇。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "pay"
+   ],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "a1e7212daa",
+   "store": "thsr",
+   "type": "sale",
+   "title": "高鐵假期送住宿專案",
+   "desc": "訂購高鐵假期指定旅遊行程，即享專案免費贈送飯店住宿。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "bundle"
+   ],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto",
+   "item": "車票與住宿"
+  },
+  {
+   "id": "dcbf1a0890",
+   "store": "thsr",
+   "type": "sale",
+   "title": "高鐵假期送租車專案",
+   "desc": "訂購高鐵假期指定專案方案，享專案贈送租車自駕服務。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "bundle"
+   ],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto",
+   "item": "車票與租車"
+  },
+  {
+   "id": "f075808bca",
+   "store": "thsr",
+   "type": "cashback",
+   "title": "TGo點數365兌換好禮",
+   "desc": "高鐵會員可使用累積的TGo點數，於點數365兌換各式好物商品。",
+   "start": null,
+   "end": null,
+   "aud": [],
+   "cond": [
+    "member"
+   ],
+   "code": "",
+   "source": "https://www.thsrc.com.tw/",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "auto"
+  },
+  {
+   "id": "043093db25",
+   "store": "thsr",
+   "type": "plan",
+   "title": "高鐵大學生指定車次 5 折起優惠",
+   "desc": "大專院校在學生搭乘指定車次標準車廂對號座享 5 折、75 折或 88 折，乘車須出示本人有效學生證正本或在學證明備查。",
    "start": null,
    "end": null,
    "aud": [
@@ -3533,10 +3825,10 @@
    "code": "",
    "source": "https://www.thsrc.com.tw/ArticleContent/530e869c-479d-441a-a4b4-61a8166827e9",
    "redeem_url": "",
-   "checked_at": "2026-11-20T11:19:36+08:00",
+   "checked_at": "2026-11-22T10:26:38+08:00",
    "origin": "auto",
    "price": 20,
-   "item": "高鐵指定車次對號座車票"
+   "item": "高鐵單程車票"
   },
   {
    "id": "7a53030954",
@@ -3827,6 +4119,54 @@
    "redeem_url": "",
    "checked_at": "2026-11-20T11:19:36+08:00",
    "origin": "auto"
+  },
+  {
+   "id": "8e91cc1084",
+   "store": "wowprime",
+   "type": "event",
+   "title": "陶板屋點2客套餐送海鮮天婦羅",
+   "desc": "至陶板屋消費2客套餐即贈送海鮮天婦羅料理，活動辦法依官方規定為準。",
+   "start": null,
+   "end": "2026-11-30",
+   "aud": [
+    "family"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://supertaste.tvbs.com.tw/pack/362540",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "tip",
+   "meal": [
+    "lunch",
+    "dinner"
+   ],
+   "item": "海鮮天婦羅1份",
+   "via": "食尚玩家"
+  },
+  {
+   "id": "60035e3b58",
+   "store": "wowprime",
+   "type": "event",
+   "title": "王品牛排點2客套餐送龍蝦鮮魚",
+   "desc": "消費2客套餐即贈送價值1,089元的龍蝦鮮魚，使用規定依官方公告為準。",
+   "start": null,
+   "end": "2026-12-31",
+   "aud": [
+    "family"
+   ],
+   "cond": [],
+   "code": "",
+   "source": "https://supertaste.tvbs.com.tw/pack/362540",
+   "redeem_url": "",
+   "checked_at": "2026-11-22T10:26:38+08:00",
+   "origin": "tip",
+   "meal": [
+    "lunch",
+    "dinner"
+   ],
+   "item": "龍蝦鮮魚1份",
+   "via": "食尚玩家"
   },
   {
    "id": "95bc1fe603",
