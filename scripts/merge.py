@@ -173,5 +173,7 @@ def merge(data: dict, cfg: dict, found: dict[str, list[dict]], fetched_ok: set[s
     data["coupons"] = kept
     data["stores"] = {k: store_public(v) for k, v in stores.items()}
     data["categories"] = cfg["categories"]
+    # 網站「回報錯誤」按鈕用的 Google 表單預先填入連結（空字串＝網站不顯示按鈕）
+    data["settings"] = {"report_form": settings.get("report_form", "") or ""}
     data["updated_at"] = now_iso()
     return data, processed, rejected, log
