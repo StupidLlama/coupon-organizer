@@ -41,6 +41,7 @@ stores:
   ubereats: { name: Uber Eats, domain: ubereats.com, sub: delivery, color: "#06c167", urls: ["https://www.ubereats.com/tw"] }
   panda: { name: foodpanda, domain: foodpanda.com.tw, sub: delivery, color: "#d70f64", urls: [] }  # 暫停：robots.txt 禁止活動頁
   pizzahut: { name: 必勝客, domain: pizzahut.com.tw, sub: dine, color: "#c8102e", urls: ["https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp"] }
+  napoli: { name: 拿坡里披薩, domain: 0800076666.com.tw, sub: dine, color: "#d71920", urls: [] }  # 暫停：官網優惠頁（/Info/InfoNews、/Info/infoStores、/Info/InfoSets）內容由 JavaScript 載入，抓不到文字；優惠靠線索來源（部落格）補上。沒有官方 App（用 LINE 點餐）
   wowprime: { name: 王品集團, domain: wowprime.com, sub: dine, color: "#8b1e2d", urls: ["https://www.wowprime.com/zh-tw/news/media"] }  # 一頁涵蓋石二鍋、陶板屋、西堤等多個品牌
   sushiro: { name: 壽司郎, domain: sushiro.com.tw, sub: dine, color: "#d7000f", urls: ["https://www.sushiro.com.tw/Announcement/List"] }
   s711: { name: 7-ELEVEN, domain: 7-11.com.tw, sub: mart, color: "#00804a", urls: ["https://www.7-11.com.tw/"] }
