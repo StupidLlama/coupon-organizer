@@ -6,6 +6,7 @@
 # - sub 必須是下面 categories 裡的子分類代號。
 # - 選填 app_ios / app_android：App Store / Google Play 的下載頁網址。填了之後，「App 限定」的優惠詳情會出現「開啟 App」按鈕。
 # - 選填 window：只在這個台灣時段抓（例 "12:00-16:45"），給 robots.txt 有 Visit-time 的網站用。時段外會略過；目前沒有店家使用（中午排程已移除，見 HANDOFF）。
+# - 選填 follow / max_follow：優惠只放圖片、文字在內頁的網站用。會抓 urls 頁面上網址含 follow 字串的連結（最多 max_follow 個，預設 5），合併成一次 Gemini 呼叫。
 #   例：mcd: { ..., app_ios: "https://apps.apple.com/tw/app/...", app_android: "https://play.google.com/store/apps/details?id=..." }
 
 settings:
@@ -41,7 +42,7 @@ stores:
   ubereats: { name: Uber Eats, domain: ubereats.com, sub: delivery, color: "#06c167", urls: ["https://www.ubereats.com/tw"] }
   panda: { name: foodpanda, domain: foodpanda.com.tw, sub: delivery, color: "#d70f64", urls: [] }  # 暫停：robots.txt 禁止活動頁
   pizzahut: { name: 必勝客, domain: pizzahut.com.tw, sub: dine, color: "#c8102e", urls: ["https://www.pizzahut.com.tw/order/?mode=step_2&ct=1&fm=hp"] }
-  napoli: { name: 拿坡里披薩, domain: 0800076666.com.tw, sub: dine, color: "#d71920", urls: [] }  # 暫停：官網優惠頁（/Info/InfoNews、/Info/infoStores、/Info/InfoSets）內容由 JavaScript 載入，抓不到文字；優惠靠線索來源（部落格）補上。沒有官方 App（用 LINE 點餐）
+  napoli: { name: 拿坡里披薩, domain: 0800076666.com.tw, sub: dine, color: "#d71920", urls: ["https://www.0800076666.com.tw/"], follow: "/Info/InfoNewsDetail/", max_follow: 5 }  # 首頁優惠只有圖片，文字在內頁，所以用 follow 抓首頁連到的內頁；沒有官方 App（用 LINE 點餐）
   wowprime: { name: 王品集團, domain: wowprime.com, sub: dine, color: "#8b1e2d", urls: ["https://www.wowprime.com/zh-tw/news/media"] }  # 一頁涵蓋石二鍋、陶板屋、西堤等多個品牌
   sushiro: { name: 壽司郎, domain: sushiro.com.tw, sub: dine, color: "#d7000f", urls: ["https://www.sushiro.com.tw/Announcement/List"] }
   s711: { name: 7-ELEVEN, domain: 7-11.com.tw, sub: mart, color: "#00804a", urls: ["https://www.7-11.com.tw/"] }

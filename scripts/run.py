@@ -56,7 +56,7 @@ def main() -> int:
         print("⚠️ 沒有設定 GEMINI_API_KEY，這次只處理回報和清理過期。")
     if not args.no_fetch and api_key:
         from extract import USAGE, ModelBusy, extract, extract_tips, resolve_models
-        from fetch import fetch_text
+        from fetch import fetch_followed, fetch_text
 
         models = resolve_models(settings.get("model", "auto"), api_key)
         print(f"候選模型：{'、'.join(models)}")
@@ -130,7 +130,11 @@ def main() -> int:
                     print(f"已執行超過 {settings.get('max_minutes', 22)} 分鐘，剩下的店家下次再抓")
                     stop = True
                     break
-                text, status = fetch_text(url, int(settings.get("max_chars_per_page", 15000)))
+                max_chars = int(settings.get("max_chars_per_page", 15000))
+                if store.get("follow"):  # 優惠只在內頁：抓列表頁上符合 follow 的連結
+                    text, status = fetch_followed(url, store["follow"], int(store.get("max_follow", 5)), max_chars)
+                else:
+                    text, status = fetch_text(url, max_chars)
                 if not text:
                     print(f"略過 {store['name']} {url}：{status}")
                     continue

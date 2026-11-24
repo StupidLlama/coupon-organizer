@@ -2,7 +2,7 @@
 import re
 import time
 import urllib.robotparser
-from urllib.parse import urlsplit
+from urllib.parse import urljoin, urlsplit
 
 import requests
 from bs4 import BeautifulSoup
@@ -70,3 +70,24 @@ def fetch_text(url: str, max_chars: int = 15000) -> tuple[str | None, str]:
     if len(text) < 80:
         return None, "沒有文字（可能是 JavaScript 動態載入的網頁）"
     return text[:max_chars], "ok"
+
+
+def fetch_followed(url: str, pattern: str, max_pages: int = 5, max_chars: int = 15000) -> tuple[str | None, str]:
+    """給優惠只放圖片、文字在內頁的網站用：抓 url，找出網址含 pattern 的連結，逐一抓內頁文字合併起來（只算一次 Gemini 呼叫）。"""
+    r, status = fetch_raw(url)
+    if r is None:
+        return None, status
+    links = []
+    for a in BeautifulSoup(r.text, "html.parser").find_all("a", href=True):
+        link = urljoin(r.url, a["href"]).split("#")[0]
+        if pattern in link and urlsplit(link).netloc == urlsplit(r.url).netloc and link not in links:
+            links.append(link)
+    parts = []
+    for link in links[:max_pages]:
+        text, _ = fetch_text(link, max_chars)
+        if text:
+            parts.append(f"【內頁 {link}】\n{text}")
+        time.sleep(1)
+    if not parts:
+        return None, f"找不到含「{pattern}」的內頁連結，或內頁沒有文字"
+    return "\n\n".join(parts)[:max_chars], f"ok（{len(parts)} 個內頁）"
