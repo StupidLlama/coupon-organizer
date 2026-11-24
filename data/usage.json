@@ -710,5 +710,47 @@
     "last_error": "HTTP 503：This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
    }
   }
+ },
+ {
+  "time": "2026-11-24T14:35:06+08:00",
+  "kind": "daily",
+  "models": {
+   "gemini-3.8-flash": {
+    "requests": 2,
+    "ok": 0,
+    "http_429": 0,
+    "http_5xx": 2,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "last_error": "HTTP 503：This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+   },
+   "gemini-3.7-flash": {
+    "requests": 2,
+    "ok": 0,
+    "http_429": 1,
+    "http_5xx": 1,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "last_error": "HTTP 503：This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+   },
+   "gemini-3.6-flash": {
+    "requests": 2,
+    "ok": 0,
+    "http_429": 1,
+    "http_5xx": 1,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "last_error": "HTTP 429：You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-"
+   },
+   "gemini-3.5-flash-lite": {
+    "requests": 3,
+    "ok": 1,
+    "http_429": 0,
+    "http_5xx": 2,
+    "input_tokens": 8876,
+    "output_tokens": 1548,
+    "last_error": "HTTP 503：This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+   }
+  }
  }
 ]

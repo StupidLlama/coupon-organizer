@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-24T14:03:31+08:00",
+ "updated_at": "2026-11-24T14:35:06+08:00",
  "categories": {
   "food": {
    "name": "美食",
@@ -147,7 +147,7 @@
    "domain": "0800076666.com.tw",
    "sub": "dine",
    "color": "#d71920",
-   "url": "https://0800076666.com.tw/"
+   "url": "https://www.0800076666.com.tw/"
   },
   "wowprime": {
    "name": "王品集團",
@@ -1101,6 +1101,30 @@
    "price": 49,
    "item": "單品咖啡或冰磚拿鐵",
    "via": "蘋果仁"
+  },
+  {
+   "id": "2e3119f519",
+   "store": "fami",
+   "type": "sale",
+   "title": "全家晚間霜淇淋29元",
+   "desc": "每天17到21點不限口味霜淇淋單支29元",
+   "start": null,
+   "end": "2026-12-04",
+   "aud": [],
+   "cond": [
+    "store"
+   ],
+   "code": "",
+   "source": "https://supertaste.tvbs.com.tw/pack/362422",
+   "redeem_url": "",
+   "checked_at": "2026-11-24T14:35:06+08:00",
+   "origin": "tip",
+   "meal": [
+    "snack"
+   ],
+   "price": 29,
+   "item": "霜淇淋",
+   "via": "食尚玩家"
   },
   {
    "id": "707e31cc03",
@@ -2974,6 +2998,27 @@
    ],
    "item": "精品咖啡加贈點數",
    "via": "蘋果仁"
+  },
+  {
+   "id": "2097346148",
+   "store": "s711",
+   "type": "sale",
+   "title": "7-ELEVEN蕎麥系列第2杯半價",
+   "desc": "購買蕎麥系列飲品任選2杯第2杯半價",
+   "start": "2026-11-10",
+   "end": "2026-11-24",
+   "aud": [],
+   "cond": [],
+   "code": "",
+   "source": "https://supertaste.tvbs.com.tw/pack/362422",
+   "redeem_url": "",
+   "checked_at": "2026-11-24T14:35:06+08:00",
+   "origin": "tip",
+   "meal": [
+    "drink"
+   ],
+   "item": "蕎麥茶飲",
+   "via": "食尚玩家"
   },
   {
    "id": "b99f081c32",
