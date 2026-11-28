@@ -869,5 +869,38 @@
     "last_error": "HTTP 503：This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
    }
   }
+ },
+ {
+  "time": "2026-11-28T12:11:36+08:00",
+  "kind": "daily",
+  "models": {
+   "gemini-3.8-flash": {
+    "requests": 4,
+    "ok": 1,
+    "http_429": 0,
+    "http_5xx": 3,
+    "input_tokens": 8464,
+    "output_tokens": 1309,
+    "last_error": "HTTP 503：This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+   },
+   "gemini-3.7-flash": {
+    "requests": 13,
+    "ok": 8,
+    "http_429": 1,
+    "http_5xx": 4,
+    "input_tokens": 24995,
+    "output_tokens": 11972,
+    "last_error": "HTTP 503：This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+   },
+   "gemini-3.6-flash": {
+    "requests": 23,
+    "ok": 23,
+    "http_429": 0,
+    "http_5xx": 0,
+    "input_tokens": 88644,
+    "output_tokens": 49628,
+    "last_error": ""
+   }
+  }
  }
 ]
